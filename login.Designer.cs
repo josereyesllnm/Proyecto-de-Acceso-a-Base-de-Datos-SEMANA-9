@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.bentrar_sqlserver_Click = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.bentrar_access_Click = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bentrar_sqlserver_Click
@@ -41,21 +41,22 @@
             this.bentrar_sqlserver_Click.Text = "SQLSERVER";
             this.bentrar_sqlserver_Click.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // bentrar_access_Click
             // 
-            this.button2.Location = new System.Drawing.Point(12, 165);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 33);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bentrar_access_Click.Location = new System.Drawing.Point(12, 165);
+            this.bentrar_access_Click.Name = "bentrar_access_Click";
+            this.bentrar_access_Click.Size = new System.Drawing.Size(85, 33);
+            this.bentrar_access_Click.TabIndex = 1;
+            this.bentrar_access_Click.Text = "ACCESS";
+            this.bentrar_access_Click.UseVisualStyleBackColor = true;
             // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(448, 244);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.bentrar_access_Click);
             this.Controls.Add(this.bentrar_sqlserver_Click);
             this.Name = "login";
             this.Text = "LOGIN";
@@ -66,6 +67,6 @@
         #endregion
 
         private System.Windows.Forms.Button bentrar_sqlserver_Click;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bentrar_access_Click;
     }
 }
