@@ -21,5 +21,10 @@ namespace Proyecto_de_Acceso_a_Base_de_Datos_Access
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

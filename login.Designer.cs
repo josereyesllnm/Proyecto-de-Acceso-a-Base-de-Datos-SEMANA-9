@@ -31,6 +31,9 @@
             this.bentrar_sqlserver_Click = new System.Windows.Forms.Button();
             this.bentrar_access_Click = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // bentrar_sqlserver_Click
@@ -69,6 +72,35 @@
             this.btn_salir.Text = "SALIR";
             this.btn_salir.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(189, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "INICIAR SESION";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(154, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(154, 95);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "label3";
+            // 
             // login
             // 
             this.AcceptButton = this.bentrar_access_Click;
@@ -76,6 +108,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(448, 244);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.bentrar_access_Click);
             this.Controls.Add(this.bentrar_sqlserver_Click);
@@ -84,6 +119,7 @@
             this.Text = "LOGIN";
             this.Load += new System.EventHandler(this.login_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -92,5 +128,8 @@
         private System.Windows.Forms.Button bentrar_sqlserver_Click;
         private System.Windows.Forms.Button bentrar_access_Click;
         private System.Windows.Forms.Button btn_salir;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
