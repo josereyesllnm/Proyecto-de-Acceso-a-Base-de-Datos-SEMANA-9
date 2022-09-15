@@ -1,7 +1,7 @@
 ﻿
 namespace Proyecto_de_Acceso_a_Base_de_Datos_Access
 {
-    partial class Form1
+    partial class login
     {
         /// <summary>
         /// Variable del diseñador necesaria.
