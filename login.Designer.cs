@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.bentrar_sqlserver_Click = new System.Windows.Forms.Button();
             this.bentrar_access_Click = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
@@ -36,6 +37,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.txtclave = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bentrar_sqlserver_Click
@@ -121,6 +124,16 @@
             this.txtclave.Size = new System.Drawing.Size(173, 20);
             this.txtclave.TabIndex = 7;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(72, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // login
             // 
             this.AcceptButton = this.bentrar_access_Click;
@@ -128,6 +141,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(448, 244);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtclave);
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.label3);
@@ -140,6 +154,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
             this.Load += new System.EventHandler(this.login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,5 +170,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.TextBox txtclave;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
