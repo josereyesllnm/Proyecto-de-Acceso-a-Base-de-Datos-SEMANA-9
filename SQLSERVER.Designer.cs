@@ -1,7 +1,7 @@
 ﻿
 namespace Proyecto_de_Acceso_a_Base_de_Datos_Access
 {
-    partial class SQLSERVER
+    partial class sqlserver
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Proyecto_de_Acceso_a_Base_de_Datos_Access
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SQLSERVER));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sqlserver));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
