@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_de_Acceso_a_Base_de_Datos_Access
 {
-    public partial class SQLSERVER : Form
+    public partial class sqlserver : Form
     {
-        public SQLSERVER()
+        public sqlserver()
         {
             InitializeComponent();
         }
