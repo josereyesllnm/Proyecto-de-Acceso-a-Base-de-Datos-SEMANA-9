@@ -34,24 +34,29 @@
             // 
             // bentrar_sqlserver_Click
             // 
+            this.bentrar_sqlserver_Click.BackColor = System.Drawing.Color.Gold;
+            this.bentrar_sqlserver_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bentrar_sqlserver_Click.Location = new System.Drawing.Point(12, 204);
             this.bentrar_sqlserver_Click.Name = "bentrar_sqlserver_Click";
             this.bentrar_sqlserver_Click.Size = new System.Drawing.Size(85, 33);
             this.bentrar_sqlserver_Click.TabIndex = 0;
             this.bentrar_sqlserver_Click.Text = "SQLSERVER";
-            this.bentrar_sqlserver_Click.UseVisualStyleBackColor = true;
+            this.bentrar_sqlserver_Click.UseVisualStyleBackColor = false;
             // 
             // bentrar_access_Click
             // 
+            this.bentrar_access_Click.BackColor = System.Drawing.Color.Gold;
+            this.bentrar_access_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bentrar_access_Click.Location = new System.Drawing.Point(12, 165);
             this.bentrar_access_Click.Name = "bentrar_access_Click";
             this.bentrar_access_Click.Size = new System.Drawing.Size(85, 33);
             this.bentrar_access_Click.TabIndex = 1;
             this.bentrar_access_Click.Text = "ACCESS";
-            this.bentrar_access_Click.UseVisualStyleBackColor = true;
+            this.bentrar_access_Click.UseVisualStyleBackColor = false;
             // 
             // login
             // 
+            this.AcceptButton = this.bentrar_access_Click;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -59,7 +64,9 @@
             this.Controls.Add(this.bentrar_access_Click);
             this.Controls.Add(this.bentrar_sqlserver_Click);
             this.Name = "login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
+            this.Load += new System.EventHandler(this.login_Load);
             this.ResumeLayout(false);
 
         }

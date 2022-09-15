@@ -16,5 +16,10 @@ namespace Proyecto_de_Acceso_a_Base_de_Datos_Access
         {
             InitializeComponent();
         }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
