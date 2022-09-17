@@ -87,7 +87,7 @@
             this.label1.AutoSize = true;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(160, 28);
+            this.label1.Location = new System.Drawing.Point(197, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 20);
             this.label1.TabIndex = 3;
@@ -98,7 +98,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(106, 78);
+            this.label2.Location = new System.Drawing.Point(128, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 4;
@@ -108,7 +108,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(123, 130);
+            this.label3.Location = new System.Drawing.Point(145, 175);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 5;
@@ -116,7 +116,7 @@
             // 
             // txtusuario
             // 
-            this.txtusuario.Location = new System.Drawing.Point(179, 75);
+            this.txtusuario.Location = new System.Drawing.Point(201, 123);
             this.txtusuario.Multiline = true;
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(173, 20);
@@ -124,7 +124,7 @@
             // 
             // txtclave
             // 
-            this.txtclave.Location = new System.Drawing.Point(179, 127);
+            this.txtclave.Location = new System.Drawing.Point(201, 172);
             this.txtclave.Name = "txtclave";
             this.txtclave.Size = new System.Drawing.Size(173, 20);
             this.txtclave.TabIndex = 7;
@@ -132,7 +132,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(393, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(72, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -155,9 +155,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(383, 18);
+            this.pictureBox2.Location = new System.Drawing.Point(5, 7);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(82, 91);
+            this.pictureBox2.Size = new System.Drawing.Size(107, 129);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
@@ -176,7 +176,6 @@
             // 
             // fusuarios
             // 
-            this.AcceptButton = this.bentrar_access_Click;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
