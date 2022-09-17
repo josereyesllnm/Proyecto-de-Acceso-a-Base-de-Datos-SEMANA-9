@@ -39,6 +39,7 @@ namespace Formulario_MDI
             this.ClientSize = new System.Drawing.Size(483, 470);
             this.Name = "fusuarios";
             this.Text = "INGRESO DE USUARIO";
+            this.Load += new System.EventHandler(this.fusuarios_Load);
             this.ResumeLayout(false);
 
         }

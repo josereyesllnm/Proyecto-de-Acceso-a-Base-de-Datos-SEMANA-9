@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Formulario_MDI
 {
-    public partial class fusuarios : Form
+    public partial class LOGIN : Form
     {
-        public fusuarios()
+        public LOGIN()
         {
             InitializeComponent();
         }
 
-        private void fusuarios_Load(object sender, EventArgs e)
+        private void btn_salir_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
     }
 }
