@@ -98,23 +98,17 @@
     <Compile Include="fusuarios.Designer.cs">
       <DependentUpon>fusuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="iniciarsesion.cs">
+    <Compile Include="fusuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="iniciarsesion.Designer.cs">
-      <DependentUpon>iniciarsesion.cs</DependentUpon>
+    <Compile Include="fusuario.Designer.cs">
+      <DependentUpon>fusuario.cs</DependentUpon>
     </Compile>
     <Compile Include="PRODUCTOS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PRODUCTOS.Designer.cs">
       <DependentUpon>PRODUCTOS.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LOGIN.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LOGIN.Designer.cs">
-      <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
     <Compile Include="MENU.cs">
       <SubType>Form</SubType>
@@ -214,14 +208,11 @@
     <EmbeddedResource Include="fusuarios.resx">
       <DependentUpon>fusuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="iniciarsesion.resx">
-      <DependentUpon>iniciarsesion.cs</DependentUpon>
+    <EmbeddedResource Include="fusuario.resx">
+      <DependentUpon>fusuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PRODUCTOS.resx">
       <DependentUpon>PRODUCTOS.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LOGIN.resx">
-      <DependentUpon>LOGIN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MENU.resx">
       <DependentUpon>MENU.cs</DependentUpon>
