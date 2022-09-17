@@ -31,5 +31,11 @@ namespace Proyecto_de_Acceso_a_Base_de_Datos_Access
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fusuarios form = new fusuarios();
+            form.ShowDialog();
+        }
     }
 }

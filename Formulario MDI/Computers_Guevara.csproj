@@ -92,6 +92,12 @@
     <Compile Include="FACTURACION.Designer.cs">
       <DependentUpon>FACTURACION.cs</DependentUpon>
     </Compile>
+    <Compile Include="fusuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fusuarios.Designer.cs">
+      <DependentUpon>fusuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="iniciarsesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FACTURACION.resx">
       <DependentUpon>FACTURACION.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fusuarios.resx">
+      <DependentUpon>fusuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="iniciarsesion.resx">
       <DependentUpon>iniciarsesion.cs</DependentUpon>
