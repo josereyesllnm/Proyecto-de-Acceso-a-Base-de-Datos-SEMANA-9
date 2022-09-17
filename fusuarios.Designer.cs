@@ -1,6 +1,6 @@
 ﻿namespace Proyecto_de_Acceso_a_Base_de_Datos_Access
 {
-    partial class login
+    partial class fusuarios
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fusuarios));
             this.bentrar_sqlserver_Click = new System.Windows.Forms.Button();
             this.bentrar_access_Click = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();

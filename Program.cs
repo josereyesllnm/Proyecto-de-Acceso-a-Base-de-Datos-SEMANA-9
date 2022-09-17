@@ -16,7 +16,7 @@ namespace Proyecto_de_Acceso_a_Base_de_Datos_Access
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());
+            Application.Run(new fusuarios());
         }
     }
 }

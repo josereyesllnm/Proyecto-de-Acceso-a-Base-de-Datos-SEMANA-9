@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto_de_Acceso_a_Base_de_Datos_Access
 {
-    public partial class login : Form
+    public partial class fusuarios : Form
     {
-        public login()
+        public fusuarios()
         {
             InitializeComponent();
         }
