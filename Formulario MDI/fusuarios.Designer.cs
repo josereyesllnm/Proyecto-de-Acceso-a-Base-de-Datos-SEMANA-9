@@ -53,10 +53,14 @@ namespace Formulario_MDI
             this.tusuariosTableAdapter = new Formulario_MDI.sistemaDataSetTableAdapters.tusuariosTableAdapter();
             this.bprimero_Click = new System.Windows.Forms.Button();
             this.bnuevo_Click = new System.Windows.Forms.Button();
+            this.tusuariosBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.tusuariosBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tusuariosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tusuariosBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tusuariosBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tusuariosBindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -104,6 +108,7 @@ namespace Formulario_MDI
             this.txtclave.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tusuariosBindingSource1, "clave", true));
             this.txtclave.Location = new System.Drawing.Point(202, 140);
             this.txtclave.Name = "txtclave";
+            this.txtclave.PasswordChar = '*';
             this.txtclave.Size = new System.Drawing.Size(173, 20);
             this.txtclave.TabIndex = 14;
             // 
@@ -155,6 +160,7 @@ namespace Formulario_MDI
             // 
             this.banterior_Click.BackColor = System.Drawing.Color.Gold;
             this.banterior_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.banterior_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.banterior_Click.Location = new System.Drawing.Point(132, 263);
             this.banterior_Click.Name = "banterior_Click";
             this.banterior_Click.Size = new System.Drawing.Size(85, 43);
@@ -167,6 +173,7 @@ namespace Formulario_MDI
             // 
             this.bsiguiente_Click.BackColor = System.Drawing.Color.Gold;
             this.bsiguiente_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bsiguiente_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bsiguiente_Click.Location = new System.Drawing.Point(232, 263);
             this.bsiguiente_Click.Name = "bsiguiente_Click";
             this.bsiguiente_Click.Size = new System.Drawing.Size(85, 43);
@@ -179,6 +186,7 @@ namespace Formulario_MDI
             // 
             this.bultimo_Click.BackColor = System.Drawing.Color.Gold;
             this.bultimo_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bultimo_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bultimo_Click.Location = new System.Drawing.Point(332, 263);
             this.bultimo_Click.Name = "bultimo_Click";
             this.bultimo_Click.Size = new System.Drawing.Size(85, 43);
@@ -191,6 +199,7 @@ namespace Formulario_MDI
             // 
             this.beliminar_Click.BackColor = System.Drawing.Color.Gold;
             this.beliminar_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.beliminar_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.beliminar_Click.Location = new System.Drawing.Point(132, 323);
             this.beliminar_Click.Name = "beliminar_Click";
             this.beliminar_Click.Size = new System.Drawing.Size(85, 43);
@@ -203,6 +212,7 @@ namespace Formulario_MDI
             // 
             this.bmodificar_Click.BackColor = System.Drawing.Color.Gold;
             this.bmodificar_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bmodificar_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bmodificar_Click.Location = new System.Drawing.Point(232, 323);
             this.bmodificar_Click.Name = "bmodificar_Click";
             this.bmodificar_Click.Size = new System.Drawing.Size(85, 43);
@@ -215,6 +225,7 @@ namespace Formulario_MDI
             // 
             this.bsalir_Click.BackColor = System.Drawing.Color.Gold;
             this.bsalir_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bsalir_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bsalir_Click.Location = new System.Drawing.Point(332, 323);
             this.bsalir_Click.Name = "bsalir_Click";
             this.bsalir_Click.Size = new System.Drawing.Size(85, 43);
@@ -227,6 +238,7 @@ namespace Formulario_MDI
             // 
             this.bguardar_Click.BackColor = System.Drawing.Color.Gold;
             this.bguardar_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bguardar_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bguardar_Click.Location = new System.Drawing.Point(31, 386);
             this.bguardar_Click.Name = "bguardar_Click";
             this.bguardar_Click.Size = new System.Drawing.Size(85, 43);
@@ -239,10 +251,10 @@ namespace Formulario_MDI
             // 
             this.bactualizar_Click.BackColor = System.Drawing.Color.Gold;
             this.bactualizar_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bactualizar_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bactualizar_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bactualizar_Click.Location = new System.Drawing.Point(232, 386);
             this.bactualizar_Click.Name = "bactualizar_Click";
-            this.bactualizar_Click.Size = new System.Drawing.Size(85, 43);
+            this.bactualizar_Click.Size = new System.Drawing.Size(93, 43);
             this.bactualizar_Click.TabIndex = 28;
             this.bactualizar_Click.Text = "ACTUALIZAR";
             this.bactualizar_Click.UseVisualStyleBackColor = false;
@@ -256,11 +268,12 @@ namespace Formulario_MDI
             // 
             this.bprimero_Click.BackColor = System.Drawing.Color.Gold;
             this.bprimero_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bprimero_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bprimero_Click.Location = new System.Drawing.Point(31, 263);
             this.bprimero_Click.Name = "bprimero_Click";
             this.bprimero_Click.Size = new System.Drawing.Size(85, 43);
             this.bprimero_Click.TabIndex = 29;
-            this.bprimero_Click.Text = "ULTIMO";
+            this.bprimero_Click.Text = "PRIMERO";
             this.bprimero_Click.UseVisualStyleBackColor = false;
             this.bprimero_Click.Click += new System.EventHandler(this.bprimero_Click_Click);
             // 
@@ -268,6 +281,7 @@ namespace Formulario_MDI
             // 
             this.bnuevo_Click.BackColor = System.Drawing.Color.Gold;
             this.bnuevo_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bnuevo_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnuevo_Click.Location = new System.Drawing.Point(31, 323);
             this.bnuevo_Click.Name = "bnuevo_Click";
             this.bnuevo_Click.Size = new System.Drawing.Size(85, 43);
@@ -275,6 +289,16 @@ namespace Formulario_MDI
             this.bnuevo_Click.Text = "NUEVO";
             this.bnuevo_Click.UseVisualStyleBackColor = false;
             this.bnuevo_Click.Click += new System.EventHandler(this.bnuevo_Click_Click);
+            // 
+            // tusuariosBindingSource2
+            // 
+            this.tusuariosBindingSource2.DataMember = "tusuarios";
+            this.tusuariosBindingSource2.DataSource = this.sistemaDataSet;
+            // 
+            // tusuariosBindingSource3
+            // 
+            this.tusuariosBindingSource3.DataMember = "tusuarios";
+            this.tusuariosBindingSource3.DataSource = this.sistemaDataSet;
             // 
             // fusuarios
             // 
@@ -301,12 +325,15 @@ namespace Formulario_MDI
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.pictureBox1);
             this.Name = "fusuarios";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INGRESO DE USUARIO";
             this.Load += new System.EventHandler(this.fusuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tusuariosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tusuariosBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tusuariosBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tusuariosBindingSource3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,5 +363,7 @@ namespace Formulario_MDI
         private System.Windows.Forms.BindingSource tusuariosBindingSource1;
         private System.Windows.Forms.Button bprimero_Click;
         private System.Windows.Forms.Button bnuevo_Click;
+        private System.Windows.Forms.BindingSource tusuariosBindingSource2;
+        private System.Windows.Forms.BindingSource tusuariosBindingSource3;
     }
 }

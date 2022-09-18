@@ -90,5 +90,9 @@ namespace Formulario_MDI
            
         }
 
+        private void bentrar_sqlserver_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,6 +28,8 @@ namespace Formulario_MDI
 
         private void fusuarios_Load(object sender, EventArgs e)
         {
+            this.tusuariosTableAdapter.Fill(this.sistemaDataSet.tusuarios);
+
             txtusuario.Enabled = false;
             txtclave.Enabled = false;
             lstnivel.Enabled = false;
@@ -83,8 +85,7 @@ namespace Formulario_MDI
                 miconexion.Open();
                 guardar.Connection = miconexion;
                 guardar.CommandType = CommandType.Text;
-                guardar.CommandText = "INSERT INTO tusuario ([nombre], [clave],[nivel])Values('" + txtusuario.Text.ToString() + "', '" +
-                txtclave.Text.ToString() + "','" + lstnivel.Text.ToString() + "')";
+                guardar.CommandText = "INSERT INTO tusuarios ([nombre], [clave],[nivel])Values('" + txtusuario.Text.ToString() + "', '" + txtclave.Text.ToString() + "','" + lstnivel.Text.ToString() + "')";
 
                 guardar.ExecuteNonQuery();
                 miconexion.Close();
@@ -136,7 +137,8 @@ namespace Formulario_MDI
                 string niv = lstnivel.Text;
                
                 //Podemos actualizar todos los campos de una vez
-                actualizar.CommandText = "UPDATE tusuario SET nombre = '" + nom + "',clave = '" + cla + "',nivel = '" + niv + "' WHERE nombre = '" + usuario_modificar + "'";
+                actualizar.CommandText = "UPDATE tusuarios SET nombre = '" + nom + "',clave = '" + cla + "',nivel = '" + niv + "' WHERE nombre = '" + usuario_modificar + "'";
+                actualizar.ExecuteNonQuery();
                 miconexion.Close();
                 bmodificar_Click.Visible = true;
                 bactualizar_Click.Visible = false;
@@ -144,6 +146,9 @@ namespace Formulario_MDI
                 txtclave.Enabled = false;
                 lstnivel.Enabled = false;
                
+                
+                
+                
                 //Mensaje que se guardó correctamente
                 MessageBox.Show("Usuario actualizado con éxito", "Ok",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -164,7 +169,7 @@ namespace Formulario_MDI
                 miconexion.Open();
                 eliminar.Connection = miconexion;
                 eliminar.CommandType = CommandType.Text;
-                eliminar.CommandText = "DELETE FROM tusuario WHERE nombre = '" + txtusuario.Text.ToString() + "'";
+                eliminar.CommandText = "DELETE FROM tusuarios WHERE nombre = '" + txtusuario.Text.ToString() + "'";
 
                 eliminar.ExecuteNonQuery();
                 this.tusuariosBindingSource.MoveNext();
