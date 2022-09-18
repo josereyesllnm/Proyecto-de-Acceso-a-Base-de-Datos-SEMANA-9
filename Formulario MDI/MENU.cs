@@ -143,6 +143,11 @@ namespace Formulario_MDI
             FACTURACION form = new FACTURACION();
             form.ShowDialog();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 
 }

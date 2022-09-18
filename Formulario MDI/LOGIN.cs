@@ -21,5 +21,11 @@ namespace Formulario_MDI
         {
             Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fusuarios form = new fusuarios();
+            form.ShowDialog();
+        }
     }
 }
