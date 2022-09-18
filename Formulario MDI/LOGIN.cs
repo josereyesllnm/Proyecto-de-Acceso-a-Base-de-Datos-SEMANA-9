@@ -27,5 +27,15 @@ namespace Formulario_MDI
             fusuarios form = new fusuarios();
             form.ShowDialog();
         }
+
+        private void btnentrarusuario_sqlserver_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bentrar_access_Click_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

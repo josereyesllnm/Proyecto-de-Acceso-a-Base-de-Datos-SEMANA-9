@@ -150,6 +150,7 @@ namespace Formulario_MDI
             this.bentrar_access_Click.TabIndex = 18;
             this.bentrar_access_Click.Text = "ACCESS";
             this.bentrar_access_Click.UseVisualStyleBackColor = false;
+            this.bentrar_access_Click.Click += new System.EventHandler(this.bentrar_access_Click_Click);
             // 
             // bentrar_sqlserver_Click
             // 
@@ -186,6 +187,7 @@ namespace Formulario_MDI
             this.btnentrarusuario_sqlserver.TabIndex = 21;
             this.btnentrarusuario_sqlserver.Text = "INGRESO DE USUARIO SQLSERVER";
             this.btnentrarusuario_sqlserver.UseVisualStyleBackColor = false;
+            this.btnentrarusuario_sqlserver.Click += new System.EventHandler(this.btnentrarusuario_sqlserver_Click);
             // 
             // LOGIN
             // 
