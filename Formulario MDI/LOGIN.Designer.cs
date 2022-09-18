@@ -116,6 +116,7 @@ namespace Formulario_MDI
             // btn_salir
             // 
             this.btn_salir.BackColor = System.Drawing.Color.Gold;
+            this.btn_salir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_salir.Location = new System.Drawing.Point(364, 225);
@@ -166,9 +167,11 @@ namespace Formulario_MDI
             // 
             // LOGIN
             // 
+            this.AcceptButton = this.btnentrarusuario_access;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.CancelButton = this.btn_salir;
             this.ClientSize = new System.Drawing.Size(471, 270);
             this.Controls.Add(this.btnentrarusuario_access);
             this.Controls.Add(this.bentrar_sqlserver);

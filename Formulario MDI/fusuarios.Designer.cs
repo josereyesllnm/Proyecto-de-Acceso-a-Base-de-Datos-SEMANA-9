@@ -55,6 +55,7 @@ namespace Formulario_MDI
             this.bnuevo_Click = new System.Windows.Forms.Button();
             this.tusuariosBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.tusuariosBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.bmmmenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tusuariosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).BeginInit();
@@ -300,12 +301,26 @@ namespace Formulario_MDI
             this.tusuariosBindingSource3.DataMember = "tusuarios";
             this.tusuariosBindingSource3.DataSource = this.sistemaDataSet;
             // 
+            // bmmmenu
+            // 
+            this.bmmmenu.BackColor = System.Drawing.Color.Gold;
+            this.bmmmenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bmmmenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bmmmenu.Location = new System.Drawing.Point(22, 124);
+            this.bmmmenu.Name = "bmmmenu";
+            this.bmmmenu.Size = new System.Drawing.Size(67, 36);
+            this.bmmmenu.TabIndex = 31;
+            this.bmmmenu.Text = "MENU";
+            this.bmmmenu.UseVisualStyleBackColor = false;
+            this.bmmmenu.Click += new System.EventHandler(this.bmmmenu_Click);
+            // 
             // fusuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(481, 458);
+            this.Controls.Add(this.bmmmenu);
             this.Controls.Add(this.bnuevo_Click);
             this.Controls.Add(this.bprimero_Click);
             this.Controls.Add(this.bactualizar_Click);
@@ -365,5 +380,6 @@ namespace Formulario_MDI
         private System.Windows.Forms.Button bnuevo_Click;
         private System.Windows.Forms.BindingSource tusuariosBindingSource2;
         private System.Windows.Forms.BindingSource tusuariosBindingSource3;
+        private System.Windows.Forms.Button bmmmenu;
     }
 }

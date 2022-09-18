@@ -25,20 +25,21 @@ namespace Formulario_MDI.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Valor {
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\sistema.mdb")]
+        public string sistemaConnectionString {
             get {
-                return ((string)(this["Valor"]));
+                return ((string)(this["sistemaConnectionString"]));
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\\sistema.mdb")]
-        public string sistemaConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=JOSEREYES;Initial Catalog=USUARIOS;Integrated Security=True")]
+        public string USUARIOSConnectionString {
             get {
-                return ((string)(this["sistemaConnectionString"]));
+                return ((string)(this["USUARIOSConnectionString"]));
             }
         }
     }

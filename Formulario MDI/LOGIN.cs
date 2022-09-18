@@ -8,11 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Data.SqlClient;
 
 namespace Formulario_MDI
 {
     public partial class LOGIN : Form
     {
+
+        OleDbConnection conexion_access = new OleDbConnection(@"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = C:\Sistema\sistema.mdb;Persist Security Info=False;");
+        SqlConnection conexion = new SqlConnection("Data Source=JOSEREYES;Initial Catalog=USUARIOS;Integrated Security=True");
+
         public LOGIN()
         {
 
@@ -30,12 +35,7 @@ namespace Formulario_MDI
             form.ShowDialog();
         }
 
-        private void btnentrarusuario_sqlserver_Click(object sender, EventArgs e)
-        {
-
-        }
-
-      
+       
         private void LOGIN_Load(object sender, EventArgs e)
         {
 
@@ -92,7 +92,43 @@ namespace Formulario_MDI
 
         private void bentrar_sqlserver_Click(object sender, EventArgs e)
         {
+            try 
+        {
+                conexion.Open();
 
+                string consultax;
+                          
+                consultax = "select nombre, clave from usuario where nombre = '" + txtusuario.Text + "'And clave = '" + txtclave.Text + "' ";
+
+                SqlCommand consulta = new SqlCommand(consultax, conexion);
+
+                consulta.ExecuteNonQuery();
+                DataSet ds = new DataSet();
+                SqlDataAdapter da = new SqlDataAdapter(consulta);
+
+                da.Fill(ds, "usuario");
+
+                DataRow registro;
+                registro = ds.Tables["usuario"].Rows[0];
+
+                if ((txtusuario.Text == registro["nombre"].ToString()) || (txtclave.Text == registro["clave"].ToString()))
+                {
+
+                    fusuarios fprincipal = new fusuarios();
+                    fprincipal.Show();
+                }
+
+
+            }
+            catch
+            {
+                MessageBox.Show("Error de usuario o clave de acceso", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
+
+
+
     }
-}
+    }
+

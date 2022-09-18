@@ -189,6 +189,11 @@
     <Compile Include="SQLSERVER.Designer.cs">
       <DependentUpon>sqlserver.cs</DependentUpon>
     </Compile>
+    <Compile Include="USUARIOSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>USUARIOSDataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Access.resx">
       <DependentUpon>Access.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,6 +289,17 @@
     </None>
     <None Include="sistemaDataSet.xss">
       <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="USUARIOSDataSet.xsc">
+      <DependentUpon>USUARIOSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="USUARIOSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>USUARIOSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="USUARIOSDataSet.xss">
+      <DependentUpon>USUARIOSDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

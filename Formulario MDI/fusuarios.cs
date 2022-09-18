@@ -188,9 +188,18 @@ namespace Formulario_MDI
             }
         }
 
+
+
         private void bsalir_Click_Click(object sender, EventArgs e)
         {
             Application.Exit();
+  
+        }
+
+        private void bmmmenu_Click(object sender, EventArgs e)
+        {
+            MENU fprincipal = new MENU();
+            fprincipal.Show();
         }
     }
  }
