@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Formulario_MDI
 {
@@ -36,6 +37,11 @@ namespace Formulario_MDI
         private void bentrar_access_Click_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void LOGIN_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

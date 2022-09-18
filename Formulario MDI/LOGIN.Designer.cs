@@ -211,6 +211,7 @@ namespace Formulario_MDI
             this.Name = "LOGIN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
+            this.Load += new System.EventHandler(this.LOGIN_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

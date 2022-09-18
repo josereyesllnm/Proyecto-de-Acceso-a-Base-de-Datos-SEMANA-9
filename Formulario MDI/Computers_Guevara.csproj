@@ -178,6 +178,11 @@
     <Compile Include="PROVEEDORES.Designer.cs">
       <DependentUpon>PROVEEDORES.cs</DependentUpon>
     </Compile>
+    <Compile Include="sistemaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="sqlserver.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -269,9 +274,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="sistemaDataSet.xsc">
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sistemaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sistemaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sistemaDataSet.xss">
+      <DependentUpon>sistemaDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sistema.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
