@@ -29,26 +29,34 @@ namespace Formulario_MDI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fusuarios));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtusuario = new System.Windows.Forms.TextBox();
+            this.tusuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sistemaDataSet = new Formulario_MDI.sistemaDataSet();
             this.label2 = new System.Windows.Forms.Label();
             this.txtclave = new System.Windows.Forms.TextBox();
+            this.tusuariosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lstnivel = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.banterior_Click = new System.Windows.Forms.Button();
+            this.bsiguiente_Click = new System.Windows.Forms.Button();
+            this.bultimo_Click = new System.Windows.Forms.Button();
+            this.beliminar_Click = new System.Windows.Forms.Button();
+            this.bmodificar_Click = new System.Windows.Forms.Button();
+            this.bsalir_Click = new System.Windows.Forms.Button();
+            this.bguardar_Click = new System.Windows.Forms.Button();
+            this.bactualizar_Click = new System.Windows.Forms.Button();
+            this.tusuariosTableAdapter = new Formulario_MDI.sistemaDataSetTableAdapters.tusuariosTableAdapter();
+            this.bprimero_Click = new System.Windows.Forms.Button();
+            this.bnuevo_Click = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tusuariosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tusuariosBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -63,11 +71,23 @@ namespace Formulario_MDI
             // 
             // txtusuario
             // 
+            this.txtusuario.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tusuariosBindingSource, "nombre", true));
             this.txtusuario.Location = new System.Drawing.Point(202, 88);
             this.txtusuario.Multiline = true;
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(173, 20);
             this.txtusuario.TabIndex = 11;
+            this.txtusuario.TextChanged += new System.EventHandler(this.txtusuario_TextChanged);
+            // 
+            // tusuariosBindingSource
+            // 
+            this.tusuariosBindingSource.DataMember = "tusuarios";
+            this.tusuariosBindingSource.DataSource = this.sistemaDataSet;
+            // 
+            // sistemaDataSet
+            // 
+            this.sistemaDataSet.DataSetName = "sistemaDataSet";
+            this.sistemaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label2
             // 
@@ -81,10 +101,16 @@ namespace Formulario_MDI
             // 
             // txtclave
             // 
+            this.txtclave.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tusuariosBindingSource1, "clave", true));
             this.txtclave.Location = new System.Drawing.Point(202, 140);
             this.txtclave.Name = "txtclave";
             this.txtclave.Size = new System.Drawing.Size(173, 20);
             this.txtclave.TabIndex = 14;
+            // 
+            // tusuariosBindingSource1
+            // 
+            this.tusuariosBindingSource1.DataMember = "tusuarios";
+            this.tusuariosBindingSource1.DataSource = this.sistemaDataSet;
             // 
             // label3
             // 
@@ -96,13 +122,14 @@ namespace Formulario_MDI
             this.label3.TabIndex = 15;
             this.label3.Text = "CLAVE:";
             // 
-            // comboBox1
+            // lstnivel
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(202, 188);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(173, 21);
-            this.comboBox1.TabIndex = 16;
+            this.lstnivel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tusuariosBindingSource1, "nivel", true));
+            this.lstnivel.FormattingEnabled = true;
+            this.lstnivel.Location = new System.Drawing.Point(202, 188);
+            this.lstnivel.Name = "lstnivel";
+            this.lstnivel.Size = new System.Drawing.Size(173, 21);
+            this.lstnivel.TabIndex = 16;
             // 
             // label1
             // 
@@ -124,117 +151,130 @@ namespace Formulario_MDI
             this.label4.TabIndex = 18;
             this.label4.Text = "INGRESO DE USUARIOS AL SISTEMA";
             // 
-            // button1
+            // banterior_Click
             // 
-            this.button1.BackColor = System.Drawing.Color.Gold;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(31, 263);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 43);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "PRIMERO";
-            this.button1.UseVisualStyleBackColor = false;
+            this.banterior_Click.BackColor = System.Drawing.Color.Gold;
+            this.banterior_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.banterior_Click.Location = new System.Drawing.Point(132, 263);
+            this.banterior_Click.Name = "banterior_Click";
+            this.banterior_Click.Size = new System.Drawing.Size(85, 43);
+            this.banterior_Click.TabIndex = 20;
+            this.banterior_Click.Text = "ANTERIOR";
+            this.banterior_Click.UseVisualStyleBackColor = false;
+            this.banterior_Click.Click += new System.EventHandler(this.banterior_Click_Click);
             // 
-            // button2
+            // bsiguiente_Click
             // 
-            this.button2.BackColor = System.Drawing.Color.Gold;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(132, 263);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 43);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "ANTERIOR";
-            this.button2.UseVisualStyleBackColor = false;
+            this.bsiguiente_Click.BackColor = System.Drawing.Color.Gold;
+            this.bsiguiente_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bsiguiente_Click.Location = new System.Drawing.Point(232, 263);
+            this.bsiguiente_Click.Name = "bsiguiente_Click";
+            this.bsiguiente_Click.Size = new System.Drawing.Size(85, 43);
+            this.bsiguiente_Click.TabIndex = 21;
+            this.bsiguiente_Click.Text = "SIGUIENTE";
+            this.bsiguiente_Click.UseVisualStyleBackColor = false;
+            this.bsiguiente_Click.Click += new System.EventHandler(this.bsiguiente_Click_Click);
             // 
-            // button3
+            // bultimo_Click
             // 
-            this.button3.BackColor = System.Drawing.Color.Gold;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(232, 263);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(85, 43);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "SIGUIENTE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.bultimo_Click.BackColor = System.Drawing.Color.Gold;
+            this.bultimo_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bultimo_Click.Location = new System.Drawing.Point(332, 263);
+            this.bultimo_Click.Name = "bultimo_Click";
+            this.bultimo_Click.Size = new System.Drawing.Size(85, 43);
+            this.bultimo_Click.TabIndex = 22;
+            this.bultimo_Click.Text = "ULTIMO";
+            this.bultimo_Click.UseVisualStyleBackColor = false;
+            this.bultimo_Click.Click += new System.EventHandler(this.bultimo_Click_Click);
             // 
-            // button4
+            // beliminar_Click
             // 
-            this.button4.BackColor = System.Drawing.Color.Gold;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(332, 263);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(85, 43);
-            this.button4.TabIndex = 22;
-            this.button4.Text = "ULTIMO";
-            this.button4.UseVisualStyleBackColor = false;
+            this.beliminar_Click.BackColor = System.Drawing.Color.Gold;
+            this.beliminar_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.beliminar_Click.Location = new System.Drawing.Point(132, 323);
+            this.beliminar_Click.Name = "beliminar_Click";
+            this.beliminar_Click.Size = new System.Drawing.Size(85, 43);
+            this.beliminar_Click.TabIndex = 24;
+            this.beliminar_Click.Text = "ELIMINAR";
+            this.beliminar_Click.UseVisualStyleBackColor = false;
+            this.beliminar_Click.Click += new System.EventHandler(this.beliminar_Click_Click);
             // 
-            // button5
+            // bmodificar_Click
             // 
-            this.button5.BackColor = System.Drawing.Color.Gold;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(31, 323);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(85, 43);
-            this.button5.TabIndex = 23;
-            this.button5.Text = "NUEVO";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.bmodificar_Click.BackColor = System.Drawing.Color.Gold;
+            this.bmodificar_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bmodificar_Click.Location = new System.Drawing.Point(232, 323);
+            this.bmodificar_Click.Name = "bmodificar_Click";
+            this.bmodificar_Click.Size = new System.Drawing.Size(85, 43);
+            this.bmodificar_Click.TabIndex = 25;
+            this.bmodificar_Click.Text = "MODIFICAR";
+            this.bmodificar_Click.UseVisualStyleBackColor = false;
+            this.bmodificar_Click.Click += new System.EventHandler(this.bmodificar_Click_Click);
             // 
-            // button6
+            // bsalir_Click
             // 
-            this.button6.BackColor = System.Drawing.Color.Gold;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Location = new System.Drawing.Point(132, 323);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(85, 43);
-            this.button6.TabIndex = 24;
-            this.button6.Text = "ELIMINAR";
-            this.button6.UseVisualStyleBackColor = false;
+            this.bsalir_Click.BackColor = System.Drawing.Color.Gold;
+            this.bsalir_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bsalir_Click.Location = new System.Drawing.Point(332, 323);
+            this.bsalir_Click.Name = "bsalir_Click";
+            this.bsalir_Click.Size = new System.Drawing.Size(85, 43);
+            this.bsalir_Click.TabIndex = 26;
+            this.bsalir_Click.Text = "SALIR";
+            this.bsalir_Click.UseVisualStyleBackColor = false;
+            this.bsalir_Click.Click += new System.EventHandler(this.bsalir_Click_Click);
             // 
-            // button7
+            // bguardar_Click
             // 
-            this.button7.BackColor = System.Drawing.Color.Gold;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Location = new System.Drawing.Point(232, 323);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(85, 43);
-            this.button7.TabIndex = 25;
-            this.button7.Text = "MODIFICAR";
-            this.button7.UseVisualStyleBackColor = false;
+            this.bguardar_Click.BackColor = System.Drawing.Color.Gold;
+            this.bguardar_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bguardar_Click.Location = new System.Drawing.Point(31, 386);
+            this.bguardar_Click.Name = "bguardar_Click";
+            this.bguardar_Click.Size = new System.Drawing.Size(85, 43);
+            this.bguardar_Click.TabIndex = 27;
+            this.bguardar_Click.Text = "GUARDAR";
+            this.bguardar_Click.UseVisualStyleBackColor = false;
+            this.bguardar_Click.Click += new System.EventHandler(this.bguardar_Click_Click);
             // 
-            // button8
+            // bactualizar_Click
             // 
-            this.button8.BackColor = System.Drawing.Color.Gold;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Location = new System.Drawing.Point(332, 323);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(85, 43);
-            this.button8.TabIndex = 26;
-            this.button8.Text = "SALIR";
-            this.button8.UseVisualStyleBackColor = false;
+            this.bactualizar_Click.BackColor = System.Drawing.Color.Gold;
+            this.bactualizar_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bactualizar_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bactualizar_Click.Location = new System.Drawing.Point(232, 386);
+            this.bactualizar_Click.Name = "bactualizar_Click";
+            this.bactualizar_Click.Size = new System.Drawing.Size(85, 43);
+            this.bactualizar_Click.TabIndex = 28;
+            this.bactualizar_Click.Text = "ACTUALIZAR";
+            this.bactualizar_Click.UseVisualStyleBackColor = false;
+            this.bactualizar_Click.Click += new System.EventHandler(this.bactualizar_Click_Click);
             // 
-            // button9
+            // tusuariosTableAdapter
             // 
-            this.button9.BackColor = System.Drawing.Color.Gold;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Location = new System.Drawing.Point(31, 386);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(85, 43);
-            this.button9.TabIndex = 27;
-            this.button9.Text = "GUARDAR";
-            this.button9.UseVisualStyleBackColor = false;
+            this.tusuariosTableAdapter.ClearBeforeFill = true;
             // 
-            // button10
+            // bprimero_Click
             // 
-            this.button10.BackColor = System.Drawing.Color.Gold;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(232, 386);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(85, 43);
-            this.button10.TabIndex = 28;
-            this.button10.Text = "ACTUALIZAR";
-            this.button10.UseVisualStyleBackColor = false;
+            this.bprimero_Click.BackColor = System.Drawing.Color.Gold;
+            this.bprimero_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bprimero_Click.Location = new System.Drawing.Point(31, 263);
+            this.bprimero_Click.Name = "bprimero_Click";
+            this.bprimero_Click.Size = new System.Drawing.Size(85, 43);
+            this.bprimero_Click.TabIndex = 29;
+            this.bprimero_Click.Text = "ULTIMO";
+            this.bprimero_Click.UseVisualStyleBackColor = false;
+            this.bprimero_Click.Click += new System.EventHandler(this.bprimero_Click_Click);
+            // 
+            // bnuevo_Click
+            // 
+            this.bnuevo_Click.BackColor = System.Drawing.Color.Gold;
+            this.bnuevo_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bnuevo_Click.Location = new System.Drawing.Point(31, 323);
+            this.bnuevo_Click.Name = "bnuevo_Click";
+            this.bnuevo_Click.Size = new System.Drawing.Size(85, 43);
+            this.bnuevo_Click.TabIndex = 30;
+            this.bnuevo_Click.Text = "NUEVO";
+            this.bnuevo_Click.UseVisualStyleBackColor = false;
+            this.bnuevo_Click.Click += new System.EventHandler(this.bnuevo_Click_Click);
             // 
             // fusuarios
             // 
@@ -242,19 +282,19 @@ namespace Formulario_MDI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(481, 458);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bnuevo_Click);
+            this.Controls.Add(this.bprimero_Click);
+            this.Controls.Add(this.bactualizar_Click);
+            this.Controls.Add(this.bguardar_Click);
+            this.Controls.Add(this.bsalir_Click);
+            this.Controls.Add(this.bmodificar_Click);
+            this.Controls.Add(this.beliminar_Click);
+            this.Controls.Add(this.bultimo_Click);
+            this.Controls.Add(this.bsiguiente_Click);
+            this.Controls.Add(this.banterior_Click);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.lstnivel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtclave);
             this.Controls.Add(this.label2);
@@ -264,6 +304,9 @@ namespace Formulario_MDI
             this.Text = "INGRESO DE USUARIO";
             this.Load += new System.EventHandler(this.fusuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tusuariosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sistemaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tusuariosBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -276,18 +319,22 @@ namespace Formulario_MDI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtclave;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox lstnivel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button banterior_Click;
+        private System.Windows.Forms.Button bsiguiente_Click;
+        private System.Windows.Forms.Button bultimo_Click;
+        private System.Windows.Forms.Button beliminar_Click;
+        private System.Windows.Forms.Button bmodificar_Click;
+        private System.Windows.Forms.Button bsalir_Click;
+        private System.Windows.Forms.Button bguardar_Click;
+        private System.Windows.Forms.Button bactualizar_Click;
+        private sistemaDataSet sistemaDataSet;
+        private System.Windows.Forms.BindingSource tusuariosBindingSource;
+        private sistemaDataSetTableAdapters.tusuariosTableAdapter tusuariosTableAdapter;
+        private System.Windows.Forms.BindingSource tusuariosBindingSource1;
+        private System.Windows.Forms.Button bprimero_Click;
+        private System.Windows.Forms.Button bnuevo_Click;
     }
 }

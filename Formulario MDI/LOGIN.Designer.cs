@@ -39,10 +39,8 @@ namespace Formulario_MDI
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_salir = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.bentrar_access_Click = new System.Windows.Forms.Button();
-            this.bentrar_sqlserver_Click = new System.Windows.Forms.Button();
-            this.btnentrarusuario_accesss = new System.Windows.Forms.Button();
-            this.btnentrarusuario_sqlserver = new System.Windows.Forms.Button();
+            this.bentrar_sqlserver = new System.Windows.Forms.Button();
+            this.btnentrarusuario_access = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -89,6 +87,7 @@ namespace Formulario_MDI
             // 
             this.txtclave.Location = new System.Drawing.Point(199, 139);
             this.txtclave.Name = "txtclave";
+            this.txtclave.PasswordChar = '*';
             this.txtclave.Size = new System.Drawing.Size(173, 20);
             this.txtclave.TabIndex = 13;
             // 
@@ -139,55 +138,30 @@ namespace Formulario_MDI
             this.label4.TabIndex = 17;
             this.label4.Text = "LOGIN";
             // 
-            // bentrar_access_Click
+            // bentrar_sqlserver
             // 
-            this.bentrar_access_Click.BackColor = System.Drawing.Color.Gold;
-            this.bentrar_access_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bentrar_access_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bentrar_access_Click.Location = new System.Drawing.Point(12, 49);
-            this.bentrar_access_Click.Name = "bentrar_access_Click";
-            this.bentrar_access_Click.Size = new System.Drawing.Size(95, 33);
-            this.bentrar_access_Click.TabIndex = 18;
-            this.bentrar_access_Click.Text = "ACCESS";
-            this.bentrar_access_Click.UseVisualStyleBackColor = false;
-            this.bentrar_access_Click.Click += new System.EventHandler(this.bentrar_access_Click_Click);
+            this.bentrar_sqlserver.BackColor = System.Drawing.Color.Gold;
+            this.bentrar_sqlserver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bentrar_sqlserver.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bentrar_sqlserver.Location = new System.Drawing.Point(12, 58);
+            this.bentrar_sqlserver.Name = "bentrar_sqlserver";
+            this.bentrar_sqlserver.Size = new System.Drawing.Size(95, 50);
+            this.bentrar_sqlserver.TabIndex = 22;
+            this.bentrar_sqlserver.Text = "INGRESO DE USUARIO SQLSERVER";
+            this.bentrar_sqlserver.UseVisualStyleBackColor = false;
             // 
-            // bentrar_sqlserver_Click
+            // btnentrarusuario_access
             // 
-            this.bentrar_sqlserver_Click.BackColor = System.Drawing.Color.Gold;
-            this.bentrar_sqlserver_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bentrar_sqlserver_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bentrar_sqlserver_Click.Location = new System.Drawing.Point(12, 96);
-            this.bentrar_sqlserver_Click.Name = "bentrar_sqlserver_Click";
-            this.bentrar_sqlserver_Click.Size = new System.Drawing.Size(95, 33);
-            this.bentrar_sqlserver_Click.TabIndex = 19;
-            this.bentrar_sqlserver_Click.Text = "SQLSERVER";
-            this.bentrar_sqlserver_Click.UseVisualStyleBackColor = false;
-            // 
-            // btnentrarusuario_accesss
-            // 
-            this.btnentrarusuario_accesss.BackColor = System.Drawing.Color.Gold;
-            this.btnentrarusuario_accesss.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnentrarusuario_accesss.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnentrarusuario_accesss.Location = new System.Drawing.Point(12, 210);
-            this.btnentrarusuario_accesss.Name = "btnentrarusuario_accesss";
-            this.btnentrarusuario_accesss.Size = new System.Drawing.Size(95, 48);
-            this.btnentrarusuario_accesss.TabIndex = 20;
-            this.btnentrarusuario_accesss.Text = "INGRESO DE USUARIO ACCESS";
-            this.btnentrarusuario_accesss.UseVisualStyleBackColor = false;
-            // 
-            // btnentrarusuario_sqlserver
-            // 
-            this.btnentrarusuario_sqlserver.BackColor = System.Drawing.Color.Gold;
-            this.btnentrarusuario_sqlserver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnentrarusuario_sqlserver.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnentrarusuario_sqlserver.Location = new System.Drawing.Point(12, 142);
-            this.btnentrarusuario_sqlserver.Name = "btnentrarusuario_sqlserver";
-            this.btnentrarusuario_sqlserver.Size = new System.Drawing.Size(95, 50);
-            this.btnentrarusuario_sqlserver.TabIndex = 21;
-            this.btnentrarusuario_sqlserver.Text = "INGRESO DE USUARIO SQLSERVER";
-            this.btnentrarusuario_sqlserver.UseVisualStyleBackColor = false;
-            this.btnentrarusuario_sqlserver.Click += new System.EventHandler(this.btnentrarusuario_sqlserver_Click);
+            this.btnentrarusuario_access.BackColor = System.Drawing.Color.Gold;
+            this.btnentrarusuario_access.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnentrarusuario_access.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnentrarusuario_access.Location = new System.Drawing.Point(12, 139);
+            this.btnentrarusuario_access.Name = "btnentrarusuario_access";
+            this.btnentrarusuario_access.Size = new System.Drawing.Size(95, 48);
+            this.btnentrarusuario_access.TabIndex = 25;
+            this.btnentrarusuario_access.Text = "INGRESO DE USUARIO ACCESS";
+            this.btnentrarusuario_access.UseVisualStyleBackColor = false;
+            this.btnentrarusuario_access.Click += new System.EventHandler(this.btnentrarusuario_access_Click);
             // 
             // LOGIN
             // 
@@ -195,10 +169,8 @@ namespace Formulario_MDI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(471, 270);
-            this.Controls.Add(this.btnentrarusuario_sqlserver);
-            this.Controls.Add(this.btnentrarusuario_accesss);
-            this.Controls.Add(this.bentrar_sqlserver_Click);
-            this.Controls.Add(this.bentrar_access_Click);
+            this.Controls.Add(this.btnentrarusuario_access);
+            this.Controls.Add(this.bentrar_sqlserver);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_salir);
             this.Controls.Add(this.pictureBox2);
@@ -230,9 +202,7 @@ namespace Formulario_MDI
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button bentrar_access_Click;
-        private System.Windows.Forms.Button bentrar_sqlserver_Click;
-        private System.Windows.Forms.Button btnentrarusuario_accesss;
-        private System.Windows.Forms.Button btnentrarusuario_sqlserver;
+        private System.Windows.Forms.Button bentrar_sqlserver;
+        private System.Windows.Forms.Button btnentrarusuario_access;
     }
 }
