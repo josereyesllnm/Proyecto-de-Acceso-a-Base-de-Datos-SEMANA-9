@@ -116,6 +116,7 @@ namespace Formulario_MDI
             this.Controls.Add(this.button1);
             this.Name = "CATEGORIASESCRITORIOS";
             this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CATEGORIAS DE ESCRITORIO";
             this.Load += new System.EventHandler(this.CATEGORIASESCRITORIOS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

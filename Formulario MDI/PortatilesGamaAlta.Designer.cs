@@ -288,6 +288,7 @@ namespace Formulario_MDI
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "PortatilesGamaAlta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "COMPUTADORAS PORTATILES GAMA ALTA";
             this.Load += new System.EventHandler(this.form9_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

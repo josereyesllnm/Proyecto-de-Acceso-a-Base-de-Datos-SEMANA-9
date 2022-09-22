@@ -115,6 +115,7 @@ namespace Formulario_MDI
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "CATEGORIASPORTATILES";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CATEGORIAS PORTATILES";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

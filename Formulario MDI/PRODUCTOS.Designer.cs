@@ -124,6 +124,7 @@ namespace Formulario_MDI
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnescritorio);
             this.Name = "EquiposDeEscritorio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PRODUCTOS";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

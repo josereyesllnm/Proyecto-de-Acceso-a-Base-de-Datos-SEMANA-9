@@ -420,6 +420,7 @@ namespace Formulario_MDI
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label14);
             this.Name = "FACTURACION";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FACTURACION";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

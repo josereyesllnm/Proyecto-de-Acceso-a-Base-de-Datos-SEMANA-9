@@ -209,6 +209,7 @@ namespace Formulario_MDI
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button3);
             this.Name = "EscritorioGamaBaja";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "COMPUTADORAS DE ESCRITORIO GAMA  BAJA";
             this.Load += new System.EventHandler(this.EscritorioGamaBaja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
