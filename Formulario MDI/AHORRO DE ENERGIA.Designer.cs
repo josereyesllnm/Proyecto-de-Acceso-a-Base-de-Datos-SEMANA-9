@@ -29,14 +29,19 @@ namespace Formulario_MDI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AHORRO_DE_ENERGIA));
             this.SuspendLayout();
             // 
             // AHORRO_DE_ENERGIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.DoubleBuffered = true;
             this.Name = "AHORRO_DE_ENERGIA";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AHORRO DE ENERGIA";
             this.Load += new System.EventHandler(this.AHORRO_DE_ENERGIA_Load);
             this.ResumeLayout(false);

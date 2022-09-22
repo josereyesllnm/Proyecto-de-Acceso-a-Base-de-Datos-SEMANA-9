@@ -29,14 +29,19 @@ namespace Formulario_MDI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RECICLAJE));
             this.SuspendLayout();
             // 
             // RECICLAJE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.DoubleBuffered = true;
             this.Name = "RECICLAJE";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RECICLAJE";
             this.Load += new System.EventHandler(this.RECICLAJE_Load);
             this.ResumeLayout(false);
