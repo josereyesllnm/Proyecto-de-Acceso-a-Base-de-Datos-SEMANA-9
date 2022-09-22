@@ -88,7 +88,7 @@ namespace Formulario_MDI
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Violet;
+            this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(70, 387);
@@ -101,7 +101,7 @@ namespace Formulario_MDI
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Violet;
+            this.button3.BackColor = System.Drawing.Color.LimeGreen;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(713, 490);
@@ -146,7 +146,7 @@ namespace Formulario_MDI
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Violet;
+            this.button4.BackColor = System.Drawing.Color.LimeGreen;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(392, 387);
@@ -159,7 +159,7 @@ namespace Formulario_MDI
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Violet;
+            this.button5.BackColor = System.Drawing.Color.LimeGreen;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.Location = new System.Drawing.Point(697, 387);

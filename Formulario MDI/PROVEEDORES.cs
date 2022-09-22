@@ -26,5 +26,10 @@ namespace Formulario_MDI
         {
 
         }
+
+        private void PROVEEDORES_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

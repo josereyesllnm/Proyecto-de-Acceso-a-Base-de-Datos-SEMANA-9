@@ -41,7 +41,7 @@ namespace Formulario_MDI
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Violet;
+            this.textBox1.BackColor = System.Drawing.Color.LimeGreen;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(56, 92);
             this.textBox1.Multiline = true;
@@ -94,7 +94,7 @@ namespace Formulario_MDI
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Violet;
+            this.button4.BackColor = System.Drawing.Color.LimeGreen;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(556, 364);

@@ -49,7 +49,7 @@ namespace Formulario_MDI
             // 
             // btn
             // 
-            this.btn.BackColor = System.Drawing.Color.Violet;
+            this.btn.BackColor = System.Drawing.Color.LimeGreen;
             this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn.Location = new System.Drawing.Point(119, 387);
@@ -83,7 +83,7 @@ namespace Formulario_MDI
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Violet;
+            this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(474, 387);

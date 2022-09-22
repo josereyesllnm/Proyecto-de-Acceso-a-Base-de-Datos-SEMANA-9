@@ -90,7 +90,7 @@ namespace Formulario_MDI
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Violet;
+            this.button1.BackColor = System.Drawing.Color.LimeGreen;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(93, 290);
@@ -103,12 +103,12 @@ namespace Formulario_MDI
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Violet;
+            this.button2.BackColor = System.Drawing.Color.LimeGreen;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(823, 378);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(127, 50);
+            this.button2.Size = new System.Drawing.Size(127, 42);
             this.button2.TabIndex = 4;
             this.button2.Text = "VOLVER AL MENU";
             this.button2.UseVisualStyleBackColor = false;
@@ -157,7 +157,7 @@ namespace Formulario_MDI
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Violet;
+            this.button4.BackColor = System.Drawing.Color.LimeGreen;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(391, 290);
@@ -181,7 +181,7 @@ namespace Formulario_MDI
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Violet;
+            this.button3.BackColor = System.Drawing.Color.LimeGreen;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(769, 290);
@@ -271,7 +271,7 @@ namespace Formulario_MDI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(962, 449);
+            this.ClientSize = new System.Drawing.Size(962, 438);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);

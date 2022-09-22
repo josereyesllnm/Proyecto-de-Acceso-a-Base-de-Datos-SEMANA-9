@@ -115,7 +115,7 @@ namespace Formulario_MDI
             // 
             // btn_salir
             // 
-            this.btn_salir.BackColor = System.Drawing.Color.Gold;
+            this.btn_salir.BackColor = System.Drawing.Color.LimeGreen;
             this.btn_salir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btn_salir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_salir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -141,7 +141,7 @@ namespace Formulario_MDI
             // 
             // bentrar_sqlserver
             // 
-            this.bentrar_sqlserver.BackColor = System.Drawing.Color.Gold;
+            this.bentrar_sqlserver.BackColor = System.Drawing.Color.LimeGreen;
             this.bentrar_sqlserver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bentrar_sqlserver.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bentrar_sqlserver.Location = new System.Drawing.Point(12, 58);
@@ -154,7 +154,7 @@ namespace Formulario_MDI
             // 
             // btnentrarusuario_access
             // 
-            this.btnentrarusuario_access.BackColor = System.Drawing.Color.Gold;
+            this.btnentrarusuario_access.BackColor = System.Drawing.Color.LimeGreen;
             this.btnentrarusuario_access.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnentrarusuario_access.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnentrarusuario_access.Location = new System.Drawing.Point(12, 139);

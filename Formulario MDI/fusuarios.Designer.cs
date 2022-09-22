@@ -159,7 +159,7 @@ namespace Formulario_MDI
             // 
             // banterior_Click
             // 
-            this.banterior_Click.BackColor = System.Drawing.Color.Gold;
+            this.banterior_Click.BackColor = System.Drawing.Color.LimeGreen;
             this.banterior_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.banterior_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.banterior_Click.Location = new System.Drawing.Point(132, 263);
@@ -172,7 +172,7 @@ namespace Formulario_MDI
             // 
             // bsiguiente_Click
             // 
-            this.bsiguiente_Click.BackColor = System.Drawing.Color.Gold;
+            this.bsiguiente_Click.BackColor = System.Drawing.Color.LimeGreen;
             this.bsiguiente_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bsiguiente_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bsiguiente_Click.Location = new System.Drawing.Point(232, 263);
@@ -185,7 +185,7 @@ namespace Formulario_MDI
             // 
             // bultimo_Click
             // 
-            this.bultimo_Click.BackColor = System.Drawing.Color.Gold;
+            this.bultimo_Click.BackColor = System.Drawing.Color.LimeGreen;
             this.bultimo_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bultimo_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bultimo_Click.Location = new System.Drawing.Point(332, 263);
@@ -198,7 +198,7 @@ namespace Formulario_MDI
             // 
             // beliminar_Click
             // 
-            this.beliminar_Click.BackColor = System.Drawing.Color.Gold;
+            this.beliminar_Click.BackColor = System.Drawing.Color.LimeGreen;
             this.beliminar_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.beliminar_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.beliminar_Click.Location = new System.Drawing.Point(132, 323);
@@ -211,7 +211,7 @@ namespace Formulario_MDI
             // 
             // bmodificar_Click
             // 
-            this.bmodificar_Click.BackColor = System.Drawing.Color.Gold;
+            this.bmodificar_Click.BackColor = System.Drawing.Color.LimeGreen;
             this.bmodificar_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bmodificar_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bmodificar_Click.Location = new System.Drawing.Point(232, 323);
@@ -224,7 +224,7 @@ namespace Formulario_MDI
             // 
             // bsalir_Click
             // 
-            this.bsalir_Click.BackColor = System.Drawing.Color.Gold;
+            this.bsalir_Click.BackColor = System.Drawing.Color.LimeGreen;
             this.bsalir_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bsalir_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bsalir_Click.Location = new System.Drawing.Point(332, 323);
@@ -237,7 +237,7 @@ namespace Formulario_MDI
             // 
             // bguardar_Click
             // 
-            this.bguardar_Click.BackColor = System.Drawing.Color.Gold;
+            this.bguardar_Click.BackColor = System.Drawing.Color.LimeGreen;
             this.bguardar_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bguardar_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bguardar_Click.Location = new System.Drawing.Point(31, 386);
@@ -250,7 +250,7 @@ namespace Formulario_MDI
             // 
             // bactualizar_Click
             // 
-            this.bactualizar_Click.BackColor = System.Drawing.Color.Gold;
+            this.bactualizar_Click.BackColor = System.Drawing.Color.LimeGreen;
             this.bactualizar_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bactualizar_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bactualizar_Click.Location = new System.Drawing.Point(232, 386);
@@ -267,7 +267,7 @@ namespace Formulario_MDI
             // 
             // bprimero_Click
             // 
-            this.bprimero_Click.BackColor = System.Drawing.Color.Gold;
+            this.bprimero_Click.BackColor = System.Drawing.Color.LimeGreen;
             this.bprimero_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bprimero_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bprimero_Click.Location = new System.Drawing.Point(31, 263);
@@ -280,7 +280,7 @@ namespace Formulario_MDI
             // 
             // bnuevo_Click
             // 
-            this.bnuevo_Click.BackColor = System.Drawing.Color.Gold;
+            this.bnuevo_Click.BackColor = System.Drawing.Color.LimeGreen;
             this.bnuevo_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bnuevo_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bnuevo_Click.Location = new System.Drawing.Point(31, 323);
@@ -303,7 +303,7 @@ namespace Formulario_MDI
             // 
             // bmmmenu
             // 
-            this.bmmmenu.BackColor = System.Drawing.Color.Gold;
+            this.bmmmenu.BackColor = System.Drawing.Color.LimeGreen;
             this.bmmmenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bmmmenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bmmmenu.Location = new System.Drawing.Point(22, 124);
