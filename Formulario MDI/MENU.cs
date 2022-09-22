@@ -148,6 +148,18 @@ namespace Formulario_MDI
         {
 
         }
+
+        private void rECICLAJEToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RECICLAJE form = new RECICLAJE();
+            form.ShowDialog();
+        }
+
+        private void aHORRODEENERGIAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AHORRO_DE_ENERGIA form = new AHORRO_DE_ENERGIA();
+            form.ShowDialog();
+        }
     }
 
 }

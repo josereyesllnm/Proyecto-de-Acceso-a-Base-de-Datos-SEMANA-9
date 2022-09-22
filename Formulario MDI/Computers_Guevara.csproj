@@ -56,6 +56,12 @@
     <Compile Include="ACERCADE.Designer.cs">
       <DependentUpon>ACERCADE.cs</DependentUpon>
     </Compile>
+    <Compile Include="AHORRO DE ENERGIA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AHORRO DE ENERGIA.Designer.cs">
+      <DependentUpon>AHORRO DE ENERGIA.cs</DependentUpon>
+    </Compile>
     <Compile Include="AYUDA.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,12 +103,6 @@
     </Compile>
     <Compile Include="LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MEDIO AMBIENTE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MEDIO AMBIENTE.Designer.cs">
-      <DependentUpon>MEDIO AMBIENTE.cs</DependentUpon>
     </Compile>
     <Compile Include="PRODUCTOS.cs">
       <SubType>Form</SubType>
@@ -178,6 +178,12 @@
     <Compile Include="PROVEEDORES.Designer.cs">
       <DependentUpon>PROVEEDORES.cs</DependentUpon>
     </Compile>
+    <Compile Include="RECICLAJE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RECICLAJE.Designer.cs">
+      <DependentUpon>RECICLAJE.cs</DependentUpon>
+    </Compile>
     <Compile Include="sistemaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -190,6 +196,9 @@
     </Compile>
     <EmbeddedResource Include="ACERCADE.resx">
       <DependentUpon>ACERCADE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AHORRO DE ENERGIA.resx">
+      <DependentUpon>AHORRO DE ENERGIA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AYUDA.resx">
       <DependentUpon>AYUDA.cs</DependentUpon>
@@ -211,9 +220,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MEDIO AMBIENTE.resx">
-      <DependentUpon>MEDIO AMBIENTE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PRODUCTOS.resx">
       <DependentUpon>PRODUCTOS.cs</DependentUpon>
@@ -260,6 +266,9 @@
     </Compile>
     <EmbeddedResource Include="PROVEEDORES.resx">
       <DependentUpon>PROVEEDORES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RECICLAJE.resx">
+      <DependentUpon>RECICLAJE.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

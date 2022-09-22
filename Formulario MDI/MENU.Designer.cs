@@ -199,6 +199,7 @@ namespace Formulario_MDI
             this.aHORRODEENERGIAToolStripMenuItem.Name = "aHORRODEENERGIAToolStripMenuItem";
             this.aHORRODEENERGIAToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.aHORRODEENERGIAToolStripMenuItem.Text = "AHORRO DE ENERGIA";
+            this.aHORRODEENERGIAToolStripMenuItem.Click += new System.EventHandler(this.aHORRODEENERGIAToolStripMenuItem_Click);
             // 
             // rECICLAJEToolStripMenuItem
             // 
@@ -207,6 +208,7 @@ namespace Formulario_MDI
             this.rECICLAJEToolStripMenuItem.Name = "rECICLAJEToolStripMenuItem";
             this.rECICLAJEToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
             this.rECICLAJEToolStripMenuItem.Text = "RECICLAJE ";
+            this.rECICLAJEToolStripMenuItem.Click += new System.EventHandler(this.rECICLAJEToolStripMenuItem_Click);
             // 
             // MENU
             // 
