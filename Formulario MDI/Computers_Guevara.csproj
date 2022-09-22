@@ -50,12 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Access.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Access.Designer.cs">
-      <DependentUpon>Access.cs</DependentUpon>
-    </Compile>
     <Compile Include="ACERCADE.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +97,12 @@
     </Compile>
     <Compile Include="LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEDIO AMBIENTE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEDIO AMBIENTE.Designer.cs">
+      <DependentUpon>MEDIO AMBIENTE.cs</DependentUpon>
     </Compile>
     <Compile Include="PRODUCTOS.cs">
       <SubType>Form</SubType>
@@ -183,20 +183,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>sistemaDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="sqlserver.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SQLSERVER.Designer.cs">
-      <DependentUpon>sqlserver.cs</DependentUpon>
-    </Compile>
     <Compile Include="USUARIOSDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>USUARIOSDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Access.resx">
-      <DependentUpon>Access.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ACERCADE.resx">
       <DependentUpon>ACERCADE.cs</DependentUpon>
     </EmbeddedResource>
@@ -266,9 +257,6 @@
     </Compile>
     <EmbeddedResource Include="PROVEEDORES.resx">
       <DependentUpon>PROVEEDORES.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SQLSERVER.resx">
-      <DependentUpon>sqlserver.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

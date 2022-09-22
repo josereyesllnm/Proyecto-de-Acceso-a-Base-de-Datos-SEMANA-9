@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Formulario_MDI
 {
-    public partial class PROVEEDORES : Form
+    public partial class MEDIO_AMBIENTE : Form
     {
-        public PROVEEDORES()
+        public MEDIO_AMBIENTE()
         {
             InitializeComponent();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

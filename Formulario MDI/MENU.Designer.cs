@@ -49,7 +49,7 @@ namespace Formulario_MDI
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Violet;
+            this.menuStrip1.BackColor = System.Drawing.Color.White;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem,
             this.menuToolStripMenuItem1,
@@ -83,7 +83,7 @@ namespace Formulario_MDI
             this.opcion1ToolStripMenuItem.BackColor = System.Drawing.Color.HotPink;
             this.opcion1ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opcion1ToolStripMenuItem.Name = "opcion1ToolStripMenuItem";
-            this.opcion1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.opcion1ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.opcion1ToolStripMenuItem.Text = "DESCUENTOS";
             this.opcion1ToolStripMenuItem.Click += new System.EventHandler(this.opcion1ToolStripMenuItem_Click);
             // 
@@ -92,7 +92,7 @@ namespace Formulario_MDI
             this.opcion2ToolStripMenuItem.BackColor = System.Drawing.Color.HotPink;
             this.opcion2ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opcion2ToolStripMenuItem.Name = "opcion2ToolStripMenuItem";
-            this.opcion2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.opcion2ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.opcion2ToolStripMenuItem.Text = "OFERTAS DEL MES";
             this.opcion2ToolStripMenuItem.Click += new System.EventHandler(this.opcion2ToolStripMenuItem_Click);
             // 
@@ -133,7 +133,7 @@ namespace Formulario_MDI
             this.clientesToolStripMenuItem.BackColor = System.Drawing.Color.HotPink;
             this.clientesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.clientesToolStripMenuItem.Text = "CLIENTES";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
@@ -142,7 +142,7 @@ namespace Formulario_MDI
             this.fACTURACIONToolStripMenuItem.BackColor = System.Drawing.Color.HotPink;
             this.fACTURACIONToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fACTURACIONToolStripMenuItem.Name = "fACTURACIONToolStripMenuItem";
-            this.fACTURACIONToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fACTURACIONToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.fACTURACIONToolStripMenuItem.Text = "FACTURACION";
             this.fACTURACIONToolStripMenuItem.Click += new System.EventHandler(this.fACTURACIONToolStripMenuItem_Click);
             // 
@@ -151,7 +151,7 @@ namespace Formulario_MDI
             this.pROVEEDORESToolStripMenuItem.BackColor = System.Drawing.Color.HotPink;
             this.pROVEEDORESToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pROVEEDORESToolStripMenuItem.Name = "pROVEEDORESToolStripMenuItem";
-            this.pROVEEDORESToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pROVEEDORESToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.pROVEEDORESToolStripMenuItem.Text = "PROVEEDORES";
             this.pROVEEDORESToolStripMenuItem.Click += new System.EventHandler(this.pROVEEDORESToolStripMenuItem_Click_1);
             // 

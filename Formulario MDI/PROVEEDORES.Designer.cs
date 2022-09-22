@@ -43,7 +43,7 @@ namespace Formulario_MDI
             // 
             this.textBox1.BackColor = System.Drawing.Color.Violet;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(74, 109);
+            this.textBox1.Location = new System.Drawing.Point(75, 70);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -54,7 +54,7 @@ namespace Formulario_MDI
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(555, 131);
+            this.pictureBox1.Location = new System.Drawing.Point(556, 98);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(210, 217);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -66,7 +66,7 @@ namespace Formulario_MDI
             this.button4.BackColor = System.Drawing.Color.Violet;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(658, 402);
+            this.button4.Location = new System.Drawing.Point(658, 411);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(130, 36);
             this.button4.TabIndex = 16;
@@ -77,8 +77,10 @@ namespace Formulario_MDI
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(566, 102);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(564, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 25);
             this.label1.TabIndex = 17;
@@ -88,7 +90,7 @@ namespace Formulario_MDI
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(276, 78);
+            this.label3.Location = new System.Drawing.Point(277, 41);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(206, 15);
             this.label3.TabIndex = 18;
@@ -98,7 +100,7 @@ namespace Formulario_MDI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(71, 78);
+            this.label2.Location = new System.Drawing.Point(81, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(190, 15);
             this.label2.TabIndex = 19;
