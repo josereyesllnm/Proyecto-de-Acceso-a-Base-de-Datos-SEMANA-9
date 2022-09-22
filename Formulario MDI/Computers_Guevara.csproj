@@ -212,6 +212,9 @@
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MEDIO AMBIENTE.resx">
+      <DependentUpon>MEDIO AMBIENTE.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PRODUCTOS.resx">
       <DependentUpon>PRODUCTOS.cs</DependentUpon>
     </EmbeddedResource>
