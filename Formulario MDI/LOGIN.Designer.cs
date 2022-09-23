@@ -41,6 +41,7 @@ namespace Formulario_MDI
             this.label4 = new System.Windows.Forms.Label();
             this.bentrar_sqlserver = new System.Windows.Forms.Button();
             this.btnentrarusuario_access = new System.Windows.Forms.Button();
+            this.b_entrar_sqlserver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -157,13 +158,26 @@ namespace Formulario_MDI
             this.btnentrarusuario_access.BackColor = System.Drawing.Color.LimeGreen;
             this.btnentrarusuario_access.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnentrarusuario_access.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnentrarusuario_access.Location = new System.Drawing.Point(12, 139);
+            this.btnentrarusuario_access.Location = new System.Drawing.Point(12, 124);
             this.btnentrarusuario_access.Name = "btnentrarusuario_access";
             this.btnentrarusuario_access.Size = new System.Drawing.Size(95, 48);
             this.btnentrarusuario_access.TabIndex = 25;
             this.btnentrarusuario_access.Text = "INGRESO DE USUARIO ACCESS";
             this.btnentrarusuario_access.UseVisualStyleBackColor = false;
             this.btnentrarusuario_access.Click += new System.EventHandler(this.btnentrarusuario_access_Click);
+            // 
+            // b_entrar_sqlserver
+            // 
+            this.b_entrar_sqlserver.BackColor = System.Drawing.Color.LimeGreen;
+            this.b_entrar_sqlserver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.b_entrar_sqlserver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b_entrar_sqlserver.Location = new System.Drawing.Point(12, 190);
+            this.b_entrar_sqlserver.Name = "b_entrar_sqlserver";
+            this.b_entrar_sqlserver.Size = new System.Drawing.Size(105, 37);
+            this.b_entrar_sqlserver.TabIndex = 26;
+            this.b_entrar_sqlserver.Text = "SQL SERVER";
+            this.b_entrar_sqlserver.UseVisualStyleBackColor = false;
+            this.b_entrar_sqlserver.Click += new System.EventHandler(this.b_entrar_sqlserver_Click);
             // 
             // LOGIN
             // 
@@ -173,6 +187,7 @@ namespace Formulario_MDI
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.CancelButton = this.btn_salir;
             this.ClientSize = new System.Drawing.Size(471, 270);
+            this.Controls.Add(this.b_entrar_sqlserver);
             this.Controls.Add(this.btnentrarusuario_access);
             this.Controls.Add(this.bentrar_sqlserver);
             this.Controls.Add(this.label4);
@@ -208,5 +223,6 @@ namespace Formulario_MDI
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button bentrar_sqlserver;
         private System.Windows.Forms.Button btnentrarusuario_access;
+        private System.Windows.Forms.Button b_entrar_sqlserver;
     }
 }
