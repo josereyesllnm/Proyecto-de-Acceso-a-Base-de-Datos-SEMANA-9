@@ -135,7 +135,7 @@ namespace Formulario_MDI
 
                 string consultax;
 
-                consultax = "select nombre, clave from usuario where nombre = '" + txtusuario.Text + "'And clave = '" + txtclave.Text + "' ";
+                consultax = "select NOMBRES, CLAVE from USUARIOS2 where NOMBRES = '" + txtusuario.Text + "'And clave = '" + txtclave.Text + "' ";
 
                 SqlCommand consulta = new SqlCommand(consultax, cone);
 
@@ -143,15 +143,15 @@ namespace Formulario_MDI
                 DataSet ds = new DataSet();
                 SqlDataAdapter da = new SqlDataAdapter(consulta);
 
-                da.Fill(ds, "usuario");
+                da.Fill(ds, "USUARIOS2");
 
                 DataRow registro;
-                registro = ds.Tables["usuario"].Rows[0];
+                registro = ds.Tables["USUARIOS2"].Rows[0];
 
-                if ((txtusuario.Text == registro["nombre"].ToString()) || (txtclave.Text == registro["clave"].ToString()))
+                if ((txtusuario.Text == registro["NOMBRES"].ToString()) || (txtclave.Text == registro["CLAVE"].ToString()))
                 {
 
-                    fusuarios fprincipal = new fusuarios();
+                    MENU fprincipal = new MENU();
                     fprincipal.Show();
                 }
 

@@ -171,9 +171,9 @@ namespace Formulario_MDI
             this.b_entrar_sqlserver.BackColor = System.Drawing.Color.LimeGreen;
             this.b_entrar_sqlserver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.b_entrar_sqlserver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_entrar_sqlserver.Location = new System.Drawing.Point(12, 190);
+            this.b_entrar_sqlserver.Location = new System.Drawing.Point(12, 187);
             this.b_entrar_sqlserver.Name = "b_entrar_sqlserver";
-            this.b_entrar_sqlserver.Size = new System.Drawing.Size(105, 37);
+            this.b_entrar_sqlserver.Size = new System.Drawing.Size(95, 50);
             this.b_entrar_sqlserver.TabIndex = 26;
             this.b_entrar_sqlserver.Text = "SQL SERVER";
             this.b_entrar_sqlserver.UseVisualStyleBackColor = false;

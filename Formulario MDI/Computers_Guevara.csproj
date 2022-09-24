@@ -104,6 +104,11 @@
     <Compile Include="LOGIN.Designer.cs">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </Compile>
+    <Compile Include="PERSONASDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PERSONASDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PRODUCTOS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -270,6 +275,17 @@
     <EmbeddedResource Include="RECICLAJE.resx">
       <DependentUpon>RECICLAJE.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="PERSONASDataSet.xsc">
+      <DependentUpon>PERSONASDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PERSONASDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PERSONASDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PERSONASDataSet.xss">
+      <DependentUpon>PERSONASDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
