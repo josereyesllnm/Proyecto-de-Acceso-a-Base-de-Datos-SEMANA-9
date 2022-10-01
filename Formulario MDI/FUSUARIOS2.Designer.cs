@@ -35,23 +35,23 @@ namespace Formulario_MDI
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.txtCLAVE = new System.Windows.Forms.TextBox();
+            this.txtUSUARIO = new System.Windows.Forms.TextBox();
+            this.lstNIVEL = new System.Windows.Forms.ComboBox();
+            this.BPRIMERO = new System.Windows.Forms.Button();
+            this.BGUARDAR = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BELIMINAR = new System.Windows.Forms.Button();
+            this.BANTERIOR = new System.Windows.Forms.Button();
+            this.BNUEVO = new System.Windows.Forms.Button();
+            this.BULTIMO = new System.Windows.Forms.Button();
+            this.BSIGUIENTE = new System.Windows.Forms.Button();
+            this.BTNMENU = new System.Windows.Forms.Button();
+            this.BACTUALIZAR = new System.Windows.Forms.Button();
+            this.BMODIFICAR = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button12 = new System.Windows.Forms.Button();
+            this.BBUSCAR = new System.Windows.Forms.Button();
+            this.bTNsalir_Click = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -106,53 +106,54 @@ namespace Formulario_MDI
             this.label1.TabIndex = 22;
             this.label1.Text = "NIVEL:";
             // 
-            // textBox3
+            // txtCLAVE
             // 
-            this.textBox3.Location = new System.Drawing.Point(222, 141);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(176, 20);
-            this.textBox3.TabIndex = 25;
+            this.txtCLAVE.Location = new System.Drawing.Point(222, 141);
+            this.txtCLAVE.Multiline = true;
+            this.txtCLAVE.Name = "txtCLAVE";
+            this.txtCLAVE.Size = new System.Drawing.Size(176, 20);
+            this.txtCLAVE.TabIndex = 25;
             // 
-            // textBox1
+            // txtUSUARIO
             // 
-            this.textBox1.Location = new System.Drawing.Point(222, 99);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 20);
-            this.textBox1.TabIndex = 23;
+            this.txtUSUARIO.Location = new System.Drawing.Point(222, 99);
+            this.txtUSUARIO.Multiline = true;
+            this.txtUSUARIO.Name = "txtUSUARIO";
+            this.txtUSUARIO.Size = new System.Drawing.Size(176, 20);
+            this.txtUSUARIO.TabIndex = 23;
             // 
-            // comboBox2
+            // lstNIVEL
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(222, 178);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(46, 21);
-            this.comboBox2.TabIndex = 27;
+            this.lstNIVEL.FormattingEnabled = true;
+            this.lstNIVEL.Location = new System.Drawing.Point(222, 178);
+            this.lstNIVEL.Name = "lstNIVEL";
+            this.lstNIVEL.Size = new System.Drawing.Size(46, 21);
+            this.lstNIVEL.TabIndex = 27;
             // 
-            // button1
+            // BPRIMERO
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(157, 263);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 38);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "PRIMERO";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BPRIMERO.BackColor = System.Drawing.Color.LimeGreen;
+            this.BPRIMERO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BPRIMERO.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BPRIMERO.Location = new System.Drawing.Point(152, 263);
+            this.BPRIMERO.Name = "BPRIMERO";
+            this.BPRIMERO.Size = new System.Drawing.Size(104, 38);
+            this.BPRIMERO.TabIndex = 28;
+            this.BPRIMERO.Text = "PRIMERO";
+            this.BPRIMERO.UseVisualStyleBackColor = false;
+            this.BPRIMERO.Click += new System.EventHandler(this.BPRIMERO_Click);
             // 
-            // button4
+            // BGUARDAR
             // 
-            this.button4.BackColor = System.Drawing.Color.LimeGreen;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(267, 263);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 38);
-            this.button4.TabIndex = 31;
-            this.button4.Text = "GUARDAR ";
-            this.button4.UseVisualStyleBackColor = false;
+            this.BGUARDAR.BackColor = System.Drawing.Color.LimeGreen;
+            this.BGUARDAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BGUARDAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BGUARDAR.Location = new System.Drawing.Point(267, 263);
+            this.BGUARDAR.Name = "BGUARDAR";
+            this.BGUARDAR.Size = new System.Drawing.Size(104, 38);
+            this.BGUARDAR.TabIndex = 31;
+            this.BGUARDAR.Text = "GUARDAR ";
+            this.BGUARDAR.UseVisualStyleBackColor = false;
             // 
             // dataGridView1
             // 
@@ -162,113 +163,103 @@ namespace Formulario_MDI
             this.dataGridView1.Size = new System.Drawing.Size(358, 99);
             this.dataGridView1.TabIndex = 32;
             // 
-            // button5
+            // BELIMINAR
             // 
-            this.button5.BackColor = System.Drawing.Color.LimeGreen;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(31, 322);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(104, 38);
-            this.button5.TabIndex = 33;
-            this.button5.Text = "ELIMINAR";
-            this.button5.UseVisualStyleBackColor = false;
+            this.BELIMINAR.BackColor = System.Drawing.Color.LimeGreen;
+            this.BELIMINAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BELIMINAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BELIMINAR.Location = new System.Drawing.Point(31, 322);
+            this.BELIMINAR.Name = "BELIMINAR";
+            this.BELIMINAR.Size = new System.Drawing.Size(104, 38);
+            this.BELIMINAR.TabIndex = 33;
+            this.BELIMINAR.Text = "ELIMINAR";
+            this.BELIMINAR.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // BANTERIOR
             // 
-            this.button6.BackColor = System.Drawing.Color.LimeGreen;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(31, 263);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(104, 38);
-            this.button6.TabIndex = 34;
-            this.button6.Text = "ANTERIOR ";
-            this.button6.UseVisualStyleBackColor = false;
+            this.BANTERIOR.BackColor = System.Drawing.Color.LimeGreen;
+            this.BANTERIOR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BANTERIOR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BANTERIOR.Location = new System.Drawing.Point(31, 263);
+            this.BANTERIOR.Name = "BANTERIOR";
+            this.BANTERIOR.Size = new System.Drawing.Size(104, 38);
+            this.BANTERIOR.TabIndex = 34;
+            this.BANTERIOR.Text = "ANTERIOR ";
+            this.BANTERIOR.UseVisualStyleBackColor = false;
+            this.BANTERIOR.Click += new System.EventHandler(this.BANTERIOR_Click);
             // 
-            // button8
+            // BNUEVO
             // 
-            this.button8.BackColor = System.Drawing.Color.LimeGreen;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(31, 382);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(104, 38);
-            this.button8.TabIndex = 36;
-            this.button8.Text = "NUEVO ";
-            this.button8.UseVisualStyleBackColor = false;
+            this.BNUEVO.BackColor = System.Drawing.Color.LimeGreen;
+            this.BNUEVO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BNUEVO.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BNUEVO.Location = new System.Drawing.Point(31, 382);
+            this.BNUEVO.Name = "BNUEVO";
+            this.BNUEVO.Size = new System.Drawing.Size(104, 38);
+            this.BNUEVO.TabIndex = 36;
+            this.BNUEVO.Text = "NUEVO ";
+            this.BNUEVO.UseVisualStyleBackColor = false;
             // 
-            // button9
+            // BULTIMO
             // 
-            this.button9.BackColor = System.Drawing.Color.LimeGreen;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(267, 322);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(104, 38);
-            this.button9.TabIndex = 37;
-            this.button9.Text = "ULTIMO";
-            this.button9.UseVisualStyleBackColor = false;
+            this.BULTIMO.BackColor = System.Drawing.Color.LimeGreen;
+            this.BULTIMO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BULTIMO.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BULTIMO.Location = new System.Drawing.Point(267, 322);
+            this.BULTIMO.Name = "BULTIMO";
+            this.BULTIMO.Size = new System.Drawing.Size(104, 38);
+            this.BULTIMO.TabIndex = 37;
+            this.BULTIMO.Text = "ULTIMO";
+            this.BULTIMO.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // BSIGUIENTE
             // 
-            this.button2.BackColor = System.Drawing.Color.LimeGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(377, 322);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 38);
-            this.button2.TabIndex = 38;
-            this.button2.Text = "SALIR ";
-            this.button2.UseVisualStyleBackColor = false;
+            this.BSIGUIENTE.BackColor = System.Drawing.Color.LimeGreen;
+            this.BSIGUIENTE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BSIGUIENTE.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BSIGUIENTE.Location = new System.Drawing.Point(377, 263);
+            this.BSIGUIENTE.Name = "BSIGUIENTE";
+            this.BSIGUIENTE.Size = new System.Drawing.Size(104, 38);
+            this.BSIGUIENTE.TabIndex = 40;
+            this.BSIGUIENTE.Text = "SIGUIENTE ";
+            this.BSIGUIENTE.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // BTNMENU
             // 
-            this.button7.BackColor = System.Drawing.Color.LimeGreen;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(377, 263);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(104, 38);
-            this.button7.TabIndex = 40;
-            this.button7.Text = "SIGUIENTE ";
-            this.button7.UseVisualStyleBackColor = false;
+            this.BTNMENU.BackColor = System.Drawing.Color.LimeGreen;
+            this.BTNMENU.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTNMENU.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNMENU.Location = new System.Drawing.Point(47, 127);
+            this.BTNMENU.Name = "BTNMENU";
+            this.BTNMENU.Size = new System.Drawing.Size(62, 41);
+            this.BTNMENU.TabIndex = 41;
+            this.BTNMENU.Text = "MENU";
+            this.BTNMENU.UseVisualStyleBackColor = false;
+            this.BTNMENU.Click += new System.EventHandler(this.BTNMENU_Click);
             // 
-            // button10
+            // BACTUALIZAR
             // 
-            this.button10.BackColor = System.Drawing.Color.LimeGreen;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(47, 127);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(62, 41);
-            this.button10.TabIndex = 41;
-            this.button10.Text = "MENU";
-            this.button10.UseVisualStyleBackColor = false;
+            this.BACTUALIZAR.BackColor = System.Drawing.Color.LimeGreen;
+            this.BACTUALIZAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BACTUALIZAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BACTUALIZAR.Location = new System.Drawing.Point(267, 382);
+            this.BACTUALIZAR.Name = "BACTUALIZAR";
+            this.BACTUALIZAR.Size = new System.Drawing.Size(104, 38);
+            this.BACTUALIZAR.TabIndex = 42;
+            this.BACTUALIZAR.Text = "ACTUALIZAR";
+            this.BACTUALIZAR.UseVisualStyleBackColor = false;
             // 
-            // button11
+            // BMODIFICAR
             // 
-            this.button11.BackColor = System.Drawing.Color.LimeGreen;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(267, 382);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(104, 38);
-            this.button11.TabIndex = 42;
-            this.button11.Text = "ACTUALIZAR";
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.LimeGreen;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(152, 322);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 38);
-            this.button3.TabIndex = 43;
-            this.button3.Text = "MODIFICAR";
-            this.button3.UseVisualStyleBackColor = false;
+            this.BMODIFICAR.BackColor = System.Drawing.Color.LimeGreen;
+            this.BMODIFICAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BMODIFICAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BMODIFICAR.Location = new System.Drawing.Point(152, 322);
+            this.BMODIFICAR.Name = "BMODIFICAR";
+            this.BMODIFICAR.Size = new System.Drawing.Size(104, 38);
+            this.BMODIFICAR.TabIndex = 43;
+            this.BMODIFICAR.Text = "MODIFICAR";
+            this.BMODIFICAR.UseVisualStyleBackColor = false;
             // 
             // textBox2
             // 
@@ -278,17 +269,30 @@ namespace Formulario_MDI
             this.textBox2.Size = new System.Drawing.Size(207, 36);
             this.textBox2.TabIndex = 44;
             // 
-            // button12
+            // BBUSCAR
             // 
-            this.button12.BackColor = System.Drawing.Color.LimeGreen;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.Location = new System.Drawing.Point(613, 91);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(104, 38);
-            this.button12.TabIndex = 45;
-            this.button12.Text = "BUSCAR";
-            this.button12.UseVisualStyleBackColor = false;
+            this.BBUSCAR.BackColor = System.Drawing.Color.LimeGreen;
+            this.BBUSCAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BBUSCAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BBUSCAR.Location = new System.Drawing.Point(613, 91);
+            this.BBUSCAR.Name = "BBUSCAR";
+            this.BBUSCAR.Size = new System.Drawing.Size(104, 38);
+            this.BBUSCAR.TabIndex = 45;
+            this.BBUSCAR.Text = "BUSCAR";
+            this.BBUSCAR.UseVisualStyleBackColor = false;
+            // 
+            // bTNsalir_Click
+            // 
+            this.bTNsalir_Click.BackColor = System.Drawing.Color.LimeGreen;
+            this.bTNsalir_Click.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bTNsalir_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bTNsalir_Click.Location = new System.Drawing.Point(377, 322);
+            this.bTNsalir_Click.Name = "bTNsalir_Click";
+            this.bTNsalir_Click.Size = new System.Drawing.Size(104, 38);
+            this.bTNsalir_Click.TabIndex = 46;
+            this.bTNsalir_Click.Text = "SALIR";
+            this.bTNsalir_Click.UseVisualStyleBackColor = false;
+            this.bTNsalir_Click.Click += new System.EventHandler(this.bTNsalir_Click_Click);
             // 
             // FUSUARIOS2
             // 
@@ -296,23 +300,23 @@ namespace Formulario_MDI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(851, 450);
-            this.Controls.Add(this.button12);
+            this.Controls.Add(this.bTNsalir_Click);
+            this.Controls.Add(this.BBUSCAR);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.BMODIFICAR);
+            this.Controls.Add(this.BACTUALIZAR);
+            this.Controls.Add(this.BTNMENU);
+            this.Controls.Add(this.BSIGUIENTE);
+            this.Controls.Add(this.BULTIMO);
+            this.Controls.Add(this.BNUEVO);
+            this.Controls.Add(this.BANTERIOR);
+            this.Controls.Add(this.BELIMINAR);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.BGUARDAR);
+            this.Controls.Add(this.BPRIMERO);
+            this.Controls.Add(this.lstNIVEL);
+            this.Controls.Add(this.txtCLAVE);
+            this.Controls.Add(this.txtUSUARIO);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -335,22 +339,22 @@ namespace Formulario_MDI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox txtCLAVE;
+        private System.Windows.Forms.TextBox txtUSUARIO;
+        private System.Windows.Forms.ComboBox lstNIVEL;
+        private System.Windows.Forms.Button BPRIMERO;
+        private System.Windows.Forms.Button BGUARDAR;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BELIMINAR;
+        private System.Windows.Forms.Button BANTERIOR;
+        private System.Windows.Forms.Button BNUEVO;
+        private System.Windows.Forms.Button BULTIMO;
+        private System.Windows.Forms.Button BSIGUIENTE;
+        private System.Windows.Forms.Button BTNMENU;
+        private System.Windows.Forms.Button BACTUALIZAR;
+        private System.Windows.Forms.Button BMODIFICAR;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button BBUSCAR;
+        private System.Windows.Forms.Button bTNsalir_Click;
     }
 }

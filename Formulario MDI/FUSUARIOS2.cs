@@ -17,6 +17,25 @@ namespace Formulario_MDI
             InitializeComponent();
         }
 
-        
+        private void BTNMENU_Click(object sender, EventArgs e)
+        {
+            MENU fprincipal = new MENU();
+            fprincipal.Show();
+        }
+
+        private void bTNsalir_Click_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BANTERIOR_Click(object sender, EventArgs e)
+        {
+            this.usuariosBindingSource.MovePrevious();
+        }
+
+        private void BPRIMERO_Click(object sender, EventArgs e)
+        {
+            this.usuariosBindingSource.MoveFirst();
+        }
     }
 }
