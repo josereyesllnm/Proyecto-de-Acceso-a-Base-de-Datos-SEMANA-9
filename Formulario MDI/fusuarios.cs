@@ -9,6 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 
+
+
+
+
+
+
 namespace Formulario_MDI
 {
     public partial class fusuarios : Form
@@ -200,6 +206,11 @@ namespace Formulario_MDI
         {
             MENU fprincipal = new MENU();
             fprincipal.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
  }

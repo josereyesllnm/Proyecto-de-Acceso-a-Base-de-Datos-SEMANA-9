@@ -98,6 +98,12 @@
     <Compile Include="fusuarios.Designer.cs">
       <DependentUpon>fusuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="FUSUARIOS2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FUSUARIOS2.Designer.cs">
+      <DependentUpon>FUSUARIOS2.cs</DependentUpon>
+    </Compile>
     <Compile Include="LOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +229,9 @@
     <EmbeddedResource Include="fusuarios.resx">
       <DependentUpon>fusuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FUSUARIOS2.resx">
+      <DependentUpon>FUSUARIOS2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LOGIN.resx">
       <DependentUpon>LOGIN.cs</DependentUpon>
     </EmbeddedResource>
@@ -325,6 +334,9 @@
     <Content Include="sistema.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
