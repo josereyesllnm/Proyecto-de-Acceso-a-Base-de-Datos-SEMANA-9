@@ -52,5 +52,15 @@ namespace Formulario_MDI.Properties {
                 return ((string)(this["PERSONAS"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=Localhost;user id=Maydelin;password=Aliciaperdomo2508;database=agenda")]
+        public string MYSQL {
+            get {
+                return ((string)(this["MYSQL"]));
+            }
+        }
     }
 }

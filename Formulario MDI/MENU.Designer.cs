@@ -42,10 +42,11 @@ namespace Formulario_MDI
             this.pROVEEDORESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medioAmbienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aHORRODEENERGIAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rECICLAJEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BFORMU = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,7 +86,7 @@ namespace Formulario_MDI
             this.opcion1ToolStripMenuItem.BackColor = System.Drawing.Color.LimeGreen;
             this.opcion1ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opcion1ToolStripMenuItem.Name = "opcion1ToolStripMenuItem";
-            this.opcion1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.opcion1ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.opcion1ToolStripMenuItem.Text = "DESCUENTOS";
             this.opcion1ToolStripMenuItem.Click += new System.EventHandler(this.opcion1ToolStripMenuItem_Click);
             // 
@@ -94,7 +95,7 @@ namespace Formulario_MDI
             this.opcion2ToolStripMenuItem.BackColor = System.Drawing.Color.LimeGreen;
             this.opcion2ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opcion2ToolStripMenuItem.Name = "opcion2ToolStripMenuItem";
-            this.opcion2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.opcion2ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.opcion2ToolStripMenuItem.Text = "OFERTAS DEL MES";
             this.opcion2ToolStripMenuItem.Click += new System.EventHandler(this.opcion2ToolStripMenuItem_Click);
             // 
@@ -135,7 +136,7 @@ namespace Formulario_MDI
             this.clientesToolStripMenuItem.BackColor = System.Drawing.Color.LimeGreen;
             this.clientesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.clientesToolStripMenuItem.Text = "CLIENTES";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
@@ -144,7 +145,7 @@ namespace Formulario_MDI
             this.fACTURACIONToolStripMenuItem.BackColor = System.Drawing.Color.LimeGreen;
             this.fACTURACIONToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fACTURACIONToolStripMenuItem.Name = "fACTURACIONToolStripMenuItem";
-            this.fACTURACIONToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fACTURACIONToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.fACTURACIONToolStripMenuItem.Text = "FACTURACION";
             this.fACTURACIONToolStripMenuItem.Click += new System.EventHandler(this.fACTURACIONToolStripMenuItem_Click);
             // 
@@ -153,7 +154,7 @@ namespace Formulario_MDI
             this.pROVEEDORESToolStripMenuItem.BackColor = System.Drawing.Color.LimeGreen;
             this.pROVEEDORESToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pROVEEDORESToolStripMenuItem.Name = "pROVEEDORESToolStripMenuItem";
-            this.pROVEEDORESToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pROVEEDORESToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
             this.pROVEEDORESToolStripMenuItem.Text = "PROVEEDORES";
             this.pROVEEDORESToolStripMenuItem.Click += new System.EventHandler(this.pROVEEDORESToolStripMenuItem_Click_1);
             // 
@@ -172,14 +173,6 @@ namespace Formulario_MDI
             this.toolStripMenuItem1.Size = new System.Drawing.Size(66, 24);
             this.toolStripMenuItem1.Text = "Ayuda";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // medioAmbienteToolStripMenuItem
             // 
@@ -210,6 +203,26 @@ namespace Formulario_MDI
             this.rECICLAJEToolStripMenuItem.Text = "RECICLAJE ";
             this.rECICLAJEToolStripMenuItem.Click += new System.EventHandler(this.rECICLAJEToolStripMenuItem_Click);
             // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // BFORMU
+            // 
+            this.BFORMU.BackColor = System.Drawing.Color.LimeGreen;
+            this.BFORMU.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BFORMU.Location = new System.Drawing.Point(12, 41);
+            this.BFORMU.Name = "BFORMU";
+            this.BFORMU.Size = new System.Drawing.Size(110, 61);
+            this.BFORMU.TabIndex = 3;
+            this.BFORMU.Text = "FORMULARIO MYSQL";
+            this.BFORMU.UseVisualStyleBackColor = false;
+            this.BFORMU.Click += new System.EventHandler(this.BFORMU_Click);
+            // 
             // MENU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -218,6 +231,7 @@ namespace Formulario_MDI
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(759, 433);
+            this.Controls.Add(this.BFORMU);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -253,6 +267,7 @@ namespace Formulario_MDI
         private System.Windows.Forms.ToolStripMenuItem medioAmbienteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aHORRODEENERGIAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rECICLAJEToolStripMenuItem;
+        private System.Windows.Forms.Button BFORMU;
     }
 }
 

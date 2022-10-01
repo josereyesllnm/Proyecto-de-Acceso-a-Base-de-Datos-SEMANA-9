@@ -49,7 +49,7 @@ namespace Formulario_MDI
             this.BTNMENU = new System.Windows.Forms.Button();
             this.BACTUALIZAR = new System.Windows.Forms.Button();
             this.BMODIFICAR = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TXTBUSCAR = new System.Windows.Forms.TextBox();
             this.BBUSCAR = new System.Windows.Forms.Button();
             this.bTNsalir_Click = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -121,6 +121,7 @@ namespace Formulario_MDI
             this.txtUSUARIO.Name = "txtUSUARIO";
             this.txtUSUARIO.Size = new System.Drawing.Size(176, 20);
             this.txtUSUARIO.TabIndex = 23;
+            this.txtUSUARIO.TextChanged += new System.EventHandler(this.txtUSUARIO_TextChanged);
             // 
             // lstNIVEL
             // 
@@ -148,20 +149,22 @@ namespace Formulario_MDI
             this.BGUARDAR.BackColor = System.Drawing.Color.LimeGreen;
             this.BGUARDAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BGUARDAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BGUARDAR.Location = new System.Drawing.Point(267, 263);
+            this.BGUARDAR.Location = new System.Drawing.Point(267, 322);
             this.BGUARDAR.Name = "BGUARDAR";
             this.BGUARDAR.Size = new System.Drawing.Size(104, 38);
             this.BGUARDAR.TabIndex = 31;
             this.BGUARDAR.Text = "GUARDAR ";
             this.BGUARDAR.UseVisualStyleBackColor = false;
+            this.BGUARDAR.Click += new System.EventHandler(this.BGUARDAR_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(481, 135);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(358, 99);
+            this.dataGridView1.Size = new System.Drawing.Size(358, 122);
             this.dataGridView1.TabIndex = 32;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // BELIMINAR
             // 
@@ -174,6 +177,7 @@ namespace Formulario_MDI
             this.BELIMINAR.TabIndex = 33;
             this.BELIMINAR.Text = "ELIMINAR";
             this.BELIMINAR.UseVisualStyleBackColor = false;
+            this.BELIMINAR.Click += new System.EventHandler(this.BELIMINAR_Click);
             // 
             // BANTERIOR
             // 
@@ -199,30 +203,33 @@ namespace Formulario_MDI
             this.BNUEVO.TabIndex = 36;
             this.BNUEVO.Text = "NUEVO ";
             this.BNUEVO.UseVisualStyleBackColor = false;
+            this.BNUEVO.Click += new System.EventHandler(this.BNUEVO_Click);
             // 
             // BULTIMO
             // 
             this.BULTIMO.BackColor = System.Drawing.Color.LimeGreen;
             this.BULTIMO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BULTIMO.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BULTIMO.Location = new System.Drawing.Point(267, 322);
+            this.BULTIMO.Location = new System.Drawing.Point(377, 263);
             this.BULTIMO.Name = "BULTIMO";
             this.BULTIMO.Size = new System.Drawing.Size(104, 38);
             this.BULTIMO.TabIndex = 37;
             this.BULTIMO.Text = "ULTIMO";
             this.BULTIMO.UseVisualStyleBackColor = false;
+            this.BULTIMO.Click += new System.EventHandler(this.BULTIMO_Click);
             // 
             // BSIGUIENTE
             // 
             this.BSIGUIENTE.BackColor = System.Drawing.Color.LimeGreen;
             this.BSIGUIENTE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BSIGUIENTE.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BSIGUIENTE.Location = new System.Drawing.Point(377, 263);
+            this.BSIGUIENTE.Location = new System.Drawing.Point(267, 263);
             this.BSIGUIENTE.Name = "BSIGUIENTE";
             this.BSIGUIENTE.Size = new System.Drawing.Size(104, 38);
             this.BSIGUIENTE.TabIndex = 40;
             this.BSIGUIENTE.Text = "SIGUIENTE ";
             this.BSIGUIENTE.UseVisualStyleBackColor = false;
+            this.BSIGUIENTE.Click += new System.EventHandler(this.BSIGUIENTE_Click);
             // 
             // BTNMENU
             // 
@@ -248,6 +255,7 @@ namespace Formulario_MDI
             this.BACTUALIZAR.TabIndex = 42;
             this.BACTUALIZAR.Text = "ACTUALIZAR";
             this.BACTUALIZAR.UseVisualStyleBackColor = false;
+            this.BACTUALIZAR.Click += new System.EventHandler(this.BACTUALIZAR_Click);
             // 
             // BMODIFICAR
             // 
@@ -260,14 +268,15 @@ namespace Formulario_MDI
             this.BMODIFICAR.TabIndex = 43;
             this.BMODIFICAR.Text = "MODIFICAR";
             this.BMODIFICAR.UseVisualStyleBackColor = false;
+            this.BMODIFICAR.Click += new System.EventHandler(this.BMODIFICAR_Click);
             // 
-            // textBox2
+            // TXTBUSCAR
             // 
-            this.textBox2.Location = new System.Drawing.Point(557, 50);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(207, 36);
-            this.textBox2.TabIndex = 44;
+            this.TXTBUSCAR.Location = new System.Drawing.Point(557, 62);
+            this.TXTBUSCAR.Multiline = true;
+            this.TXTBUSCAR.Name = "TXTBUSCAR";
+            this.TXTBUSCAR.Size = new System.Drawing.Size(207, 24);
+            this.TXTBUSCAR.TabIndex = 44;
             // 
             // BBUSCAR
             // 
@@ -280,6 +289,7 @@ namespace Formulario_MDI
             this.BBUSCAR.TabIndex = 45;
             this.BBUSCAR.Text = "BUSCAR";
             this.BBUSCAR.UseVisualStyleBackColor = false;
+            this.BBUSCAR.Click += new System.EventHandler(this.BBUSCAR_Click);
             // 
             // bTNsalir_Click
             // 
@@ -302,7 +312,7 @@ namespace Formulario_MDI
             this.ClientSize = new System.Drawing.Size(851, 450);
             this.Controls.Add(this.bTNsalir_Click);
             this.Controls.Add(this.BBUSCAR);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TXTBUSCAR);
             this.Controls.Add(this.BMODIFICAR);
             this.Controls.Add(this.BACTUALIZAR);
             this.Controls.Add(this.BTNMENU);
@@ -325,6 +335,7 @@ namespace Formulario_MDI
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "FUSUARIOS2";
             this.Text = "FORMULARIO DE MYSQL";
+            this.Load += new System.EventHandler(this.FUSUARIOS2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -353,7 +364,7 @@ namespace Formulario_MDI
         private System.Windows.Forms.Button BTNMENU;
         private System.Windows.Forms.Button BACTUALIZAR;
         private System.Windows.Forms.Button BMODIFICAR;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TXTBUSCAR;
         private System.Windows.Forms.Button BBUSCAR;
         private System.Windows.Forms.Button bTNsalir_Click;
     }

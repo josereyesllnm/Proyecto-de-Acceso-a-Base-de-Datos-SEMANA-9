@@ -160,6 +160,12 @@ namespace Formulario_MDI
             AHORRO_DE_ENERGIA form = new AHORRO_DE_ENERGIA();
             form.ShowDialog();
         }
+
+        private void BFORMU_Click(object sender, EventArgs e)
+        {
+            FUSUARIOS2 fprincipal = new FUSUARIOS2();
+            fprincipal.Show();
+        }
     }
 
 }

@@ -9,12 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 
-
-
-
-
-
-
 namespace Formulario_MDI
 {
     public partial class fusuarios : Form
