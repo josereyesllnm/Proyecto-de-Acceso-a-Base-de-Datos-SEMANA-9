@@ -117,34 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBox1.Text" xml:space="preserve">
-    <value>
-            0087                                  Juana de la Cruz Perdomo 
- 
-            0009                                  Helen Larissa Matzar
-
-            0982                                  Jose Carlos López
-
-            0897                                  Jose Emilio Gómez
-
-            0645                                  Blanca Elizabeth De Reyes
-
-            7765                                  Graciela Reyes Urías
-
-            8876                                  Siria Michelle Rodriguez 
-
-            6098                                  Pedro Juan Portillo 
-
-            1234                                  Hendri Ventura Bernal 
-
-            4567                                  Cristian Alexander Montes 
-            
-            7869                                   Manuel de Jesus Martinez 
-  
-            3214                                   Maria Dolores Salgado
-
-            5078                                   Noelia Margarita Bermudez </value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

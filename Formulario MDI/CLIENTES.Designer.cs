@@ -33,10 +33,13 @@ namespace Formulario_MDI
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.NUEVO_23 = new System.Windows.Forms.Button();
+            this.GUARDAR_23 = new System.Windows.Forms.Button();
+            this.ELIMINAR_23 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -47,15 +50,14 @@ namespace Formulario_MDI
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(370, 286);
+            this.textBox1.Size = new System.Drawing.Size(375, 286);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = resources.GetString("textBox1.Text");
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(467, 109);
+            this.pictureBox1.Location = new System.Drawing.Point(466, 134);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(210, 217);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -72,32 +74,12 @@ namespace Formulario_MDI
             this.label1.TabIndex = 2;
             this.label1.Text = "CLIENTES";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 15);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "CODIGOS DE CLIENTES";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(245, 73);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "NOMBRES DE CLIENTES";
-            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.LimeGreen;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(556, 364);
+            this.button4.Location = new System.Drawing.Point(556, 441);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(130, 36);
             this.button4.TabIndex = 15;
@@ -105,22 +87,72 @@ namespace Formulario_MDI
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(25, 91);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(389, 287);
+            this.dataGridView1.TabIndex = 16;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // NUEVO_23
+            // 
+            this.NUEVO_23.BackColor = System.Drawing.Color.LimeGreen;
+            this.NUEVO_23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.NUEVO_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NUEVO_23.Location = new System.Drawing.Point(82, 413);
+            this.NUEVO_23.Name = "NUEVO_23";
+            this.NUEVO_23.Size = new System.Drawing.Size(91, 35);
+            this.NUEVO_23.TabIndex = 17;
+            this.NUEVO_23.Text = "NUEVO";
+            this.NUEVO_23.UseVisualStyleBackColor = false;
+            // 
+            // GUARDAR_23
+            // 
+            this.GUARDAR_23.BackColor = System.Drawing.Color.LimeGreen;
+            this.GUARDAR_23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.GUARDAR_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GUARDAR_23.Location = new System.Drawing.Point(204, 413);
+            this.GUARDAR_23.Name = "GUARDAR_23";
+            this.GUARDAR_23.Size = new System.Drawing.Size(91, 35);
+            this.GUARDAR_23.TabIndex = 18;
+            this.GUARDAR_23.Text = "GUARDAR";
+            this.GUARDAR_23.UseVisualStyleBackColor = false;
+            this.GUARDAR_23.Click += new System.EventHandler(this.GUARDAR_23_Click);
+            // 
+            // ELIMINAR_23
+            // 
+            this.ELIMINAR_23.BackColor = System.Drawing.Color.LimeGreen;
+            this.ELIMINAR_23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ELIMINAR_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ELIMINAR_23.Location = new System.Drawing.Point(323, 413);
+            this.ELIMINAR_23.Name = "ELIMINAR_23";
+            this.ELIMINAR_23.Size = new System.Drawing.Size(91, 35);
+            this.ELIMINAR_23.TabIndex = 19;
+            this.ELIMINAR_23.Text = "ELIMINAR";
+            this.ELIMINAR_23.UseVisualStyleBackColor = false;
+            // 
             // CLIENTES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(698, 412);
+            this.ClientSize = new System.Drawing.Size(698, 489);
+            this.Controls.Add(this.ELIMINAR_23);
+            this.Controls.Add(this.GUARDAR_23);
+            this.Controls.Add(this.NUEVO_23);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Name = "CLIENTES";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INVENTARIO DE CLIENTES";
+            this.Load += new System.EventHandler(this.CLIENTES_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,8 +163,10 @@ namespace Formulario_MDI
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button NUEVO_23;
+        private System.Windows.Forms.Button GUARDAR_23;
+        private System.Windows.Forms.Button ELIMINAR_23;
     }
 }
