@@ -17,7 +17,7 @@ namespace Formulario_MDI
     {
 
         public string cadena_conexion = "Database=agenda;Data Source=Localhost;User Id=Maydelin;Password=Aliciaperdomo2508";
-        public string usuario_eliminar;
+        public string cliente_eliminar;
 
 
         public CLIENTES()
@@ -44,7 +44,7 @@ namespace Formulario_MDI
         {
             try
             {
-                string consulta = "select * from contactos";
+                string consulta = "select * from clientes";
 
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);
@@ -65,6 +65,66 @@ namespace Formulario_MDI
         }
 
         private void GUARDAR_23_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+
+                string myInsertQuery = "INSERT INTO Clientes(Nombre,Clave,Nivel) Values(?Nombre,?Clave,?Nivel)";
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+
+                myCommand.Parameters.Add("?Nombre", MySqlDbType.VarChar, 75).Value = dataGridView1;
+                myCommand.Parameters.Add("?Clave", MySqlDbType.VarChar, 75).Value = dataGridView1;
+                myCommand.Parameters.Add("?Nivel", MySqlDbType.VarChar, 75).Value = dataGridView1;
+
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+                myCommand.ExecuteNonQuery();
+                myCommand.Connection.Close();
+
+                MessageBox.Show("Contacto agregado con éxito", "CONFIRMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                string consulta = "select * from clientes";
+
+                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                da.Fill(ds, "agenda");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "agenda";
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show("Ya existe el CONTACTO", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void ELIMINAR_23_Click(object sender, EventArgs e)
+        {
+             MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+
+            string myInsertQuery = "delete from contactos Where codigo = " + TXTBUSCAR.Text + "";
+            MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+
+            myCommand.Connection = myConnection;
+            myConnection.Open();
+            myCommand.ExecuteNonQuery();
+            myCommand.Connection.Close();
+
+            MessageBox.Show("Contacto eliminado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+            string consulta = "select * from contactos";
+
+            MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+            MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
+            System.Data.DataSet ds = new System.Data.DataSet();
+            da.Fill(ds, "agenda");
+            dataGridView1.DataSource = ds;
+            dataGridView1.DataMember = "agenda";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
