@@ -79,7 +79,7 @@ namespace Formulario_MDI
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(30, 190);
+            this.dataGridView1.Location = new System.Drawing.Point(28, 175);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridView1.Size = new System.Drawing.Size(474, 287);
@@ -97,6 +97,7 @@ namespace Formulario_MDI
             this.NUEVO_23.TabIndex = 17;
             this.NUEVO_23.Text = "NUEVO";
             this.NUEVO_23.UseVisualStyleBackColor = false;
+            this.NUEVO_23.Click += new System.EventHandler(this.NUEVO_23_Click);
             // 
             // GUARDAR_23
             // 

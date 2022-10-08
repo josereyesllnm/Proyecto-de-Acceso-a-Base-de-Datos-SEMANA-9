@@ -128,6 +128,11 @@ namespace Formulario_MDI
         {
 
         }
+
+        private void NUEVO_23_Click(object sender, EventArgs e)
+        {
+
+        }
     }
   }
 
