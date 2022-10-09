@@ -54,7 +54,7 @@ namespace Formulario_MDI
             txtcodigo.Text = "";
             txtempresa.Text = "";
             txtnombree.Focus();
-            NUEVO_24.Visible = false;
+            NUEVO_24.Visible = true;
             GUARDAR_24.Visible = true;
         }
 
@@ -127,8 +127,7 @@ namespace Formulario_MDI
                 MessageBox.Show("Campo de busqueda está vacío", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            NUEVO_24.Visible = true;
-            GUARDAR_24.Visible = false;
+ 
         }
 
         private void BTNELIMINAR1_Click(object sender, EventArgs e)
