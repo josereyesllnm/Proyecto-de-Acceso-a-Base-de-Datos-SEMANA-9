@@ -44,7 +44,7 @@ namespace Formulario_MDI
         {
             try
             {
-                string consulta = "select * from clientes";
+                string consulta = "select * from cliente";
 
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);
@@ -70,21 +70,21 @@ namespace Formulario_MDI
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string myInsertQuery = "INSERT INTO Clientes(Nombre,Clave,Nivel) Values(?Nombre,?Clave,?Nivel)";
+                string myInsertQuery = "INSERT INTO cliente(Nombre,apellidos,celular) Values(?Nombre,?apellidos,?celular)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
-                myCommand.Parameters.Add("?Nombre", MySqlDbType.VarChar, 75).Value = dataGridView1;
-                myCommand.Parameters.Add("?Clave", MySqlDbType.VarChar, 75).Value = dataGridView1;
-                myCommand.Parameters.Add("?Nivel", MySqlDbType.VarChar, 75).Value = dataGridView1;
+                myCommand.Parameters.Add("?Nombre", MySqlDbType.VarChar, 75).Value = txtnombre;
+                myCommand.Parameters.Add("?apellidos", MySqlDbType.VarChar, 75).Value = txtapellidos;
+                myCommand.Parameters.Add("?celular", MySqlDbType.VarChar, 75).Value = txtcelular;
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
                 myCommand.ExecuteNonQuery();
                 myCommand.Connection.Close();
 
-                MessageBox.Show("Contacto agregado con éxito", "CONFIRMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Agregado con éxito", "CONFIRMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                string consulta = "select * from clientes";
+                string consulta = "select * from cliente";
 
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
@@ -95,7 +95,7 @@ namespace Formulario_MDI
             }
             catch (MySqlException)
             {
-                MessageBox.Show("Ya existe el CONTACTO", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Ya existe el cliente", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -103,7 +103,7 @@ namespace Formulario_MDI
         {
              MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-            string myInsertQuery = "delete from contactos Where codigo = " + TXTBUSCAR.Text + "";
+            string myInsertQuery = "delete from cliente Where codigo = " + txttbuscar.Text + "";
             MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
             myCommand.Connection = myConnection;
@@ -111,10 +111,10 @@ namespace Formulario_MDI
             myCommand.ExecuteNonQuery();
             myCommand.Connection.Close();
 
-            MessageBox.Show("Contacto eliminado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Cliente eliminado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
-            string consulta = "select * from contactos";
+            string consulta = "select * from cliente";
 
             MySqlConnection conexion = new MySqlConnection(cadena_conexion);
             MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
@@ -122,7 +122,10 @@ namespace Formulario_MDI
             da.Fill(ds, "agenda");
             dataGridView1.DataSource = ds;
             dataGridView1.DataMember = "agenda";
+
+            cliente_eliminar = txtnombre.Text;
         }
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -131,7 +134,53 @@ namespace Formulario_MDI
 
         private void NUEVO_23_Click(object sender, EventArgs e)
         {
+            txtnombre.Enabled = true;
+            txtapellidos.Enabled = true;
+            txtcelular.Enabled = true;
+            txtnombre.Text = "";
+            txtapellidos.Text = "";
+            txtcelular.Text = "";
+            txtnombre.Focus();
+            NUEVO_23.Visible = false;
+            GUARDAR_23.Visible = true;
+        }
 
+        private void txttbuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+
+                string myInsertQuery = "select * from cliente Where idcliente = " + bbtnbuscar.Text + "";
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery, myConnection);
+
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+
+                MySqlDataReader myReader;
+                myReader = myCommand.ExecuteReader();
+
+                if (myReader.Read())
+                {
+                    txtnombre.Text = (myReader.GetString(1));
+                    txtapellidos.Text = (myReader.GetString(2));
+                    txtcelular.Text = (myReader.GetString(3));
+                }
+                else
+                {
+                    MessageBox.Show("El Cliente no existe", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                myReader.Close();
+                myConnection.Close();
+
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show("Campo de busqueda está vacío", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            NUEVO_23.Visible = true;
+            GUARDAR_23.Visible = false;
         }
     }
   }

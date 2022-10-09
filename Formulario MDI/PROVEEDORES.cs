@@ -31,5 +31,10 @@ namespace Formulario_MDI
         {
 
         }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
