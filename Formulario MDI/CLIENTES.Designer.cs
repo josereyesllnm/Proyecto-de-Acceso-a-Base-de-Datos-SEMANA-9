@@ -44,16 +44,19 @@ namespace Formulario_MDI
             this.label4 = new System.Windows.Forms.Label();
             this.bbtnbuscar = new System.Windows.Forms.Button();
             this.txttbuscar = new System.Windows.Forms.TextBox();
+            this.ELIMINAR_23 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(557, 222);
+            this.pictureBox1.Location = new System.Drawing.Point(428, 71);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(210, 217);
+            this.pictureBox1.Size = new System.Drawing.Size(96, 89);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -62,7 +65,7 @@ namespace Formulario_MDI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(610, 151);
+            this.label1.Location = new System.Drawing.Point(423, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 25);
             this.label1.TabIndex = 2;
@@ -99,7 +102,7 @@ namespace Formulario_MDI
             this.NUEVO_23.BackColor = System.Drawing.Color.LimeGreen;
             this.NUEVO_23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.NUEVO_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUEVO_23.Location = new System.Drawing.Point(318, 36);
+            this.NUEVO_23.Location = new System.Drawing.Point(282, 27);
             this.NUEVO_23.Name = "NUEVO_23";
             this.NUEVO_23.Size = new System.Drawing.Size(77, 37);
             this.NUEVO_23.TabIndex = 17;
@@ -112,7 +115,7 @@ namespace Formulario_MDI
             this.GUARDAR_23.BackColor = System.Drawing.Color.LimeGreen;
             this.GUARDAR_23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.GUARDAR_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GUARDAR_23.Location = new System.Drawing.Point(318, 106);
+            this.GUARDAR_23.Location = new System.Drawing.Point(282, 76);
             this.GUARDAR_23.Name = "GUARDAR_23";
             this.GUARDAR_23.Size = new System.Drawing.Size(77, 37);
             this.GUARDAR_23.TabIndex = 18;
@@ -179,7 +182,7 @@ namespace Formulario_MDI
             this.bbtnbuscar.BackColor = System.Drawing.Color.LimeGreen;
             this.bbtnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bbtnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbtnbuscar.Location = new System.Drawing.Point(615, 71);
+            this.bbtnbuscar.Location = new System.Drawing.Point(650, 78);
             this.bbtnbuscar.Name = "bbtnbuscar";
             this.bbtnbuscar.Size = new System.Drawing.Size(82, 33);
             this.bbtnbuscar.TabIndex = 26;
@@ -189,11 +192,34 @@ namespace Formulario_MDI
             // 
             // txttbuscar
             // 
-            this.txttbuscar.Location = new System.Drawing.Point(557, 36);
+            this.txttbuscar.Location = new System.Drawing.Point(591, 39);
             this.txttbuscar.Multiline = true;
             this.txttbuscar.Name = "txttbuscar";
             this.txttbuscar.Size = new System.Drawing.Size(202, 25);
             this.txttbuscar.TabIndex = 27;
+            // 
+            // ELIMINAR_23
+            // 
+            this.ELIMINAR_23.BackColor = System.Drawing.Color.LimeGreen;
+            this.ELIMINAR_23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ELIMINAR_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ELIMINAR_23.Location = new System.Drawing.Point(282, 123);
+            this.ELIMINAR_23.Name = "ELIMINAR_23";
+            this.ELIMINAR_23.Size = new System.Drawing.Size(77, 37);
+            this.ELIMINAR_23.TabIndex = 28;
+            this.ELIMINAR_23.Text = "ELIMINAR";
+            this.ELIMINAR_23.UseVisualStyleBackColor = false;
+            this.ELIMINAR_23.Click += new System.EventHandler(this.ELIMINAR_23_Click_1);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(557, 189);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(226, 309);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 29;
+            this.pictureBox2.TabStop = false;
             // 
             // CLIENTES
             // 
@@ -201,6 +227,8 @@ namespace Formulario_MDI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(818, 568);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.ELIMINAR_23);
             this.Controls.Add(this.txttbuscar);
             this.Controls.Add(this.bbtnbuscar);
             this.Controls.Add(this.label4);
@@ -222,6 +250,7 @@ namespace Formulario_MDI
             this.Load += new System.EventHandler(this.CLIENTES_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,5 +271,7 @@ namespace Formulario_MDI
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button bbtnbuscar;
         private System.Windows.Forms.TextBox txttbuscar;
+        private System.Windows.Forms.Button ELIMINAR_23;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

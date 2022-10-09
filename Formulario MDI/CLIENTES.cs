@@ -99,33 +99,7 @@ namespace Formulario_MDI
             }
         }
 
-        private void ELIMINAR_23_Click(object sender, EventArgs e)
-        {
-             MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
-
-            string myInsertQuery = "delete from cliente Where codigo = " + txttbuscar.Text + "";
-            MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
-
-            myCommand.Connection = myConnection;
-            myConnection.Open();
-            myCommand.ExecuteNonQuery();
-            myCommand.Connection.Close();
-
-            MessageBox.Show("Cliente eliminado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-
-            string consulta = "select * from cliente";
-
-            MySqlConnection conexion = new MySqlConnection(cadena_conexion);
-            MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
-            System.Data.DataSet ds = new System.Data.DataSet();
-            da.Fill(ds, "agenda");
-            dataGridView1.DataSource = ds;
-            dataGridView1.DataMember = "agenda";
-
-            cliente_eliminar = txtnombre.Text;
-        }
-
+ 
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -181,6 +155,35 @@ namespace Formulario_MDI
 
             NUEVO_23.Visible = true;
             GUARDAR_23.Visible = false;
+        }
+
+        private void ELIMINAR_23_Click_1(object sender, EventArgs e)
+        {
+            {
+                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+
+                string myInsertQuery = "delete from cliente Where codigo = " + txttbuscar.Text + "";
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+                myCommand.ExecuteNonQuery();
+                myCommand.Connection.Close();
+
+                MessageBox.Show("Cliente eliminado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                string consulta = "select * from cliente";
+
+                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                da.Fill(ds, "agenda");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "agenda";
+
+                cliente_eliminar = txtnombre.Text;
+            }
         }
     }
   }
