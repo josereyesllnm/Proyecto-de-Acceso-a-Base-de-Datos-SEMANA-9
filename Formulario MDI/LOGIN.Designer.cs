@@ -199,6 +199,7 @@ namespace Formulario_MDI
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LOGIN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";

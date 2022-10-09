@@ -424,7 +424,8 @@ namespace Formulario_MDI
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label15);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form6";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "COMPUTADORAS EN DESCUENTO";

@@ -105,6 +105,7 @@ namespace Formulario_MDI
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn);
             this.Controls.Add(this.txtContenedor);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AYUDA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AYUDA";

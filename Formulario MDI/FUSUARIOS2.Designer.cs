@@ -333,6 +333,7 @@ namespace Formulario_MDI
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FUSUARIOS2";
             this.Text = "FORMULARIO DE MYSQL";
             this.Load += new System.EventHandler(this.FUSUARIOS2_Load);
