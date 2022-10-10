@@ -16,7 +16,7 @@ namespace Formulario_MDI
     public partial class CLIENTES : Form
     {
 
-        public string cadena_conexion = "Database=agenda;Data Source=Localhost;User Id=Maydelin;Password=Aliciaperdomo2508";
+        public string cadena_conexion = "Database=agenda;Data Source=Localhost;User Id=jose;Password=12345";
         public string cliente_eliminar;
 
 
@@ -70,10 +70,10 @@ namespace Formulario_MDI
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string myInsertQuery = "INSERT INTO cliente(Nombre,apellidos,celular) Values(?Nombre,?apellidos,?celular)";
+                string myInsertQuery = "INSERT INTO cliente(nombres,apellidos,celular) Values(?nombres,?apellidos,?celular)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
-                myCommand.Parameters.Add("?Nombre", MySqlDbType.VarChar, 75).Value = txtnombre;
+                myCommand.Parameters.Add("?nombres", MySqlDbType.VarChar, 75).Value = txtnombre;
                 myCommand.Parameters.Add("?apellidos", MySqlDbType.VarChar, 75).Value = txtapellidos;
                 myCommand.Parameters.Add("?celular", MySqlDbType.VarChar, 75).Value = txtcelular;
 
@@ -97,8 +97,15 @@ namespace Formulario_MDI
             {
                 MessageBox.Show("Ya existe el cliente", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-        }
+            NUEVO_23.Visible = true;
+            GUARDAR_23.Visible = true;
 
+            txtnombre.Enabled = false;
+            txtapellidos.Enabled = false;
+            txtcelular.Enabled = false;
+            NUEVO_23.Focus();
+        }
+          
  
 
         private void label1_Click(object sender, EventArgs e)
@@ -115,7 +122,7 @@ namespace Formulario_MDI
             txtapellidos.Text = "";
             txtcelular.Text = "";
             txtnombre.Focus();
-            NUEVO_23.Visible = false;
+            NUEVO_23.Visible = true;
             GUARDAR_23.Visible = true;
         }
 

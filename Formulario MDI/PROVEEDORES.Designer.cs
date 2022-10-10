@@ -89,11 +89,12 @@ namespace Formulario_MDI
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.CornflowerBlue;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
             this.dataGridView1.Location = new System.Drawing.Point(24, 187);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(555, 313);
+            this.dataGridView1.Size = new System.Drawing.Size(543, 313);
             this.dataGridView1.TabIndex = 20;
             // 
             // txtnombree
@@ -226,7 +227,7 @@ namespace Formulario_MDI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(880, 578);
+            this.ClientSize = new System.Drawing.Size(880, 582);
             this.Controls.Add(this.BTNELIMINAR1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label5);

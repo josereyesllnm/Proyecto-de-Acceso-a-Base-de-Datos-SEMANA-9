@@ -77,7 +77,7 @@ namespace Formulario_MDI
             this.button4.BackColor = System.Drawing.Color.LimeGreen;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(673, 531);
+            this.button4.Location = new System.Drawing.Point(787, 525);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(133, 31);
             this.button4.TabIndex = 15;
@@ -88,12 +88,13 @@ namespace Formulario_MDI
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.CornflowerBlue;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
             this.dataGridView1.Location = new System.Drawing.Point(28, 189);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dataGridView1.Size = new System.Drawing.Size(474, 328);
+            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dataGridView1.Size = new System.Drawing.Size(545, 328);
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -182,7 +183,7 @@ namespace Formulario_MDI
             this.bbtnbuscar.BackColor = System.Drawing.Color.LimeGreen;
             this.bbtnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bbtnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbtnbuscar.Location = new System.Drawing.Point(650, 78);
+            this.bbtnbuscar.Location = new System.Drawing.Point(761, 90);
             this.bbtnbuscar.Name = "bbtnbuscar";
             this.bbtnbuscar.Size = new System.Drawing.Size(82, 33);
             this.bbtnbuscar.TabIndex = 26;
@@ -192,7 +193,7 @@ namespace Formulario_MDI
             // 
             // txttbuscar
             // 
-            this.txttbuscar.Location = new System.Drawing.Point(591, 39);
+            this.txttbuscar.Location = new System.Drawing.Point(697, 47);
             this.txttbuscar.Multiline = true;
             this.txttbuscar.Name = "txttbuscar";
             this.txttbuscar.Size = new System.Drawing.Size(202, 25);
@@ -214,7 +215,7 @@ namespace Formulario_MDI
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(557, 189);
+            this.pictureBox2.Location = new System.Drawing.Point(673, 189);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(226, 309);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -226,7 +227,7 @@ namespace Formulario_MDI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(818, 568);
+            this.ClientSize = new System.Drawing.Size(932, 568);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.ELIMINAR_23);
             this.Controls.Add(this.txttbuscar);

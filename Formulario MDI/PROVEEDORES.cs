@@ -16,7 +16,7 @@ namespace Formulario_MDI
     {
 
 
-        public string cadena_conexion = "Database=agenda;Data Source=Localhost;User Id=Maydelin;Password=Aliciaperdomo2508";
+        public string cadena_conexion = "Database=agenda;Data Source=localhost;User Id=jose;Password=12345";
         public string proveedor_eliminar;
         
         public PROVEEDORES()
@@ -36,8 +36,28 @@ namespace Formulario_MDI
 
         private void PROVEEDORES_Load(object sender, EventArgs e)
         {
+            try
+            {
+                string consulta = "select * from proveedores";
+
+                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);
+
+                System.Data.DataSet ds = new System.Data.DataSet();
+                comando.Fill(ds, "agenda");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "agenda";
+
+
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show("Error de conexion", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
 
         }
+    
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
         {
@@ -64,10 +84,10 @@ namespace Formulario_MDI
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string myInsertQuery = "INSERT INTO proveedor(Nombre,codigo,empresa) Values(?Nombre,?codigo,?empresa)";
+                string myInsertQuery = "INSERT INTO proveedores(nombre,codigo,empresa) Values(?nombre,?codigo,?empresa)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
-                myCommand.Parameters.Add("?Nombre", MySqlDbType.VarChar, 75).Value = txtnombree;
+                myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 75).Value = txtnombree;
                 myCommand.Parameters.Add("?codigo", MySqlDbType.VarChar, 75).Value = txtcodigo;
                 myCommand.Parameters.Add("?empresa", MySqlDbType.VarChar, 75).Value = txtempresa;
 
@@ -78,7 +98,7 @@ namespace Formulario_MDI
 
                 MessageBox.Show("Agregado con éxito", "CONFIRMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                string consulta = "select * from proveedor";
+                string consulta = "select * from proveedores";
 
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
@@ -99,7 +119,7 @@ namespace Formulario_MDI
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string myInsertQuery = "select * from proveedor Where idproveedor = " + btnbuscar.Text + "";
+                string myInsertQuery = "select * from proveedores Where idproveedor = " + btnbuscar.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery, myConnection);
 
                 myCommand.Connection = myConnection;
@@ -135,7 +155,7 @@ namespace Formulario_MDI
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string myInsertQuery = "delete from proveedor Where codigo = " + txtBuscar.Text + "";
+                string myInsertQuery = "delete from proveedores Where codigo = " + txtBuscar.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
                 myCommand.Connection = myConnection;
@@ -146,7 +166,7 @@ namespace Formulario_MDI
                 MessageBox.Show("Proveedor eliminado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
-                string consulta = "select * from proveedor";
+                string consulta = "select * from proveedores";
 
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);

@@ -62,5 +62,15 @@ namespace Formulario_MDI.Properties {
                 return ((string)(this["MYSQL"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=jose;password=12345;database=agenda")]
+        public string CONEEMYSQL {
+            get {
+                return ((string)(this["CONEEMYSQL"]));
+            }
+        }
     }
 }
