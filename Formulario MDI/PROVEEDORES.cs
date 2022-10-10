@@ -5,7 +5,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data;
 using MySql.Data.MySqlClient;
@@ -16,7 +15,7 @@ namespace Formulario_MDI
     {
 
 
-        public string cadena_conexion = "Database=agenda;Data Source=localhost;User Id=jose;Password=12345";
+        public string cadena_cone = "Database=agenda;Data Source=localhost;User Id=jose;Password=12345";
         public string proveedor_eliminar;
         
         public PROVEEDORES()
@@ -40,7 +39,7 @@ namespace Formulario_MDI
             {
                 string consulta = "select * from proveedores";
 
-                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlConnection conexion = new MySqlConnection(cadena_cone);
                 MySqlDataAdapter comando = new MySqlDataAdapter(consulta, conexion);
 
                 System.Data.DataSet ds = new System.Data.DataSet();
@@ -82,14 +81,14 @@ namespace Formulario_MDI
         {
             try
             {
-                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+                MySqlConnection myConnection = new MySqlConnection(cadena_cone);
 
-                string myInsertQuery = "INSERT INTO proveedores(nombre,codigo,empresa) Values(?nombre,?codigo,?empresa)";
+                string myInsertQuery = "INSERT INTO proveedores(nombres,codigo,empresa) Values(?nombres,?codigo,?empresa)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
-                myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 75).Value = txtnombree;
-                myCommand.Parameters.Add("?codigo", MySqlDbType.VarChar, 75).Value = txtcodigo;
-                myCommand.Parameters.Add("?empresa", MySqlDbType.VarChar, 75).Value = txtempresa;
+                myCommand.Parameters.Add("?nombres", MySqlDbType.VarChar, 75).Value = txtnombree.Text;
+                myCommand.Parameters.Add("?codigo", MySqlDbType.VarChar, 75).Value = txtcodigo.Text;
+                myCommand.Parameters.Add("?empresa", MySqlDbType.VarChar, 75).Value = txtempresa.Text;
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
@@ -100,7 +99,7 @@ namespace Formulario_MDI
 
                 string consulta = "select * from proveedores";
 
-                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlConnection conexion = new MySqlConnection(cadena_cone);
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
                 System.Data.DataSet ds = new System.Data.DataSet();
                 da.Fill(ds, "agenda");
@@ -117,9 +116,9 @@ namespace Formulario_MDI
         {
             try
             {
-                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+                MySqlConnection myConnection = new MySqlConnection(cadena_cone);
 
-                string myInsertQuery = "select * from proveedores Where idproveedor = " + btnbuscar.Text + "";
+                string myInsertQuery = "select * from proveedores Where idproveedor = " + txtBuscar.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery, myConnection);
 
                 myCommand.Connection = myConnection;
@@ -153,7 +152,7 @@ namespace Formulario_MDI
         private void BTNELIMINAR1_Click(object sender, EventArgs e)
         {
             {
-                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+                MySqlConnection myConnection = new MySqlConnection(cadena_cone);
 
                 string myInsertQuery = "delete from proveedores Where codigo = " + txtBuscar.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
@@ -168,7 +167,7 @@ namespace Formulario_MDI
 
                 string consulta = "select * from proveedores";
 
-                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlConnection conexion = new MySqlConnection(cadena_cone);
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
                 System.Data.DataSet ds = new System.Data.DataSet();
                 da.Fill(ds, "agenda");

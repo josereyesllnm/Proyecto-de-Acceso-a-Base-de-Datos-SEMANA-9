@@ -166,6 +166,12 @@ namespace Formulario_MDI
             FUSUARIOS2 fprincipal = new FUSUARIOS2();
             fprincipal.Show();
         }
+
+        private void eMPLEADOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EMPLEADOS fprincipal = new EMPLEADOS();
+            fprincipal.Show();
+        }
     }
 
 }

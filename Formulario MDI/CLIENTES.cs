@@ -73,9 +73,9 @@ namespace Formulario_MDI
                 string myInsertQuery = "INSERT INTO cliente(nombres,apellidos,celular) Values(?nombres,?apellidos,?celular)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
-                myCommand.Parameters.Add("?nombres", MySqlDbType.VarChar, 75).Value = txtnombre;
-                myCommand.Parameters.Add("?apellidos", MySqlDbType.VarChar, 75).Value = txtapellidos;
-                myCommand.Parameters.Add("?celular", MySqlDbType.VarChar, 75).Value = txtcelular;
+                myCommand.Parameters.Add("?nombres", MySqlDbType.VarChar, 75).Value = txtnombre.Text;
+                myCommand.Parameters.Add("?apellidos", MySqlDbType.VarChar, 75).Value = txtapellidos.Text;
+                myCommand.Parameters.Add("?celular", MySqlDbType.VarChar, 75).Value = txtcelular.Text;
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
@@ -161,7 +161,7 @@ namespace Formulario_MDI
             }
 
             NUEVO_23.Visible = true;
-            GUARDAR_23.Visible = false;
+            GUARDAR_23.Visible = true;
         }
 
         private void ELIMINAR_23_Click_1(object sender, EventArgs e)

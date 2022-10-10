@@ -52,12 +52,6 @@
     <Reference Include="MySql.Data">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PrivateAssemblies\MySql.Data.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data.EntityFramework">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PrivateAssemblies\MySql.Data.EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="MySql.Web">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PrivateAssemblies\MySql.Web.dll</HintPath>
-    </Reference>
     <Reference Include="System">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
@@ -140,6 +134,12 @@
     </Compile>
     <Compile Include="CLIENTES.Designer.cs">
       <DependentUpon>CLIENTES.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLEADOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLEADOS.Designer.cs">
+      <DependentUpon>EMPLEADOS.cs</DependentUpon>
     </Compile>
     <Compile Include="FACTURACION.cs">
       <SubType>Form</SubType>
@@ -277,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CLIENTES.resx">
       <DependentUpon>CLIENTES.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLEADOS.resx">
+      <DependentUpon>EMPLEADOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FACTURACION.resx">
       <DependentUpon>FACTURACION.cs</DependentUpon>
