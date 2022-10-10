@@ -172,6 +172,12 @@ namespace Formulario_MDI
             EMPLEADOS fprincipal = new EMPLEADOS();
             fprincipal.Show();
         }
+
+        private void rEGOSTRODEVENTASToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            VENTAS fprincipal = new VENTAS();
+            fprincipal.Show();
+        }
     }
 
 }

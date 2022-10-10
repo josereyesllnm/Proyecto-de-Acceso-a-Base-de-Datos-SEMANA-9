@@ -260,6 +260,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>USUARIOSDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="VENTAS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VENTAS.Designer.cs">
+      <DependentUpon>VENTAS.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ACERCADE.resx">
       <DependentUpon>ACERCADE.cs</DependentUpon>
     </EmbeddedResource>
@@ -341,6 +347,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RECICLAJE.resx">
       <DependentUpon>RECICLAJE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VENTAS.resx">
+      <DependentUpon>VENTAS.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="PERSONASDataSet.xsc">
