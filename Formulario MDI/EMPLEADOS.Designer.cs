@@ -246,6 +246,7 @@ namespace Formulario_MDI
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EMPLEADOS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "REGISTRO DE EMPLEADOS";
             this.Load += new System.EventHandler(this.EMPLEADOS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
