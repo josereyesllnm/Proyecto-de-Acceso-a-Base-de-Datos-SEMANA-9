@@ -199,14 +199,14 @@ namespace Formulario_MDI
             BTNMODIFICAR.Visible = false;
             BTNACTUALIZAR.Visible = true;
 
-            EMPLEADOS_modificar = txtNOMBREE.Text.ToString();
+            empleados_modificar = txtNOMBREE.Text.ToString();
         }
 
         private void BTNACTUALIZAR_Click(object sender, EventArgs e)
         {
             try
             {
-                MySqlConnection myConnection = new MySqlConnection(cadena_cone);
+                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
                 string nom = txtNOMBREE.Text.ToString();
                 string ape = txtAPELLIDOOS.Text.ToString();
@@ -254,7 +254,7 @@ namespace Formulario_MDI
         }
     }
     }
-    }
+    
 
     
 

@@ -256,6 +256,6 @@ private void BTNMODIFICAR_Click(object sender, EventArgs e)
 
             clientes_modificar = txtnombre1.Text.ToString();
         }
-    
-  
+    }
+}
 
