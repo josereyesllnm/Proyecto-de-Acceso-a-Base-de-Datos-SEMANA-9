@@ -18,7 +18,7 @@ namespace Formulario_MDI
 
         public string cadena_conexion = "Database=agenda;Data Source=Localhost;User Id=jose;Password=12345";
         public string cliente_eliminar;
-
+        public string clientes_modificar;
 
         public CLIENTES()
         {
@@ -73,8 +73,8 @@ namespace Formulario_MDI
                 string myInsertQuery = "INSERT INTO cliente(nombres,apellidos,celular) Values(?nombres,?apellidos,?celular)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
-                myCommand.Parameters.Add("?nombres", MySqlDbType.VarChar, 75).Value = txtnombre.Text;
-                myCommand.Parameters.Add("?apellidos", MySqlDbType.VarChar, 75).Value = txtapellidos.Text;
+                myCommand.Parameters.Add("?nombres", MySqlDbType.VarChar, 75).Value = txtnombre1.Text;
+                myCommand.Parameters.Add("?apellidos", MySqlDbType.VarChar, 75).Value = txtapellido.Text;
                 myCommand.Parameters.Add("?celular", MySqlDbType.VarChar, 75).Value = txtcelular.Text;
 
                 myCommand.Connection = myConnection;
@@ -100,8 +100,8 @@ namespace Formulario_MDI
             NUEVO_23.Visible = true;
             GUARDAR_23.Visible = true;
 
-            txtnombre.Enabled = false;
-            txtapellidos.Enabled = false;
+            txtnombre1.Enabled = false;
+            txtapellido.Enabled = false;
             txtcelular.Enabled = false;
             NUEVO_23.Focus();
         }
@@ -115,13 +115,13 @@ namespace Formulario_MDI
 
         private void NUEVO_23_Click(object sender, EventArgs e)
         {
-            txtnombre.Enabled = true;
-            txtapellidos.Enabled = true;
+            txtnombre1.Enabled = true;
+            txtapellido.Enabled = true;
             txtcelular.Enabled = true;
-            txtnombre.Text = "";
-            txtapellidos.Text = "";
+            txtnombre1.Text = "";
+            txtapellido.Text = "";
             txtcelular.Text = "";
-            txtnombre.Focus();
+            txtnombre1.Focus();
             NUEVO_23.Visible = true;
             GUARDAR_23.Visible = true;
         }
@@ -143,8 +143,8 @@ namespace Formulario_MDI
 
                 if (myReader.Read())
                 {
-                    txtnombre.Text = (myReader.GetString(1));
-                    txtapellidos.Text = (myReader.GetString(2));
+                    txtnombre1.Text = (myReader.GetString(1));
+                    txtapellido.Text = (myReader.GetString(2));
                     txtcelular.Text = (myReader.GetString(3));
                 }
                 else
@@ -189,9 +189,73 @@ namespace Formulario_MDI
                 dataGridView1.DataSource = ds;
                 dataGridView1.DataMember = "agenda";
 
-                cliente_eliminar = txtnombre.Text;
+                cliente_eliminar = txtnombre1.Text;
             }
         }
-    }
-  }
+
+        private void BTNACTUALIZAR_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+
+                string nom = txtnombre1.Text.ToString();
+                string ape = txtapellido.Text.ToString();
+                string cel = txtcelular.Text; ToString();
+
+
+
+                string myInsertQuery = "UPDATE clientes SET nombre = '" + nom + "', nombre = '" + ape + "',apellidos = '" + cel + "', WHERE nombre = '" + clientes_modificar + "'";
+
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+
+
+
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+                myCommand.ExecuteNonQuery();
+                myCommand.Connection.Close();
+
+                MessageBox.Show("clientes actualizado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                string consulta = "select * from clientes";
+
+                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                da.Fill(ds, "clientes");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "clientes";
+
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show("Error al actualizar al cliente", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            BTNMODIFICAR.Visible = true;
+            BTNACTUALIZAR.Visible = false;
+
+            //Desabilitar campos, se activan al crear nuevo registro
+            txtnombre1.Enabled = false;
+            txtapellido.Enabled = false;
+            txtcelular.Enabled = false;
+            BTNMODIFICAR.Focus();
+
+        }
+private void BTNMODIFICAR_Click(object sender, EventArgs e)
+        {
+            txtnombre1.Enabled = true;
+            txtapellido.Enabled = true;
+            txtcelular.Enabled = true;
+
+            txtnombre1.Focus();
+
+            BTNMODIFICAR.Visible = false;
+            BTNACTUALIZAR.Visible = true;
+
+            clientes_modificar = txtnombre1.Text.ToString();
+        }
+    
+  
 
