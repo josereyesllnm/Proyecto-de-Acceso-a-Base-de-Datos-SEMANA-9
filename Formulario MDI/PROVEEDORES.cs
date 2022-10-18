@@ -17,7 +17,8 @@ namespace Formulario_MDI
 
         public string cadena_cone = "Database=agenda;Data Source=localhost;User Id=jose;Password=12345";
         public string proveedor_eliminar;
-        
+        public string proveedor_modificar;
+        public string proveedor_actualizar;
         public PROVEEDORES()
         {
             InitializeComponent();
@@ -177,6 +178,73 @@ namespace Formulario_MDI
                 proveedor_eliminar = txtnombree.Text;
             }
         }
+
+        private void BTNACTUALIZAR_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlConnection myConnection = new MySqlConnection(cadena_cone);
+
+                string nom = txtnombree.Text.ToString();
+                string cod = txtcodigo.Text.ToString();
+                string emp = txtempresa.Text; ToString();
+
+
+                
+                string myInsertQuery = "UPDATE proveedores SET nombre = '" + nom + "', codigo = '" + cod + "',empresa = '" + emp + "' WHERE nombre = '" + proveedor_modificar + "'";
+
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+
+          
+
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+                myCommand.ExecuteNonQuery();
+                myCommand.Connection.Close();
+
+                MessageBox.Show("proveedor actualizado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                string consulta = "select * from proveedores";
+
+                MySqlConnection conexion = new MySqlConnection(cadena_cone);
+                MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                da.Fill(ds, "proveedores");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "proveedores";
+
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show("Error al actualizar al proveedor", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            BTNMODIFICAR.Visible = true;
+            BTNACTUALIZAR.Visible = false;
+
+            //Desabilitar campos, se activan al crear nuevo registro
+            txtnombree.Enabled = false;
+            txtcodigo.Enabled = false;
+            txtempresa.Enabled = false;
+            BTNMODIFICAR.Focus();
+
+        }
+
+        private void BTNMODIFICAR_Click(object sender, EventArgs e)
+        {
+            txtnombree.Enabled = true;
+            txtcodigo.Enabled = true;
+            txtempresa.Enabled = true;
+
+            txtnombree.Focus();
+
+            BTNMODIFICAR.Visible = false;
+            BTNACTUALIZAR.Visible = true;
+
+            proveedor_modificar = txtnombree.Text.ToString();
+        }
     }
-    }
+        }
+    
+    
 
