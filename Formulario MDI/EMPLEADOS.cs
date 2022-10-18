@@ -17,7 +17,8 @@ namespace Formulario_MDI
 
         public string cadena_conexion = "Database=agenda;Data Source=Localhost;User Id=jose;Password=12345";
         public string empleados_eliminar;
-
+        public string empleados_modificar;
+        public string empleados_actualizar;
 
 
 
@@ -186,6 +187,72 @@ namespace Formulario_MDI
             NUEVO_25.Visible = true;
             GUARDAR25.Visible = true;
         }
+
+        private void BTNMODIFICAR_Click(object sender, EventArgs e)
+        {
+            txtNOMBREE.Enabled = true;
+            txtAPELLIDOOS.Enabled = true;
+            txtCELULAAR.Enabled = true;
+
+            txtNOMBREE.Focus();
+
+            BTNMODIFICAR.Visible = false;
+            BTNACTUALIZAR.Visible = true;
+
+            EMPLEADOS_modificar = txtNOMBREE.Text.ToString();
+        }
+
+        private void BTNACTUALIZAR_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlConnection myConnection = new MySqlConnection(cadena_cone);
+
+                string nom = txtNOMBREE.Text.ToString();
+                string ape = txtAPELLIDOOS.Text.ToString();
+                string cel = txtCELULAAR.Text; ToString();
+
+
+
+                string myInsertQuery = "UPDATE empleados SET nombre = '" + nom + "', apellidos= '" + ape + "',celular = '" + cel+ "' WHERE nombre = '" + empleados_modificar + "'";
+
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+
+
+
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+                myCommand.ExecuteNonQuery();
+                myCommand.Connection.Close();
+
+                MessageBox.Show("empleado actualizado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                string consulta = "select * from empleados";
+
+                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                da.Fill(ds, "empleados");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "empleados";
+
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show("Error al actualizar al empleado", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            BTNMODIFICAR.Visible = true;
+            BTNACTUALIZAR.Visible = false;
+
+            //Desabilitar campos, se activan al crear nuevo registro
+            txtNOMBREE.Enabled = false;
+            txtAPELLIDOOS.Enabled = false;
+            txtCELULAAR.Enabled = false;
+            BTNMODIFICAR.Focus();
+
+        }
+    }
     }
     }
 

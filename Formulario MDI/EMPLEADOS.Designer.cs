@@ -46,6 +46,8 @@ namespace Formulario_MDI
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.GUARDAR25 = new System.Windows.Forms.Button();
             this.BTNELIMINAR2 = new System.Windows.Forms.Button();
+            this.BTNACTUALIZAR = new System.Windows.Forms.Button();
+            this.BTNMODIFICAR = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,7 +56,7 @@ namespace Formulario_MDI
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(610, 189);
+            this.pictureBox2.Location = new System.Drawing.Point(642, 173);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(226, 309);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,7 +96,7 @@ namespace Formulario_MDI
             this.btnbuscar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbuscar.Location = new System.Drawing.Point(696, 76);
+            this.btnbuscar.Location = new System.Drawing.Point(760, 74);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(82, 33);
             this.btnbuscar.TabIndex = 46;
@@ -104,7 +106,7 @@ namespace Formulario_MDI
             // 
             // txtBUSCAR23
             // 
-            this.txtBUSCAR23.Location = new System.Drawing.Point(634, 34);
+            this.txtBUSCAR23.Location = new System.Drawing.Point(701, 34);
             this.txtBUSCAR23.Multiline = true;
             this.txtBUSCAR23.Name = "txtBUSCAR23";
             this.txtBUSCAR23.Size = new System.Drawing.Size(202, 25);
@@ -115,9 +117,9 @@ namespace Formulario_MDI
             this.NUEVO_25.BackColor = System.Drawing.Color.LimeGreen;
             this.NUEVO_25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.NUEVO_25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUEVO_25.Location = new System.Drawing.Point(331, 18);
+            this.NUEVO_25.Location = new System.Drawing.Point(341, 18);
             this.NUEVO_25.Name = "NUEVO_25";
-            this.NUEVO_25.Size = new System.Drawing.Size(77, 37);
+            this.NUEVO_25.Size = new System.Drawing.Size(95, 37);
             this.NUEVO_25.TabIndex = 43;
             this.NUEVO_25.Text = "NUEVO";
             this.NUEVO_25.UseVisualStyleBackColor = false;
@@ -166,7 +168,7 @@ namespace Formulario_MDI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(455, 37);
+            this.label1.Location = new System.Drawing.Point(569, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 18);
             this.label1.TabIndex = 38;
@@ -189,9 +191,9 @@ namespace Formulario_MDI
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(458, 67);
+            this.pictureBox1.Location = new System.Drawing.Point(597, 65);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(95, 97);
+            this.pictureBox1.Size = new System.Drawing.Size(64, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
@@ -201,9 +203,9 @@ namespace Formulario_MDI
             this.GUARDAR25.BackColor = System.Drawing.Color.LimeGreen;
             this.GUARDAR25.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.GUARDAR25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GUARDAR25.Location = new System.Drawing.Point(331, 74);
+            this.GUARDAR25.Location = new System.Drawing.Point(341, 74);
             this.GUARDAR25.Name = "GUARDAR25";
-            this.GUARDAR25.Size = new System.Drawing.Size(77, 37);
+            this.GUARDAR25.Size = new System.Drawing.Size(95, 37);
             this.GUARDAR25.TabIndex = 52;
             this.GUARDAR25.Text = "GUARDAR";
             this.GUARDAR25.UseVisualStyleBackColor = false;
@@ -214,20 +216,48 @@ namespace Formulario_MDI
             this.BTNELIMINAR2.BackColor = System.Drawing.Color.LimeGreen;
             this.BTNELIMINAR2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNELIMINAR2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNELIMINAR2.Location = new System.Drawing.Point(331, 129);
+            this.BTNELIMINAR2.Location = new System.Drawing.Point(449, 18);
             this.BTNELIMINAR2.Name = "BTNELIMINAR2";
-            this.BTNELIMINAR2.Size = new System.Drawing.Size(77, 37);
+            this.BTNELIMINAR2.Size = new System.Drawing.Size(95, 37);
             this.BTNELIMINAR2.TabIndex = 53;
             this.BTNELIMINAR2.Text = "ELIMINAR";
             this.BTNELIMINAR2.UseVisualStyleBackColor = false;
             this.BTNELIMINAR2.Click += new System.EventHandler(this.BTNELIMINAR2_Click);
+            // 
+            // BTNACTUALIZAR
+            // 
+            this.BTNACTUALIZAR.BackColor = System.Drawing.Color.LimeGreen;
+            this.BTNACTUALIZAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTNACTUALIZAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNACTUALIZAR.Location = new System.Drawing.Point(341, 132);
+            this.BTNACTUALIZAR.Name = "BTNACTUALIZAR";
+            this.BTNACTUALIZAR.Size = new System.Drawing.Size(95, 37);
+            this.BTNACTUALIZAR.TabIndex = 54;
+            this.BTNACTUALIZAR.Text = "ACTUALIZAR";
+            this.BTNACTUALIZAR.UseVisualStyleBackColor = false;
+            this.BTNACTUALIZAR.Click += new System.EventHandler(this.BTNACTUALIZAR_Click);
+            // 
+            // BTNMODIFICAR
+            // 
+            this.BTNMODIFICAR.BackColor = System.Drawing.Color.LimeGreen;
+            this.BTNMODIFICAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTNMODIFICAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTNMODIFICAR.Location = new System.Drawing.Point(449, 72);
+            this.BTNMODIFICAR.Name = "BTNMODIFICAR";
+            this.BTNMODIFICAR.Size = new System.Drawing.Size(95, 35);
+            this.BTNMODIFICAR.TabIndex = 55;
+            this.BTNMODIFICAR.Text = "MODIFICAR";
+            this.BTNMODIFICAR.UseVisualStyleBackColor = false;
+            this.BTNMODIFICAR.Click += new System.EventHandler(this.BTNMODIFICAR_Click);
             // 
             // EMPLEADOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(893, 565);
+            this.ClientSize = new System.Drawing.Size(915, 583);
+            this.Controls.Add(this.BTNMODIFICAR);
+            this.Controls.Add(this.BTNACTUALIZAR);
             this.Controls.Add(this.BTNELIMINAR2);
             this.Controls.Add(this.GUARDAR25);
             this.Controls.Add(this.pictureBox2);
@@ -274,5 +304,7 @@ namespace Formulario_MDI
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button GUARDAR25;
         private System.Windows.Forms.Button BTNELIMINAR2;
+        private System.Windows.Forms.Button BTNACTUALIZAR;
+        private System.Windows.Forms.Button BTNMODIFICAR;
     }
 }
