@@ -17,7 +17,8 @@ namespace Formulario_MDI
 
         public string cadena_conexion = "Database=agenda;Data Source=Localhost;User Id=jose;Password=12345";
         public string venta_eliminar;
-
+        public string venta_modificar;
+        public string venta_actualizar;
 
 
         public VENTAS()
@@ -134,6 +135,72 @@ namespace Formulario_MDI
                 venta_eliminar = txtFECHA.Text;
             }
         }
+
+        private void BTNMODIFICAR_Click(object sender, EventArgs e)
+        {
+            txtFECHA.Enabled = true;
+            txtTOTAL.Enabled = true;
+        
+
+            txtFECHA.Focus();
+
+            BTNMODIFICAR.Visible = false;
+            BTNACTUALIZAR.Visible = true;
+
+            venta_modificar = txtFECHA.Text.ToString();
+        }
+
+        private void BTNACTUALIZAR_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
+
+                string FEC = txtFECHA.Text.ToString();
+                string TOT = txtTOTAL.Text.ToString();
+                
+
+
+
+                string myInsertQuery = "UPDATE ventas SET fecha = '" + FEC + "', total= '" + TOT + "' WHERE fecha = '" + venta_modificar + "'";
+
+                MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
+
+
+
+                myCommand.Connection = myConnection;
+                myConnection.Open();
+                myCommand.ExecuteNonQuery();
+                myCommand.Connection.Close();
+
+                MessageBox.Show("venta actualizada con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                string consulta = "select * from ventas";
+
+                MySqlConnection conexion = new MySqlConnection(cadena_conexion);
+                MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
+                System.Data.DataSet ds = new System.Data.DataSet();
+                da.Fill(ds, "ventas");
+                dataGridView1.DataSource = ds;
+                dataGridView1.DataMember = "ventas";
+
+            }
+            catch (MySqlException)
+            {
+                MessageBox.Show("Error al actualizar la venta", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            BTNMODIFICAR.Visible = true;
+            BTNACTUALIZAR.Visible = false;
+
+            //Desabilitar campos, se activan al crear nuevo registro
+            txtFECHA.Enabled = false;
+            txtTOTAL.Enabled = false;
+           
+            BTNMODIFICAR.Focus();
+
+        }
+    }
     }
     }
     
