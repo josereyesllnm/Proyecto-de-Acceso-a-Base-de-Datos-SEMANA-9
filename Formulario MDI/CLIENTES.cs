@@ -132,7 +132,7 @@ namespace Formulario_MDI
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string myInsertQuery = "select * from cliente Where idcliente = " + bbtnbuscar.Text + "";
+                string myInsertQuery = "select * from cliente Where idcliente = " + txttbuscar.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery, myConnection);
 
                 myCommand.Connection = myConnection;
@@ -169,7 +169,7 @@ namespace Formulario_MDI
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string myInsertQuery = "delete from cliente Where codigo = " + txttbuscar.Text + "";
+                string myInsertQuery = "delete from cliente Where idcliente = " + txttbuscar.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
                 myCommand.Connection = myConnection;
@@ -205,7 +205,7 @@ namespace Formulario_MDI
 
 
 
-                string myInsertQuery = "UPDATE clientes SET nombre = '" + nom + "', nombre = '" + ape + "',apellidos = '" + cel + "', WHERE nombre = '" + clientes_modificar + "'";
+                string myInsertQuery = "UPDATE cliente SET nombre = '" + nom + "', nombre = '" + ape + "',apellidos = '" + cel + "', WHERE nombre = '" + clientes_modificar + "'";
 
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
@@ -218,14 +218,14 @@ namespace Formulario_MDI
 
                 MessageBox.Show("clientes actualizado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                string consulta = "select * from clientes";
+                string consulta = "select * from cliente";
 
                 MySqlConnection conexion = new MySqlConnection(cadena_conexion);
                 MySqlDataAdapter da = new MySqlDataAdapter(consulta, conexion);
                 System.Data.DataSet ds = new System.Data.DataSet();
-                da.Fill(ds, "clientes");
+                da.Fill(ds, "agenda");
                 dataGridView1.DataSource = ds;
-                dataGridView1.DataMember = "clientes";
+                dataGridView1.DataMember = "agenda";
 
             }
             catch (MySqlException)
@@ -234,7 +234,7 @@ namespace Formulario_MDI
             }
 
             BTNMODIFICAR.Visible = true;
-            BTNACTUALIZAR.Visible = false;
+            BTNACTUALIZAR.Visible = true;
 
             //Desabilitar campos, se activan al crear nuevo registro
             txtnombre1.Enabled = false;
@@ -251,7 +251,7 @@ private void BTNMODIFICAR_Click(object sender, EventArgs e)
 
             txtnombre1.Focus();
 
-            BTNMODIFICAR.Visible = false;
+            BTNMODIFICAR.Visible = true;
             BTNACTUALIZAR.Visible = true;
 
             clientes_modificar = txtnombre1.Text.ToString();
