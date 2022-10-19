@@ -34,6 +34,10 @@ namespace Formulario_MDI
 
         private void EMPLEADOS_Load(object sender, EventArgs e)
         {
+            txtNOMBREE.Enabled = false;
+            txtAPELLIDOOS.Enabled = false;
+            txtCELULAAR.Enabled = false;
+
             try
             {
                 string consulta = "select * from empleados";
@@ -121,7 +125,7 @@ namespace Formulario_MDI
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string myInsertQuery = "delete from empleados Where codigo = " + txtBUSCAR23.Text + "";
+                string myInsertQuery = "delete from empleados Where idempleados = " + txtBUSCAR23.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
                 myCommand.Connection = myConnection;
@@ -256,6 +260,11 @@ namespace Formulario_MDI
         private void button4_Click_1(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void txtBUSCAR23_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
     }

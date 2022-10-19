@@ -42,6 +42,10 @@ namespace Formulario_MDI
 
         private void CLIENTES_Load(object sender, EventArgs e)
         {
+            txtnombre1.Enabled = false;
+            txtapellido.Enabled = false;
+            txtcelular.Enabled = false;
+
             try
             {
                 string consulta = "select * from cliente";

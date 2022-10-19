@@ -111,6 +111,7 @@ namespace Formulario_MDI
             this.txtBUSCAR23.Name = "txtBUSCAR23";
             this.txtBUSCAR23.Size = new System.Drawing.Size(202, 25);
             this.txtBUSCAR23.TabIndex = 45;
+            this.txtBUSCAR23.TextChanged += new System.EventHandler(this.txtBUSCAR23_TextChanged);
             // 
             // NUEVO_25
             // 
