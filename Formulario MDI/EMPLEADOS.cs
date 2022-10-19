@@ -252,6 +252,11 @@ namespace Formulario_MDI
             BTNMODIFICAR.Focus();
 
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
     }
     

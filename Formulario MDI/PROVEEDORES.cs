@@ -243,6 +243,11 @@ namespace Formulario_MDI
 
             proveedor_modificar = txtnombree.Text.ToString();
         }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
         }
     

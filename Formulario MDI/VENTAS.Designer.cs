@@ -41,11 +41,11 @@ namespace Formulario_MDI
             this.GUARDAR_29 = new System.Windows.Forms.Button();
             this.NUEVO_29 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BTNMODIFICAR = new System.Windows.Forms.Button();
             this.BTNACTUALIZAR = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,9 +54,9 @@ namespace Formulario_MDI
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(664, 208);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 65);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(226, 309);
+            this.pictureBox2.Size = new System.Drawing.Size(291, 495);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 45;
             this.pictureBox2.TabStop = false;
@@ -66,7 +66,7 @@ namespace Formulario_MDI
             this.ELIMINAR_29.BackColor = System.Drawing.Color.LimeGreen;
             this.ELIMINAR_29.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ELIMINAR_29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ELIMINAR_29.Location = new System.Drawing.Point(273, 133);
+            this.ELIMINAR_29.Location = new System.Drawing.Point(863, 244);
             this.ELIMINAR_29.Name = "ELIMINAR_29";
             this.ELIMINAR_29.Size = new System.Drawing.Size(95, 37);
             this.ELIMINAR_29.TabIndex = 44;
@@ -76,7 +76,7 @@ namespace Formulario_MDI
             // 
             // txtBUSCAR2
             // 
-            this.txtBUSCAR2.Location = new System.Drawing.Point(688, 66);
+            this.txtBUSCAR2.Location = new System.Drawing.Point(924, 81);
             this.txtBUSCAR2.Multiline = true;
             this.txtBUSCAR2.Name = "txtBUSCAR2";
             this.txtBUSCAR2.Size = new System.Drawing.Size(202, 25);
@@ -87,7 +87,7 @@ namespace Formulario_MDI
             this.btnBUSCAR23.BackColor = System.Drawing.Color.LimeGreen;
             this.btnBUSCAR23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBUSCAR23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBUSCAR23.Location = new System.Drawing.Point(752, 109);
+            this.btnBUSCAR23.Location = new System.Drawing.Point(993, 112);
             this.btnBUSCAR23.Name = "btnBUSCAR23";
             this.btnBUSCAR23.Size = new System.Drawing.Size(82, 33);
             this.btnBUSCAR23.TabIndex = 42;
@@ -98,7 +98,7 @@ namespace Formulario_MDI
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(44, 142);
+            this.label4.Location = new System.Drawing.Point(570, 149);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 13);
             this.label4.TabIndex = 41;
@@ -108,7 +108,7 @@ namespace Formulario_MDI
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(44, 70);
+            this.label3.Location = new System.Drawing.Point(570, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 13);
             this.label3.TabIndex = 40;
@@ -116,18 +116,18 @@ namespace Formulario_MDI
             // 
             // txtTOTAL
             // 
-            this.txtTOTAL.Location = new System.Drawing.Point(101, 139);
+            this.txtTOTAL.Location = new System.Drawing.Point(641, 146);
             this.txtTOTAL.Multiline = true;
             this.txtTOTAL.Name = "txtTOTAL";
-            this.txtTOTAL.Size = new System.Drawing.Size(138, 23);
+            this.txtTOTAL.Size = new System.Drawing.Size(175, 23);
             this.txtTOTAL.TabIndex = 38;
             // 
             // txtFECHA
             // 
-            this.txtFECHA.Location = new System.Drawing.Point(101, 66);
+            this.txtFECHA.Location = new System.Drawing.Point(641, 100);
             this.txtFECHA.Multiline = true;
             this.txtFECHA.Name = "txtFECHA";
-            this.txtFECHA.Size = new System.Drawing.Size(138, 23);
+            this.txtFECHA.Size = new System.Drawing.Size(175, 23);
             this.txtFECHA.TabIndex = 37;
             // 
             // GUARDAR_29
@@ -135,7 +135,7 @@ namespace Formulario_MDI
             this.GUARDAR_29.BackColor = System.Drawing.Color.LimeGreen;
             this.GUARDAR_29.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.GUARDAR_29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GUARDAR_29.Location = new System.Drawing.Point(273, 81);
+            this.GUARDAR_29.Location = new System.Drawing.Point(483, 242);
             this.GUARDAR_29.Name = "GUARDAR_29";
             this.GUARDAR_29.Size = new System.Drawing.Size(95, 37);
             this.GUARDAR_29.TabIndex = 35;
@@ -148,7 +148,7 @@ namespace Formulario_MDI
             this.NUEVO_29.BackColor = System.Drawing.Color.LimeGreen;
             this.NUEVO_29.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.NUEVO_29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUEVO_29.Location = new System.Drawing.Point(273, 26);
+            this.NUEVO_29.Location = new System.Drawing.Point(364, 242);
             this.NUEVO_29.Name = "NUEVO_29";
             this.NUEVO_29.Size = new System.Drawing.Size(95, 37);
             this.NUEVO_29.TabIndex = 34;
@@ -162,30 +162,17 @@ namespace Formulario_MDI
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(19, 208);
+            this.dataGridView1.Location = new System.Drawing.Point(364, 296);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dataGridView1.Size = new System.Drawing.Size(545, 328);
+            this.dataGridView1.Size = new System.Drawing.Size(594, 284);
             this.dataGridView1.TabIndex = 33;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.LimeGreen;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(778, 544);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(133, 31);
-            this.button4.TabIndex = 32;
-            this.button4.Text = "VOLVER AL MENU";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(530, 38);
+            this.label1.Location = new System.Drawing.Point(636, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(102, 25);
             this.label1.TabIndex = 31;
@@ -194,9 +181,9 @@ namespace Formulario_MDI
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(508, 81);
+            this.pictureBox1.Location = new System.Drawing.Point(398, 50);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 89);
+            this.pictureBox1.Size = new System.Drawing.Size(140, 133);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
@@ -206,7 +193,7 @@ namespace Formulario_MDI
             this.BTNMODIFICAR.BackColor = System.Drawing.Color.LimeGreen;
             this.BTNMODIFICAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNMODIFICAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNMODIFICAR.Location = new System.Drawing.Point(390, 26);
+            this.BTNMODIFICAR.Location = new System.Drawing.Point(734, 244);
             this.BTNMODIFICAR.Name = "BTNMODIFICAR";
             this.BTNMODIFICAR.Size = new System.Drawing.Size(95, 35);
             this.BTNMODIFICAR.TabIndex = 56;
@@ -219,7 +206,7 @@ namespace Formulario_MDI
             this.BTNACTUALIZAR.BackColor = System.Drawing.Color.LimeGreen;
             this.BTNACTUALIZAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNACTUALIZAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNACTUALIZAR.Location = new System.Drawing.Point(390, 81);
+            this.BTNACTUALIZAR.Location = new System.Drawing.Point(610, 242);
             this.BTNACTUALIZAR.Name = "BTNACTUALIZAR";
             this.BTNACTUALIZAR.Size = new System.Drawing.Size(95, 37);
             this.BTNACTUALIZAR.TabIndex = 57;
@@ -227,12 +214,28 @@ namespace Formulario_MDI
             this.BTNACTUALIZAR.UseVisualStyleBackColor = false;
             this.BTNACTUALIZAR.Click += new System.EventHandler(this.BTNACTUALIZAR_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(1052, 548);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(61, 60);
+            this.button1.TabIndex = 58;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // VENTAS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(930, 584);
+            this.ClientSize = new System.Drawing.Size(1138, 620);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BTNACTUALIZAR);
             this.Controls.Add(this.BTNMODIFICAR);
             this.Controls.Add(this.pictureBox2);
@@ -246,7 +249,6 @@ namespace Formulario_MDI
             this.Controls.Add(this.GUARDAR_29);
             this.Controls.Add(this.NUEVO_29);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -275,10 +277,10 @@ namespace Formulario_MDI
         private System.Windows.Forms.Button GUARDAR_29;
         private System.Windows.Forms.Button NUEVO_29;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BTNMODIFICAR;
         private System.Windows.Forms.Button BTNACTUALIZAR;
+        private System.Windows.Forms.Button button1;
     }
 }
