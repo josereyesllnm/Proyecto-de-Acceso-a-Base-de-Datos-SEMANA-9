@@ -36,6 +36,10 @@ namespace Formulario_MDI
 
         private void PROVEEDORES_Load(object sender, EventArgs e)
         {
+            txtnombree.Enabled = false;
+            txtcodigo.Enabled = false;
+            txtempresa.Enabled = false;
+
             try
             {
                 string consulta = "select * from proveedores";
@@ -55,6 +59,8 @@ namespace Formulario_MDI
                 MessageBox.Show("Error de conexion", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+
+
 
         }
     
@@ -155,7 +161,7 @@ namespace Formulario_MDI
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_cone);
 
-                string myInsertQuery = "delete from proveedores Where codigo = " + txtBuscar.Text + "";
+                string myInsertQuery = "delete from proveedores Where idproveedor = " + txtBuscar.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
                 myCommand.Connection = myConnection;
@@ -184,18 +190,22 @@ namespace Formulario_MDI
             try
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_cone);
-
+              
                 string nom = txtnombree.Text.ToString();
                 string cod = txtcodigo.Text.ToString();
-                string emp = txtempresa.Text; ToString();
+                string emp = txtempresa.Text;
 
 
-                
-                string myInsertQuery = "UPDATE proveedores SET nombre = '" + nom + "', codigo = '" + cod + "',empresa = '" + emp + "' WHERE nombre = '" + proveedor_modificar + "'";
+
+                string myInsertQuery = "UPDATE proveedores SET nombres = ?nombres, codigo = ?codigo, empresa= ?empresa Where nombres = " + proveedor_actualizar+ "";
+
 
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
-          
+                myCommand.Parameters.Add("?nombres", MySqlDbType.VarChar, 75).Value = txtnombree.Text;
+                myCommand.Parameters.Add("?codigo", MySqlDbType.VarChar, 75).Value = txtcodigo.Text;
+                myCommand.Parameters.Add("?empresa", MySqlDbType.VarChar, 75).Value = txtempresa.Text;
+
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
@@ -220,7 +230,7 @@ namespace Formulario_MDI
             }
 
             BTNMODIFICAR.Visible = true;
-            BTNACTUALIZAR.Visible = false;
+            BTNACTUALIZAR.Visible = true;
 
             //Desabilitar campos, se activan al crear nuevo registro
             txtnombree.Enabled = false;
