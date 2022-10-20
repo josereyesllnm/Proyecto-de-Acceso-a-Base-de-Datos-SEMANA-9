@@ -266,6 +266,11 @@ namespace Formulario_MDI
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
     

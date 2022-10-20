@@ -48,6 +48,7 @@ namespace Formulario_MDI
             this.BTNMODIFICAR = new System.Windows.Forms.Button();
             this.BTNACTUALIZAR = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -56,7 +57,7 @@ namespace Formulario_MDI
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(408, 46);
+            this.pictureBox1.Location = new System.Drawing.Point(379, 46);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(140, 133);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -69,11 +70,11 @@ namespace Formulario_MDI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(629, 23);
+            this.label1.Location = new System.Drawing.Point(536, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 25);
+            this.label1.Size = new System.Drawing.Size(345, 25);
             this.label1.TabIndex = 17;
-            this.label1.Text = "PROVEEDORES";
+            this.label1.Text = "REGISTRO DE PROVEEDORES";
             // 
             // dataGridView1
             // 
@@ -106,18 +107,18 @@ namespace Formulario_MDI
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(554, 78);
+            this.label4.Location = new System.Drawing.Point(544, 81);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.Size = new System.Drawing.Size(64, 13);
             this.label4.TabIndex = 25;
-            this.label4.Text = "Nombre:";
+            this.label4.Text = "NOMBRE:";
             // 
             // NUEVO_24
             // 
             this.NUEVO_24.BackColor = System.Drawing.Color.LimeGreen;
             this.NUEVO_24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.NUEVO_24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUEVO_24.Location = new System.Drawing.Point(403, 242);
+            this.NUEVO_24.Location = new System.Drawing.Point(446, 240);
             this.NUEVO_24.Name = "NUEVO_24";
             this.NUEVO_24.Size = new System.Drawing.Size(95, 37);
             this.NUEVO_24.TabIndex = 27;
@@ -130,9 +131,9 @@ namespace Formulario_MDI
             this.GUARDAR_24.BackColor = System.Drawing.Color.LimeGreen;
             this.GUARDAR_24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.GUARDAR_24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GUARDAR_24.Location = new System.Drawing.Point(526, 242);
+            this.GUARDAR_24.Location = new System.Drawing.Point(557, 240);
             this.GUARDAR_24.Name = "GUARDAR_24";
-            this.GUARDAR_24.Size = new System.Drawing.Size(95, 35);
+            this.GUARDAR_24.Size = new System.Drawing.Size(95, 37);
             this.GUARDAR_24.TabIndex = 28;
             this.GUARDAR_24.Text = "GUARDAR";
             this.GUARDAR_24.UseVisualStyleBackColor = false;
@@ -152,7 +153,7 @@ namespace Formulario_MDI
             this.btnbuscar.BackColor = System.Drawing.Color.LimeGreen;
             this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbuscar.Location = new System.Drawing.Point(996, 130);
+            this.btnbuscar.Location = new System.Drawing.Point(990, 130);
             this.btnbuscar.Name = "btnbuscar";
             this.btnbuscar.Size = new System.Drawing.Size(82, 33);
             this.btnbuscar.TabIndex = 30;
@@ -172,21 +173,21 @@ namespace Formulario_MDI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(558, 121);
+            this.label2.Location = new System.Drawing.Point(549, 121);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.Size = new System.Drawing.Size(59, 13);
             this.label2.TabIndex = 32;
-            this.label2.Text = "Codigo:";
+            this.label2.Text = "CODIGO:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(549, 158);
+            this.label5.Location = new System.Drawing.Point(538, 166);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 13);
+            this.label5.Size = new System.Drawing.Size(70, 13);
             this.label5.TabIndex = 33;
-            this.label5.Text = "Empresa:";
+            this.label5.Text = "EMPRESA:";
             // 
             // pictureBox2
             // 
@@ -216,9 +217,9 @@ namespace Formulario_MDI
             this.BTNMODIFICAR.BackColor = System.Drawing.Color.LimeGreen;
             this.BTNMODIFICAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BTNMODIFICAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNMODIFICAR.Location = new System.Drawing.Point(654, 242);
+            this.BTNMODIFICAR.Location = new System.Drawing.Point(670, 240);
             this.BTNMODIFICAR.Name = "BTNMODIFICAR";
-            this.BTNMODIFICAR.Size = new System.Drawing.Size(95, 35);
+            this.BTNMODIFICAR.Size = new System.Drawing.Size(95, 37);
             this.BTNMODIFICAR.TabIndex = 36;
             this.BTNMODIFICAR.Text = "MODIFICAR";
             this.BTNMODIFICAR.UseVisualStyleBackColor = false;
@@ -252,12 +253,23 @@ namespace Formulario_MDI
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(966, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(130, 15);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "INGRESAR DATOS \r";
+            // 
             // PROVEEDORES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1138, 620);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.BTNACTUALIZAR);
             this.Controls.Add(this.BTNMODIFICAR);
@@ -279,7 +291,7 @@ namespace Formulario_MDI
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PROVEEDORES";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "REGISTRO DE PROVEEDORES";
+            this.Text = "COMPUTERS GUEVARA - REGISTRO DE PROVEEDORES";
             this.Load += new System.EventHandler(this.PROVEEDORES_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -308,5 +320,6 @@ namespace Formulario_MDI
         private System.Windows.Forms.Button BTNMODIFICAR;
         private System.Windows.Forms.Button BTNACTUALIZAR;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label3;
     }
 }

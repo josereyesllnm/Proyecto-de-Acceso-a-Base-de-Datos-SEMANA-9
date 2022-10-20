@@ -114,5 +114,39 @@ namespace Formulario_MDI
         {
 
         }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Esta Seguro de Comprar esta Computadora?", " Confirmacion de Compra", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            MessageBox.Show(" Muchas Gracias por visitar nuestro sitio.                                                     "
+                +
+                   "           Su compra ha sido un exito!!", " Computers Guevara.");
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Esta Seguro de Comprar esta Computadora?", " Confirmacion de Compra", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            MessageBox.Show(" Muchas Gracias por visitar nuestro sitio.                                                     "
+                +
+                   "           Su compra ha sido un exito!!", " Computers Guevara.");
+        }
+
+        private void button2_Click_2(object sender, EventArgs e)
+        {
+            MessageBox.Show("Esta Seguro de Comprar esta Computadora?", " Confirmacion de Compra", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            MessageBox.Show(" Muchas Gracias por visitar nuestro sitio.                                                     "
+                +
+                   "           Su compra ha sido un exito!!", " Computers Guevara.");
+        }
     }
 }

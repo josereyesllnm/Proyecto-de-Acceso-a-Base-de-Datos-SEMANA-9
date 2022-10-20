@@ -48,6 +48,7 @@ namespace Formulario_MDI
             this.BTNACTUALIZAR = new System.Windows.Forms.Button();
             this.BTNMODIFICAR = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,26 +63,27 @@ namespace Formulario_MDI
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 50;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(585, 154);
+            this.label5.Location = new System.Drawing.Point(573, 154);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 13);
+            this.label5.Size = new System.Drawing.Size(67, 13);
             this.label5.TabIndex = 49;
-            this.label5.Text = "Celular:";
+            this.label5.Text = "CELULAR:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(573, 106);
+            this.label2.Location = new System.Drawing.Point(561, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
+            this.label2.Size = new System.Drawing.Size(79, 13);
             this.label2.TabIndex = 48;
-            this.label2.Text = "Apellidos:";
+            this.label2.Text = "APELLIDOS:";
             // 
             // txtCELULAAR
             // 
@@ -130,11 +132,11 @@ namespace Formulario_MDI
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(581, 66);
+            this.label4.Location = new System.Drawing.Point(576, 66);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.Size = new System.Drawing.Size(64, 13);
             this.label4.TabIndex = 42;
-            this.label4.Text = "Nombre:";
+            this.label4.Text = "NOMBRE:";
             // 
             // txtAPELLIDOOS
             // 
@@ -169,11 +171,11 @@ namespace Formulario_MDI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(571, 9);
+            this.label1.Location = new System.Drawing.Point(579, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 25);
+            this.label1.Size = new System.Drawing.Size(313, 25);
             this.label1.TabIndex = 38;
-            this.label1.Text = "EMPLEADOS";
+            this.label1.Text = "REGISTRO DE EMPLEADOS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
@@ -253,12 +255,23 @@ namespace Formulario_MDI
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(965, 72);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(130, 15);
+            this.label3.TabIndex = 57;
+            this.label3.Text = "INGRESAR DATOS \r";
+            // 
             // EMPLEADOS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1138, 620);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.BTNMODIFICAR);
             this.Controls.Add(this.BTNACTUALIZAR);
@@ -280,7 +293,7 @@ namespace Formulario_MDI
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EMPLEADOS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "REGISTRO DE EMPLEADOS";
+            this.Text = "COMPUTERS GUEVARA - REGISTRO DE EMPLEADOS";
             this.Load += new System.EventHandler(this.EMPLEADOS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -309,5 +322,6 @@ namespace Formulario_MDI
         private System.Windows.Forms.Button BTNACTUALIZAR;
         private System.Windows.Forms.Button BTNMODIFICAR;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label3;
     }
 }

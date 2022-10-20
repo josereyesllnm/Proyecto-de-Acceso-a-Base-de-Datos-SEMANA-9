@@ -22,6 +22,9 @@ namespace Formulario_MDI
 
         }
 
-        
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

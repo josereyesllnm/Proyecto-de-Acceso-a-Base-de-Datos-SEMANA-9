@@ -48,6 +48,7 @@ namespace Formulario_MDI
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.BTNACTUALIZAR = new System.Windows.Forms.Button();
             this.BTNMODIFICAR = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -67,11 +68,11 @@ namespace Formulario_MDI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(629, 11);
+            this.label1.Location = new System.Drawing.Point(563, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 25);
+            this.label1.Size = new System.Drawing.Size(283, 25);
             this.label1.TabIndex = 2;
-            this.label1.Text = "CLIENTES";
+            this.label1.Text = "REGISTRO DE CLIENTES";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button4
@@ -156,31 +157,31 @@ namespace Formulario_MDI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(561, 76);
+            this.label2.Location = new System.Drawing.Point(557, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 23;
-            this.label2.Text = "Nombre:";
+            this.label2.Text = "NOMBRE:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(554, 116);
+            this.label3.Location = new System.Drawing.Point(542, 116);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 13);
+            this.label3.Size = new System.Drawing.Size(79, 13);
             this.label3.TabIndex = 24;
-            this.label3.Text = "Apellidos:";
+            this.label3.Text = "APELLIDOS:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(565, 164);
+            this.label4.Location = new System.Drawing.Point(554, 164);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.Size = new System.Drawing.Size(67, 13);
             this.label4.TabIndex = 25;
-            this.label4.Text = "Celular:";
+            this.label4.Text = "CELULAR:";
             // 
             // bbtnbuscar
             // 
@@ -252,12 +253,23 @@ namespace Formulario_MDI
             this.BTNMODIFICAR.UseVisualStyleBackColor = false;
             this.BTNMODIFICAR.Click += new System.EventHandler(this.BTNMODIFICAR_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(960, 84);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(130, 15);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "INGRESAR DATOS \r";
+            // 
             // CLIENTES
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1138, 620);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.BTNMODIFICAR);
             this.Controls.Add(this.BTNACTUALIZAR);
             this.Controls.Add(this.pictureBox2);
@@ -309,5 +321,6 @@ namespace Formulario_MDI
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button BTNACTUALIZAR;
         private System.Windows.Forms.Button BTNMODIFICAR;
+        private System.Windows.Forms.Label label5;
     }
 }

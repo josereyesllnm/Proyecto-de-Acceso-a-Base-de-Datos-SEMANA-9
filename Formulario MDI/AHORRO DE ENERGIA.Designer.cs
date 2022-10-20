@@ -32,6 +32,7 @@ namespace Formulario_MDI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AHORRO_DE_ENERGIA));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -58,6 +59,21 @@ namespace Formulario_MDI
             this.label1.TabIndex = 3;
             this.label1.Text = "\"FORMAS DE AHORRAR ENERGIA\"";
             // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.ForestGreen;
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.Transparent;
+            this.button7.Location = new System.Drawing.Point(736, 237);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(61, 60);
+            this.button7.TabIndex = 63;
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // AHORRO_DE_ENERGIA
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -65,13 +81,14 @@ namespace Formulario_MDI
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AHORRO_DE_ENERGIA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AHORRO DE ENERGIA";
+            this.Text = "COMPUTERS GUEVARA - AHORRO DE ENERGIA";
             this.Load += new System.EventHandler(this.AHORRO_DE_ENERGIA_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -82,5 +99,6 @@ namespace Formulario_MDI
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button7;
     }
 }
