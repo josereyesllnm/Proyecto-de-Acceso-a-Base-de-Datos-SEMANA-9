@@ -49,8 +49,11 @@ namespace Formulario_MDI
             // 
             // btn
             // 
-            this.btn.BackColor = System.Drawing.Color.LimeGreen;
-            this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn.BackColor = System.Drawing.Color.Transparent;
+            this.btn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn.BackgroundImage")));
+            this.btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn.Location = new System.Drawing.Point(119, 387);
             this.btn.Name = "btn";
@@ -83,8 +86,11 @@ namespace Formulario_MDI
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(474, 387);
             this.button1.Name = "button1";

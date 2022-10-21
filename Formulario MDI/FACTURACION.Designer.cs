@@ -367,13 +367,15 @@ namespace Formulario_MDI
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Bisque;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(588, 517);
+            this.button1.Location = new System.Drawing.Point(578, 516);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 32);
+            this.button1.Size = new System.Drawing.Size(103, 41);
             this.button1.TabIndex = 34;
             this.button1.Text = "AGREGAR";
             this.button1.UseVisualStyleBackColor = false;
@@ -383,7 +385,7 @@ namespace Formulario_MDI
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
-            this.ClientSize = new System.Drawing.Size(683, 551);
+            this.ClientSize = new System.Drawing.Size(693, 560);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.textBox15);

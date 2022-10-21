@@ -260,6 +260,11 @@ private void BTNMODIFICAR_Click(object sender, EventArgs e)
 
             clientes_modificar = txtnombre1.Text.ToString();
         }
+
+        private void txtnombre1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

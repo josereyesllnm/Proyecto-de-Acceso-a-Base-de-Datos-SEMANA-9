@@ -64,8 +64,11 @@ namespace Formulario_MDI
             // 
             // ELIMINAR_29
             // 
-            this.ELIMINAR_29.BackColor = System.Drawing.Color.LimeGreen;
-            this.ELIMINAR_29.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ELIMINAR_29.BackColor = System.Drawing.Color.Transparent;
+            this.ELIMINAR_29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ELIMINAR_29.BackgroundImage")));
+            this.ELIMINAR_29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ELIMINAR_29.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.ELIMINAR_29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ELIMINAR_29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ELIMINAR_29.Location = new System.Drawing.Point(863, 244);
             this.ELIMINAR_29.Name = "ELIMINAR_29";
@@ -85,8 +88,11 @@ namespace Formulario_MDI
             // 
             // btnBUSCAR23
             // 
-            this.btnBUSCAR23.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnBUSCAR23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBUSCAR23.BackColor = System.Drawing.Color.Transparent;
+            this.btnBUSCAR23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBUSCAR23.BackgroundImage")));
+            this.btnBUSCAR23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBUSCAR23.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnBUSCAR23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBUSCAR23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBUSCAR23.Location = new System.Drawing.Point(993, 112);
             this.btnBUSCAR23.Name = "btnBUSCAR23";
@@ -133,8 +139,11 @@ namespace Formulario_MDI
             // 
             // GUARDAR_29
             // 
-            this.GUARDAR_29.BackColor = System.Drawing.Color.LimeGreen;
-            this.GUARDAR_29.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.GUARDAR_29.BackColor = System.Drawing.Color.Transparent;
+            this.GUARDAR_29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("GUARDAR_29.BackgroundImage")));
+            this.GUARDAR_29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.GUARDAR_29.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.GUARDAR_29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GUARDAR_29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GUARDAR_29.Location = new System.Drawing.Point(483, 242);
             this.GUARDAR_29.Name = "GUARDAR_29";
@@ -146,8 +155,11 @@ namespace Formulario_MDI
             // 
             // NUEVO_29
             // 
-            this.NUEVO_29.BackColor = System.Drawing.Color.LimeGreen;
-            this.NUEVO_29.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.NUEVO_29.BackColor = System.Drawing.Color.Transparent;
+            this.NUEVO_29.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("NUEVO_29.BackgroundImage")));
+            this.NUEVO_29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.NUEVO_29.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.NUEVO_29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NUEVO_29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NUEVO_29.Location = new System.Drawing.Point(364, 242);
             this.NUEVO_29.Name = "NUEVO_29";
@@ -191,8 +203,11 @@ namespace Formulario_MDI
             // 
             // BTNMODIFICAR
             // 
-            this.BTNMODIFICAR.BackColor = System.Drawing.Color.LimeGreen;
-            this.BTNMODIFICAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTNMODIFICAR.BackColor = System.Drawing.Color.Transparent;
+            this.BTNMODIFICAR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTNMODIFICAR.BackgroundImage")));
+            this.BTNMODIFICAR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BTNMODIFICAR.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.BTNMODIFICAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTNMODIFICAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNMODIFICAR.Location = new System.Drawing.Point(734, 244);
             this.BTNMODIFICAR.Name = "BTNMODIFICAR";
@@ -204,8 +219,11 @@ namespace Formulario_MDI
             // 
             // BTNACTUALIZAR
             // 
-            this.BTNACTUALIZAR.BackColor = System.Drawing.Color.LimeGreen;
-            this.BTNACTUALIZAR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BTNACTUALIZAR.BackColor = System.Drawing.Color.Transparent;
+            this.BTNACTUALIZAR.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTNACTUALIZAR.BackgroundImage")));
+            this.BTNACTUALIZAR.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BTNACTUALIZAR.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.BTNACTUALIZAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTNACTUALIZAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BTNACTUALIZAR.Location = new System.Drawing.Point(610, 242);
             this.BTNACTUALIZAR.Name = "BTNACTUALIZAR";

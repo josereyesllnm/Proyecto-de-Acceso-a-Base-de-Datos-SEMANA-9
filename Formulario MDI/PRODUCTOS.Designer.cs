@@ -41,8 +41,11 @@ namespace Formulario_MDI
             // 
             // btnescritorio
             // 
-            this.btnescritorio.BackColor = System.Drawing.Color.LimeGreen;
-            this.btnescritorio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnescritorio.BackColor = System.Drawing.Color.Transparent;
+            this.btnescritorio.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnescritorio.BackgroundImage")));
+            this.btnescritorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnescritorio.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.btnescritorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnescritorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnescritorio.Location = new System.Drawing.Point(69, 80);
             this.btnescritorio.Name = "btnescritorio";
@@ -54,8 +57,11 @@ namespace Formulario_MDI
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(69, 345);
             this.button1.Name = "button1";
@@ -67,8 +73,11 @@ namespace Formulario_MDI
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.LimeGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(69, 212);
             this.button2.Name = "button2";

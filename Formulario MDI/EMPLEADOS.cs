@@ -34,9 +34,14 @@ namespace Formulario_MDI
 
         private void EMPLEADOS_Load(object sender, EventArgs e)
         {
-            txtNOMBREE.Enabled = false;
-            txtAPELLIDOOS.Enabled = false;
-            txtCELULAAR.Enabled = false;
+            txtNOMBREE.Enabled = true;
+            txtAPELLIDOOS.Enabled = true;
+            txtCELULAAR.Enabled = true;
+            txtdui.Enabled = true;
+            txtnit.Enabled = true;
+            txtpuesto.Enabled = true;
+            txtdireccion.Enabled = true;
+            txtnacimiento.Enabled = true;
 
             try
             {
@@ -66,12 +71,17 @@ namespace Formulario_MDI
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string myInsertQuery = "INSERT INTO empleados(nombre,apellidos,celular) Values(?nombre,?apellidos,?celular)";
+                string myInsertQuery = "INSERT INTO empleados(nombre,apellidos,celular,dui,nit,puesto,direccion,fechanacimiento) Values(?nombre,?apellidos,?celular,?dui,?nit,?puesto,?direccion,?fechanacimiento)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
                 myCommand.Parameters.Add("?nombre", MySqlDbType.VarChar, 75).Value = txtNOMBREE.Text;
                 myCommand.Parameters.Add("?apellidos", MySqlDbType.VarChar, 75).Value = txtAPELLIDOOS.Text;
                 myCommand.Parameters.Add("?celular", MySqlDbType.VarChar, 75).Value = txtCELULAAR.Text;
+                myCommand.Parameters.Add("?dui", MySqlDbType.VarChar, 75).Value = txtdui.Text;
+                myCommand.Parameters.Add("?nit", MySqlDbType.VarChar, 75).Value = txtnit.Text;
+                myCommand.Parameters.Add("?puesto", MySqlDbType.VarChar, 75).Value = txtpuesto.Text;
+                myCommand.Parameters.Add("?direccion", MySqlDbType.VarChar, 75).Value = txtdireccion.Text;
+                myCommand.Parameters.Add("?fechanacimiento", MySqlDbType.VarChar, 75).Value = txtnacimiento.Text;
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
@@ -99,6 +109,13 @@ namespace Formulario_MDI
             txtNOMBREE.Enabled = false;
             txtAPELLIDOOS.Enabled = false;
             txtCELULAAR.Enabled = false;
+            txtdui.Enabled = false;
+            txtnit.Enabled = false;
+            txtpuesto.Enabled = false;
+            txtdireccion.Enabled = false;
+            txtnacimiento.Enabled = false;
+
+
             NUEVO_25.Focus();
         }
 
@@ -110,6 +127,12 @@ namespace Formulario_MDI
             txtNOMBREE.Text = "";
             txtAPELLIDOOS.Text = "";
             txtCELULAAR.Text = "";
+            txtdireccion.Text = "";
+            txtdui.Text = "";
+            txtnacimiento.Text = "";
+            txtpuesto.Text = "";
+            txtnit.Text = "";
+
             txtNOMBREE.Focus();
             NUEVO_25.Visible = true;
             GUARDAR25.Visible = true;
@@ -133,7 +156,7 @@ namespace Formulario_MDI
                 myCommand.ExecuteNonQuery();
                 myCommand.Connection.Close();
 
-                MessageBox.Show("EMPLEADO eliminado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("EMPLEADO eliminado con éxito", "COMPUTERS GUEVARA", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
                 string consulta = "select * from empleados";
@@ -160,7 +183,7 @@ namespace Formulario_MDI
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string myInsertQuery = "select * from empleados Where idempleado = " + txtBUSCAR23.Text + "";
+                string myInsertQuery = "select * from empleados Where idempleados = " + txtBUSCAR23.Text + "";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery, myConnection);
 
                 myCommand.Connection = myConnection;
@@ -173,7 +196,12 @@ namespace Formulario_MDI
                 {
                     txtNOMBREE.Text = (myReader.GetString(1));
                     txtAPELLIDOOS.Text = (myReader.GetString(2));
-                    txtCELULAAR.Text = (myReader.GetString(3));
+                    txtCELULAAR.Text = (myReader.GetString(3));                   
+                    txtdui.Text = (myReader.GetString(4));
+                    txtnit.Text = (myReader.GetString(5));
+                    txtpuesto.Text = (myReader.GetString(6));
+                    txtdireccion.Text = (myReader.GetString(7));
+                    txtnacimiento.Text = (myReader.GetString(8));
                 }
                 else
                 {
@@ -196,11 +224,15 @@ namespace Formulario_MDI
         {
             txtNOMBREE.Enabled = true;
             txtAPELLIDOOS.Enabled = true;
-            txtCELULAAR.Enabled = true;
-
+            txtCELULAAR.Enabled = true;           
+            txtdui.Enabled = true;
+            txtnit.Enabled = true;
+            txtpuesto.Enabled = true;
+            txtdireccion.Enabled = true;
+            txtnacimiento.Enabled = true;
             txtNOMBREE.Focus();
 
-            BTNMODIFICAR.Visible = false;
+            BTNMODIFICAR.Visible = true;
             BTNACTUALIZAR.Visible = true;
 
             empleados_modificar = txtNOMBREE.Text.ToString();
@@ -215,9 +247,7 @@ namespace Formulario_MDI
                 string nom = txtNOMBREE.Text.ToString();
                 string ape = txtAPELLIDOOS.Text.ToString();
                 string cel = txtCELULAAR.Text; ToString();
-
-
-
+             
                 string myInsertQuery = "UPDATE empleados SET nombre = '" + nom + "', apellidos= '" + ape + "',celular = '" + cel+ "' WHERE nombre = '" + empleados_modificar + "'";
 
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
@@ -268,6 +298,11 @@ namespace Formulario_MDI
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
