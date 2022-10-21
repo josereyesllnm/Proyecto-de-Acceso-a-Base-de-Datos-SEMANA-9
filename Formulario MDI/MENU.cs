@@ -126,7 +126,7 @@ namespace Formulario_MDI
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           CLIENTES form = new CLIENTES();
+           v form = new v();
             form.ShowDialog();
         }
 

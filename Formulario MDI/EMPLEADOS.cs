@@ -88,7 +88,7 @@ namespace Formulario_MDI
                 myCommand.ExecuteNonQuery();
                 myCommand.Connection.Close();
 
-                MessageBox.Show("Agregado con éxito", "CONFIRMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Empleado agregado con éxito", "CONFIRMACION", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 string consulta = "select * from empleados";
 
@@ -101,7 +101,7 @@ namespace Formulario_MDI
             }
             catch (MySqlException)
             {
-                MessageBox.Show("Ya existe el EMPLEADO", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Ya existe el empleado", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             NUEVO_25.Visible = true;
             GUARDAR25.Visible = true;
@@ -156,7 +156,7 @@ namespace Formulario_MDI
                 myCommand.ExecuteNonQuery();
                 myCommand.Connection.Close();
 
-                MessageBox.Show("EMPLEADO eliminado con éxito", "COMPUTERS GUEVARA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Empleado eliminado con éxito", "COMPUTERS GUEVARA", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
                 string consulta = "select * from empleados";
@@ -196,16 +196,16 @@ namespace Formulario_MDI
                 {
                     txtNOMBREE.Text = (myReader.GetString(1));
                     txtAPELLIDOOS.Text = (myReader.GetString(2));
-                    txtCELULAAR.Text = (myReader.GetString(3));                   
-                    txtdui.Text = (myReader.GetString(4));
+                    txtCELULAAR.Text = (myReader.GetString(4));                   
+                    txtdui.Text = (myReader.GetString(3));
                     txtnit.Text = (myReader.GetString(5));
-                    txtpuesto.Text = (myReader.GetString(6));
-                    txtdireccion.Text = (myReader.GetString(7));
-                    txtnacimiento.Text = (myReader.GetString(8));
+                    txtpuesto.Text = (myReader.GetString(7));
+                    txtdireccion.Text = (myReader.GetString(8));
+                    txtnacimiento.Text = (myReader.GetString(6));
                 }
                 else
                 {
-                    MessageBox.Show("El EMPLEADO no existe", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("El empleado no existe", "COMPUTERS GUEVARA", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 myReader.Close();
                 myConnection.Close();
@@ -213,7 +213,7 @@ namespace Formulario_MDI
             }
             catch (MySqlException)
             {
-                MessageBox.Show("Campo de busqueda está vacío", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Campo de busqueda está vacío", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             NUEVO_25.Visible = true;
@@ -259,7 +259,7 @@ namespace Formulario_MDI
                 myCommand.ExecuteNonQuery();
                 myCommand.Connection.Close();
 
-                MessageBox.Show("empleado actualizado con éxito", "Ok", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Empleado actualizado con éxito", "COMPUTERS GUEVARA", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 string consulta = "select * from empleados";
 
@@ -273,18 +273,13 @@ namespace Formulario_MDI
             }
             catch (MySqlException)
             {
-                MessageBox.Show("Error al actualizar al empleado", "Alerta!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Error al actualizar al empleado", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
             BTNMODIFICAR.Visible = true;
-            BTNACTUALIZAR.Visible = false;
+            BTNACTUALIZAR.Visible = true;
 
-            //Desabilitar campos, se activan al crear nuevo registro
-            txtNOMBREE.Enabled = false;
-            txtAPELLIDOOS.Enabled = false;
-            txtCELULAAR.Enabled = false;
-            BTNMODIFICAR.Focus();
-
+            
         }
 
         private void button4_Click_1(object sender, EventArgs e)

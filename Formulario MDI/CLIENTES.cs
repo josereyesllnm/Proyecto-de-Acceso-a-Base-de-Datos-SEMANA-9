@@ -13,14 +13,14 @@ using MySql.Data.MySqlClient;
 
 namespace Formulario_MDI
 {
-    public partial class CLIENTES : Form
+    public partial class v : Form
     {
 
         public string cadena_conexion = "Database=agenda;Data Source=Localhost;User Id=jose;Password=12345";
         public string cliente_eliminar;
         public string clientes_modificar;
 
-        public CLIENTES()
+        public v()
         {
             InitializeComponent();
         }
@@ -42,9 +42,9 @@ namespace Formulario_MDI
 
         private void CLIENTES_Load(object sender, EventArgs e)
         {
-            txtnombre1.Enabled = false;
-            txtapellido.Enabled = false;
-            txtcelular.Enabled = false;
+            txtnombre8.Enabled = true;
+            txtapellido7.Enabled = true;
+            txtcelular.Enabled = true;
 
             try
             {
@@ -74,12 +74,15 @@ namespace Formulario_MDI
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string myInsertQuery = "INSERT INTO cliente(nombres,apellidos,celular) Values(?nombres,?apellidos,?celular)";
+                string myInsertQuery = "INSERT INTO cliente(nombres,apellidos,celular,direccion,correo,tipocliente) Values(?nombres,?apellidos,?celular,?direccion,?correo,?tipocliente)";
                 MySqlCommand myCommand = new MySqlCommand(myInsertQuery);
 
-                myCommand.Parameters.Add("?nombres", MySqlDbType.VarChar, 75).Value = txtnombre1.Text;
-                myCommand.Parameters.Add("?apellidos", MySqlDbType.VarChar, 75).Value = txtapellido.Text;
+                myCommand.Parameters.Add("?nombres", MySqlDbType.VarChar, 75).Value = txtnombre8.Text;
+                myCommand.Parameters.Add("?apellidos", MySqlDbType.VarChar, 75).Value = txtapellido7.Text;
                 myCommand.Parameters.Add("?celular", MySqlDbType.VarChar, 75).Value = txtcelular.Text;
+                myCommand.Parameters.Add("?direccion", MySqlDbType.VarChar, 75).Value = txtdireccion5.Text;
+                myCommand.Parameters.Add("?correo", MySqlDbType.VarChar, 75).Value = txtcorreo.Text;
+                myCommand.Parameters.Add("?tipocliente", MySqlDbType.VarChar, 75).Value = txttipocliente.Text;
 
                 myCommand.Connection = myConnection;
                 myConnection.Open();
@@ -104,9 +107,13 @@ namespace Formulario_MDI
             NUEVO_23.Visible = true;
             GUARDAR_23.Visible = true;
 
-            txtnombre1.Enabled = false;
-            txtapellido.Enabled = false;
+            txtnombre8.Enabled = false;
+            txtapellido7.Enabled = false;
             txtcelular.Enabled = false;
+            txtcorreo.Enabled = false;
+            txtdireccion5.Enabled = false;
+            txttipocliente.Enabled = false;
+
             NUEVO_23.Focus();
         }
           
@@ -119,13 +126,21 @@ namespace Formulario_MDI
 
         private void NUEVO_23_Click(object sender, EventArgs e)
         {
-            txtnombre1.Enabled = true;
-            txtapellido.Enabled = true;
+            txtnombre8.Enabled = true;
+            txtapellido7.Enabled = true;
             txtcelular.Enabled = true;
-            txtnombre1.Text = "";
-            txtapellido.Text = "";
+            txttipocliente.Enabled = true;
+            txtcorreo.Enabled = true;
+            txtdireccion5.Enabled = true;
+
+            txtnombre8.Text = "";
+            txtapellido7.Text = "";
             txtcelular.Text = "";
-            txtnombre1.Focus();
+            txttipocliente.Text = "";
+            txtcorreo.Text = "";
+            txtdireccion5.Text = "";
+            
+            txtnombre8.Focus();
             NUEVO_23.Visible = true;
             GUARDAR_23.Visible = true;
         }
@@ -147,9 +162,12 @@ namespace Formulario_MDI
 
                 if (myReader.Read())
                 {
-                    txtnombre1.Text = (myReader.GetString(1));
-                    txtapellido.Text = (myReader.GetString(2));
+                    txtnombre8.Text = (myReader.GetString(1));
+                    txtapellido7.Text = (myReader.GetString(2));
                     txtcelular.Text = (myReader.GetString(3));
+                    txttipocliente.Text = (myReader.GetString(4));
+                    txtcorreo.Text = (myReader.GetString(6));
+                    txtdireccion5.Text = (myReader.GetString(5));
                 }
                 else
                 {
@@ -193,7 +211,7 @@ namespace Formulario_MDI
                 dataGridView1.DataSource = ds;
                 dataGridView1.DataMember = "agenda";
 
-                cliente_eliminar = txtnombre1.Text;
+                cliente_eliminar = txtnombre8.Text;
             }
         }
 
@@ -203,8 +221,8 @@ namespace Formulario_MDI
             {
                 MySqlConnection myConnection = new MySqlConnection(cadena_conexion);
 
-                string nom = txtnombre1.Text.ToString();
-                string ape = txtapellido.Text.ToString();
+                string nom = txtnombre8.Text.ToString();
+                string ape = txtapellido7.Text.ToString();
                 string cel = txtcelular.Text; ToString();
 
 
@@ -238,30 +256,32 @@ namespace Formulario_MDI
             }
 
             BTNMODIFICAR.Visible = true;
-            BTNACTUALIZAR.Visible = true;
-
-            //Desabilitar campos, se activan al crear nuevo registro
-            txtnombre1.Enabled = false;
-            txtapellido.Enabled = false;
-            txtcelular.Enabled = false;
-            BTNMODIFICAR.Focus();
+            BTNACTUALIZAR.Visible = true;          
 
         }
 private void BTNMODIFICAR_Click(object sender, EventArgs e)
         {
-            txtnombre1.Enabled = true;
-            txtapellido.Enabled = true;
+            txtnombre8.Enabled = true;
+            txtapellido7.Enabled = true;
             txtcelular.Enabled = true;
+            txtcorreo.Enabled = true;
+            txttipocliente.Enabled = true;
+            txtdireccion5.Enabled = true;
 
-            txtnombre1.Focus();
+            txtnombre8.Focus();
 
             BTNMODIFICAR.Visible = true;
             BTNACTUALIZAR.Visible = true;
 
-            clientes_modificar = txtnombre1.Text.ToString();
+            clientes_modificar = txtnombre8.Text.ToString();
         }
 
         private void txtnombre1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }

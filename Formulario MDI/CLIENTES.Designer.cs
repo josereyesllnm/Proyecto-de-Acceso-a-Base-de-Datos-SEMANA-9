@@ -1,7 +1,7 @@
 ﻿
 namespace Formulario_MDI
 {
-    partial class CLIENTES
+    partial class v
     {
         /// <summary>
         /// Required designer variable.
@@ -29,15 +29,15 @@ namespace Formulario_MDI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CLIENTES));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(v));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.NUEVO_23 = new System.Windows.Forms.Button();
             this.GUARDAR_23 = new System.Windows.Forms.Button();
-            this.txtnombre1 = new System.Windows.Forms.TextBox();
-            this.txtapellido = new System.Windows.Forms.TextBox();
+            this.txtnombre8 = new System.Windows.Forms.TextBox();
+            this.txtapellido7 = new System.Windows.Forms.TextBox();
             this.txtcelular = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,6 +49,12 @@ namespace Formulario_MDI
             this.BTNACTUALIZAR = new System.Windows.Forms.Button();
             this.BTNMODIFICAR = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtcorreo = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtdireccion5 = new System.Windows.Forms.TextBox();
+            this.txttipocliente = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -57,7 +63,7 @@ namespace Formulario_MDI
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(396, 51);
+            this.pictureBox1.Location = new System.Drawing.Point(391, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(140, 133);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -68,7 +74,7 @@ namespace Formulario_MDI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(563, 24);
+            this.label1.Location = new System.Drawing.Point(658, 59);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(283, 25);
             this.label1.TabIndex = 2;
@@ -83,7 +89,7 @@ namespace Formulario_MDI
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Transparent;
-            this.button4.Location = new System.Drawing.Point(1065, 548);
+            this.button4.Location = new System.Drawing.Point(1186, 592);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(61, 60);
             this.button4.TabIndex = 15;
@@ -96,10 +102,10 @@ namespace Formulario_MDI
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(396, 295);
+            this.dataGridView1.Location = new System.Drawing.Point(345, 331);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dataGridView1.Size = new System.Drawing.Size(594, 284);
+            this.dataGridView1.Size = new System.Drawing.Size(903, 235);
             this.dataGridView1.TabIndex = 16;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -111,7 +117,7 @@ namespace Formulario_MDI
             this.NUEVO_23.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
             this.NUEVO_23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.NUEVO_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NUEVO_23.Location = new System.Drawing.Point(396, 233);
+            this.NUEVO_23.Location = new System.Drawing.Point(379, 287);
             this.NUEVO_23.Name = "NUEVO_23";
             this.NUEVO_23.Size = new System.Drawing.Size(95, 37);
             this.NUEVO_23.TabIndex = 17;
@@ -127,7 +133,7 @@ namespace Formulario_MDI
             this.GUARDAR_23.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
             this.GUARDAR_23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GUARDAR_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GUARDAR_23.Location = new System.Drawing.Point(520, 233);
+            this.GUARDAR_23.Location = new System.Drawing.Point(570, 287);
             this.GUARDAR_23.Name = "GUARDAR_23";
             this.GUARDAR_23.Size = new System.Drawing.Size(95, 37);
             this.GUARDAR_23.TabIndex = 18;
@@ -135,37 +141,34 @@ namespace Formulario_MDI
             this.GUARDAR_23.UseVisualStyleBackColor = false;
             this.GUARDAR_23.Click += new System.EventHandler(this.GUARDAR_23_Click);
             // 
-            // txtnombre1
+            // txtnombre8
             // 
-            this.txtnombre1.BackColor = System.Drawing.SystemColors.Window;
-            this.txtnombre1.Location = new System.Drawing.Point(622, 73);
-            this.txtnombre1.Multiline = true;
-            this.txtnombre1.Name = "txtnombre1";
-            this.txtnombre1.Size = new System.Drawing.Size(179, 23);
-            this.txtnombre1.TabIndex = 20;
-            this.txtnombre1.TextChanged += new System.EventHandler(this.txtnombre1_TextChanged);
+            this.txtnombre8.BackColor = System.Drawing.SystemColors.Window;
+            this.txtnombre8.Location = new System.Drawing.Point(622, 129);
+            this.txtnombre8.Name = "txtnombre8";
+            this.txtnombre8.Size = new System.Drawing.Size(179, 20);
+            this.txtnombre8.TabIndex = 20;
+            this.txtnombre8.TextChanged += new System.EventHandler(this.txtnombre1_TextChanged);
             // 
-            // txtapellido
+            // txtapellido7
             // 
-            this.txtapellido.Location = new System.Drawing.Point(622, 113);
-            this.txtapellido.Multiline = true;
-            this.txtapellido.Name = "txtapellido";
-            this.txtapellido.Size = new System.Drawing.Size(179, 23);
-            this.txtapellido.TabIndex = 21;
+            this.txtapellido7.Location = new System.Drawing.Point(622, 160);
+            this.txtapellido7.Name = "txtapellido7";
+            this.txtapellido7.Size = new System.Drawing.Size(179, 20);
+            this.txtapellido7.TabIndex = 21;
             // 
             // txtcelular
             // 
-            this.txtcelular.Location = new System.Drawing.Point(622, 161);
-            this.txtcelular.Multiline = true;
+            this.txtcelular.Location = new System.Drawing.Point(967, 163);
             this.txtcelular.Name = "txtcelular";
-            this.txtcelular.Size = new System.Drawing.Size(179, 23);
+            this.txtcelular.Size = new System.Drawing.Size(179, 20);
             this.txtcelular.TabIndex = 22;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(557, 76);
+            this.label2.Location = new System.Drawing.Point(552, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 23;
@@ -175,7 +178,7 @@ namespace Formulario_MDI
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(542, 116);
+            this.label3.Location = new System.Drawing.Point(537, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 13);
             this.label3.TabIndex = 24;
@@ -185,7 +188,7 @@ namespace Formulario_MDI
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(554, 164);
+            this.label4.Location = new System.Drawing.Point(894, 166);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 13);
             this.label4.TabIndex = 25;
@@ -199,7 +202,7 @@ namespace Formulario_MDI
             this.bbtnbuscar.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
             this.bbtnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bbtnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbtnbuscar.Location = new System.Drawing.Point(982, 151);
+            this.bbtnbuscar.Location = new System.Drawing.Point(1113, 71);
             this.bbtnbuscar.Name = "bbtnbuscar";
             this.bbtnbuscar.Size = new System.Drawing.Size(82, 33);
             this.bbtnbuscar.TabIndex = 26;
@@ -209,10 +212,9 @@ namespace Formulario_MDI
             // 
             // txttbuscar
             // 
-            this.txttbuscar.Location = new System.Drawing.Point(924, 113);
-            this.txttbuscar.Multiline = true;
+            this.txttbuscar.Location = new System.Drawing.Point(1065, 45);
             this.txttbuscar.Name = "txttbuscar";
-            this.txttbuscar.Size = new System.Drawing.Size(202, 25);
+            this.txttbuscar.Size = new System.Drawing.Size(172, 20);
             this.txttbuscar.TabIndex = 27;
             // 
             // ELIMINAR_23
@@ -223,7 +225,7 @@ namespace Formulario_MDI
             this.ELIMINAR_23.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
             this.ELIMINAR_23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ELIMINAR_23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ELIMINAR_23.Location = new System.Drawing.Point(895, 234);
+            this.ELIMINAR_23.Location = new System.Drawing.Point(1113, 288);
             this.ELIMINAR_23.Name = "ELIMINAR_23";
             this.ELIMINAR_23.Size = new System.Drawing.Size(95, 37);
             this.ELIMINAR_23.TabIndex = 28;
@@ -234,7 +236,7 @@ namespace Formulario_MDI
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(48, 84);
+            this.pictureBox2.Location = new System.Drawing.Point(23, 84);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(291, 495);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -249,7 +251,7 @@ namespace Formulario_MDI
             this.BTNACTUALIZAR.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
             this.BTNACTUALIZAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTNACTUALIZAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNACTUALIZAR.Location = new System.Drawing.Point(775, 233);
+            this.BTNACTUALIZAR.Location = new System.Drawing.Point(946, 288);
             this.BTNACTUALIZAR.Name = "BTNACTUALIZAR";
             this.BTNACTUALIZAR.Size = new System.Drawing.Size(95, 37);
             this.BTNACTUALIZAR.TabIndex = 38;
@@ -265,7 +267,7 @@ namespace Formulario_MDI
             this.BTNMODIFICAR.FlatAppearance.BorderColor = System.Drawing.Color.CornflowerBlue;
             this.BTNMODIFICAR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BTNMODIFICAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTNMODIFICAR.Location = new System.Drawing.Point(647, 234);
+            this.BTNMODIFICAR.Location = new System.Drawing.Point(755, 288);
             this.BTNMODIFICAR.Name = "BTNMODIFICAR";
             this.BTNMODIFICAR.Size = new System.Drawing.Size(95, 36);
             this.BTNMODIFICAR.TabIndex = 39;
@@ -277,18 +279,76 @@ namespace Formulario_MDI
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(960, 84);
+            this.label5.Location = new System.Drawing.Point(1095, 27);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(130, 15);
             this.label5.TabIndex = 40;
             this.label5.Text = "INGRESAR DATOS \r";
             // 
-            // CLIENTES
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(807, 195);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(154, 13);
+            this.label6.TabIndex = 41;
+            this.label6.Text = "CORREO ELECTRONICO:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // txtcorreo
+            // 
+            this.txtcorreo.Location = new System.Drawing.Point(967, 192);
+            this.txtcorreo.Name = "txtcorreo";
+            this.txtcorreo.Size = new System.Drawing.Size(179, 20);
+            this.txtcorreo.TabIndex = 42;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(844, 136);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(117, 13);
+            this.label7.TabIndex = 43;
+            this.label7.Text = "TIPO DE CLIENTE:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(537, 195);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 13);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "DIRECCION:";
+            // 
+            // txtdireccion5
+            // 
+            this.txtdireccion5.Location = new System.Drawing.Point(622, 192);
+            this.txtdireccion5.Name = "txtdireccion5";
+            this.txtdireccion5.Size = new System.Drawing.Size(179, 20);
+            this.txtdireccion5.TabIndex = 45;
+            // 
+            // txttipocliente
+            // 
+            this.txttipocliente.Location = new System.Drawing.Point(967, 133);
+            this.txttipocliente.Name = "txttipocliente";
+            this.txttipocliente.Size = new System.Drawing.Size(178, 20);
+            this.txttipocliente.TabIndex = 46;
+            // 
+            // v
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(1138, 620);
+            this.ClientSize = new System.Drawing.Size(1259, 664);
+            this.Controls.Add(this.txttipocliente);
+            this.Controls.Add(this.txtdireccion5);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtcorreo);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.BTNMODIFICAR);
             this.Controls.Add(this.BTNACTUALIZAR);
@@ -300,8 +360,8 @@ namespace Formulario_MDI
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtcelular);
-            this.Controls.Add(this.txtapellido);
-            this.Controls.Add(this.txtnombre1);
+            this.Controls.Add(this.txtapellido7);
+            this.Controls.Add(this.txtnombre8);
             this.Controls.Add(this.GUARDAR_23);
             this.Controls.Add(this.NUEVO_23);
             this.Controls.Add(this.dataGridView1);
@@ -309,7 +369,7 @@ namespace Formulario_MDI
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "CLIENTES";
+            this.Name = "v";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "COMPUTERS GUEVARA - REGISTRO DE CLIENTES";
             this.Load += new System.EventHandler(this.CLIENTES_Load);
@@ -329,8 +389,8 @@ namespace Formulario_MDI
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button NUEVO_23;
         private System.Windows.Forms.Button GUARDAR_23;
-        private System.Windows.Forms.TextBox txtnombre1;
-        private System.Windows.Forms.TextBox txtapellido;
+        private System.Windows.Forms.TextBox txtnombre8;
+        private System.Windows.Forms.TextBox txtapellido7;
         private System.Windows.Forms.TextBox txtcelular;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -342,5 +402,11 @@ namespace Formulario_MDI
         private System.Windows.Forms.Button BTNACTUALIZAR;
         private System.Windows.Forms.Button BTNMODIFICAR;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtcorreo;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtdireccion5;
+        private System.Windows.Forms.TextBox txttipocliente;
     }
 }
